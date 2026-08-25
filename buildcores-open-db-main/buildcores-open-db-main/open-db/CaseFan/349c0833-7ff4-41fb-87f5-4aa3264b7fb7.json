@@ -1,0 +1,29 @@
+{
+  "opendb_id": "349c0833-7ff4-41fb-87f5-4aa3264b7fb7",
+  "metadata": {
+    "name": "Noctua NF-A4x10 24V PWM",
+    "manufacturer": "Noctua",
+    "series": "A4x10",
+    "variant": "24V PWM",
+    "manufacturer_color": "Brown",
+    "part_numbers": ["nf-a4x10-24v-pwm"],
+    "releaseYear": 2023
+  },
+  "size": 40,
+  "color": ["BROWN"],
+  "quantity": 1,
+  "pwm": true,
+  "connector": "4-pin PWM",
+  "lighting": ["None"],
+  "isOEM": false,
+  "flow_direction": "Standard",
+  "min_airflow": 5.24,
+  "min_noise_level": 19.6,
+  "static_pressure": 1.95,
+  "controller": "None",
+  "led": "None",
+  "general_product_information": {
+    "amazon_sku": "B0CN39MCPL",
+    "manufacturer_url": "https://www.noctua.at/en/products/nf-a4x10-24v-pwm/specifications"
+  }
+}

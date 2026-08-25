@@ -1,0 +1,32 @@
+{
+  "opendb_id": "b9a0d1ef-2628-4f3e-a269-51cd9ae2a9fe",
+  "metadata": {
+    "name": "ID-COOLING AF-127-ARGB-W Trio 120mm PWM White Pack of 3",
+    "manufacturer": "ID-COOLING",
+    "part_numbers": ["AF-127-ARGB-W TRIO"],
+    "series": "AF",
+    "variant": "127-ARGB-W",
+    "manufacturer_color": "White",
+    "releaseYear": 2025
+  },
+  "size": 120,
+  "color": ["WHITE"],
+  "quantity": 3,
+  "min_airflow": 78,
+  "max_airflow": null,
+  "min_noise_level": 29.9,
+  "max_noise_level": null,
+  "pwm": true,
+  "led": "Addressable RGB",
+  "connector": "4-pin PWM + 3-pin 5V Addressable RGB",
+  "controller": "None",
+  "static_pressure": 2.68,
+  "flow_direction": "Standard",
+  "isOEM": false,
+  "lighting": ["ARGB"],
+  "general_product_information": {
+    "amazon_sku": "B0CFPZ4VNG",
+    "newegg_sku": "9SIC21AKRJ2459",
+    "manufacturer_url": "https://www.idcooling.com/product/detail?id=380&name=AF-127-ARGB-W%20TRIO"
+  }
+}

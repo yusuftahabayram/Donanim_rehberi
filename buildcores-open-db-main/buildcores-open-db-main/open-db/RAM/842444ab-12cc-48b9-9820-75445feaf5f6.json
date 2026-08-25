@@ -1,0 +1,37 @@
+{
+  "opendb_id": "842444ab-12cc-48b9-9820-75445feaf5f6",
+  "modules": {
+    "quantity": 2,
+    "capacity_gb": 16
+  },
+  "metadata": {
+    "name": "G.Skill Trident Z5 Neo RGB 32GB (2x16GB) DDR5 6000 CL30 White",
+    "manufacturer": "G.SKILL",
+    "part_numbers": ["F5-6000J3036F16GX2-TZ5NRW"],
+    "series": "Trident Z5 Neo RGB",
+    "manufacturer_color": "Matte White",
+    "releaseYear": 2025,
+    "last_manually_spec_verified_at": "2026-04-12T00:18:49.588Z"
+  },
+  "speed": 6000,
+  "ram_type": "DDR5",
+  "form_factor": "288-pin DIMM",
+  "capacity": 32,
+  "color": ["WHITE"],
+  "cas_latency": 30,
+  "timings": "30-36-36-96",
+  "ecc": "Non-ECC",
+  "registered": "Unbuffered",
+  "heat_spreader": true,
+  "rgb": true,
+  "profile_support": ["XMP", "EXPO"],
+  "voltage": 1.35,
+  "height": 44,
+  "lighting": ["ARGB"],
+  "general_product_information": {
+    "amazon_sku": "B0CJX8K4XT",
+    "newegg_sku": "N82E16820374523",
+    "walmart_sku": 5065038175,
+    "manufacturer_url": "https://www.gskill.com/product/165/390/1692584545/F5-6000J3036F16GX2-TZ5NRW"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "opendb_id": "afbb99ce-e7ed-4f7f-be80-ea64efd36cf3",
+  "metadata": {
+    "name": "ATK F1 V2 Ultimate",
+    "manufacturer": "ATK",
+    "series": "F1 V2",
+    "variant": "Ultimate",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FX43T862"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "opendb_id": "a1272cd8-f01a-47d7-b41b-0381c2fd4ece",
+  "cores": {
+    "total": 8,
+    "performance": 0,
+    "efficiency": 0,
+    "threads": 8
+  },
+  "clocks": {
+    "performance": {
+      "base": 4,
+      "boost": 4.2
+    },
+    "efficiency": {
+      "base": 0,
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l1": "4 × 64 KB Instruction + 8 × 16 KB Data (384 KB total)",
+    "l2": 8,
+    "l3": 8
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "None",
+      "baseClock": 0,
+      "boostClock": 0,
+      "shaderCount": 0
+    },
+    "memory": {
+      "maxSupport": 0,
+      "types": ["DDR3"],
+      "channels": 2
+    },
+    "tdp": 125,
+    "eccSupport": false,
+    "includesCooler": true,
+    "packaging": "Boxed",
+    "lithography": "32 nm",
+    "simultaneousMultithreading": false,
+    "ppt": 0
+  },
+  "metadata": {
+    "name": "AMD FX-8350",
+    "part_numbers": ["FD8350FRHKHBX"],
+    "releaseYear": 2012,
+    "manufacturer": "AMD",
+    "series": "FX 8000",
+    "variant": "8350"
+  },
+  "series": "FX 8000",
+  "microarchitecture": "Vishera",
+  "coreFamily": "Piledriver",
+  "socket": "AM3+",
+  "general_product_information": {
+    "amazon_sku": "B01F4ZOB3C",
+    "newegg_sku": "N82E16819113284",
+    "walmart_sku": 51987916
+  }
+}

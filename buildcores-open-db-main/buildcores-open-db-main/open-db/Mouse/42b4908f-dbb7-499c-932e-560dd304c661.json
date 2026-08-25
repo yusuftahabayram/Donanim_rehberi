@@ -1,0 +1,16 @@
+{
+  "opendb_id": "42b4908f-dbb7-499c-932e-560dd304c661",
+  "metadata": {
+    "name": "ATK A9 SE",
+    "manufacturer": "ATK",
+    "series": "A9",
+    "variant": "SE",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FNCDN8SX"
+  }
+}

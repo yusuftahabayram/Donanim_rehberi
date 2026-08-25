@@ -1,0 +1,15 @@
+{
+  "opendb_id": "d798f949-009d-4a84-bd5e-a41362c204f4",
+  "metadata": {
+    "name": "Glorious Model D Wireless",
+    "manufacturer": "Glorious",
+    "series": "Model D Wireless",
+    "part_numbers": ["GLO-MS-DW-MW"]
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B094RJMZ1B"
+  }
+}

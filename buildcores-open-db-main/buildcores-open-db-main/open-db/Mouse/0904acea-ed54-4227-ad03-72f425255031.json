@@ -1,0 +1,16 @@
+{
+  "opendb_id": "0904acea-ed54-4227-ad03-72f425255031",
+  "metadata": {
+    "name": "Logitech M650",
+    "manufacturer": "Logitech",
+    "series": "M650",
+    "part_numbers": ["910-006253"]
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B09KX66ZCD",
+    "walmart_sku": 2295134921
+  }
+}

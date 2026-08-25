@@ -1,0 +1,16 @@
+{
+  "opendb_id": "18df9626-5ba5-4298-8d1c-86174c62a5fe",
+  "metadata": {
+    "name": "Alienware AW320M",
+    "manufacturer": "Alienware",
+    "series": "AW320M",
+    "part_numbers": []
+  },
+  "connectivity": ["Wired"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B09V1CDRRR",
+    "walmart_sku": 1362930620
+  }
+}

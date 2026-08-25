@@ -1,0 +1,33 @@
+{
+  "opendb_id": "37feeeb0-b8cf-4524-a136-15aab5ffe1f4",
+  "metadata": {
+    "name": "ARCTIC P14 Pro 140mm White PWM ARGB",
+    "manufacturer": "ARCTIC",
+    "part_numbers": ["ACFAN00318A"],
+    "series": "P14",
+    "manufacturer_color": "White",
+    "variant": "Pro",
+    "releaseYear": 2025
+  },
+  "size": 140,
+  "color": ["WHITE"],
+  "quantity": 1,
+  "min_airflow": 110,
+  "max_airflow": null,
+  "min_noise_level": null,
+  "max_noise_level": null,
+  "pwm": true,
+  "led": "Addressable RGB",
+  "connector": "4-pin PWM + 3-pin 5V Addressable RGB",
+  "controller": "None",
+  "static_pressure": 5.2,
+  "flow_direction": "Standard",
+  "isOEM": false,
+  "lighting": ["ARGB"],
+  "general_product_information": {
+    "amazon_sku": "B0DPX688L7",
+    "newegg_sku": "9SIA2W0KKG0339",
+    "walmart_sku": 17708814149,
+    "manufacturer_url": "https://www.arctic.de/en/P14-Pro-A-RGB-White/ACFAN00318A"
+  }
+}

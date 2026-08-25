@@ -1,0 +1,33 @@
+{
+  "opendb_id": "0c66c678-98d8-45a8-8858-70d81b4301ce",
+  "modules": {
+    "quantity": 2,
+    "capacity_gb": 32
+  },
+  "metadata": {
+    "name": "ADATA XPG Lancer RGB DDR5-6400 64 (2x32GB) CL32 Black",
+    "manufacturer": "ADATA",
+    "part_numbers": ["AX5U6400C3232G-DCLARBK"],
+    "series": "XPG LANCER RGB",
+    "manufacturer_color": "Black",
+    "releaseYear": 2022
+  },
+  "speed": 6400,
+  "ram_type": "DDR5",
+  "form_factor": "288-pin DIMM",
+  "capacity": 64,
+  "color": ["BLACK"],
+  "cas_latency": 32,
+  "ecc": "Non-ECC",
+  "registered": "Unbuffered",
+  "heat_spreader": true,
+  "rgb": true,
+  "profile_support": ["XMP", "EXPO"],
+  "lighting": ["ARGB"],
+  "timings": "32-39-39",
+  "voltage": 1.35,
+  "height": 40,
+  "general_product_information": {
+    "amazon_sku": "B0C6HW2G8C"
+  }
+}

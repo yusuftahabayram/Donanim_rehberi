@@ -1,0 +1,16 @@
+{
+  "opendb_id": "00788e36-cd9f-49a3-aea1-560e76d60b0a",
+  "metadata": {
+    "name": "Pwnage Symm 1 Wireless",
+    "manufacturer": "Pwnage",
+    "series": "Symm 1",
+    "variant": "Wireless",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B09NXRL2BM"
+  }
+}

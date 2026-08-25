@@ -1,0 +1,14 @@
+{
+  "opendb_id": "461e873c-5c51-415c-8943-e619934dc690",
+  "metadata": {
+    "name": "VGN Y2 Master",
+    "manufacturer": "VGN",
+    "series": "Y2",
+    "variant": "Master",
+    "part_numbers": []
+  },
+  "grip_types": [],
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "general_product_information": {}
+}

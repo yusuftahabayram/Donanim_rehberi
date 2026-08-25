@@ -1,0 +1,16 @@
+{
+  "opendb_id": "0e86676c-38d8-4323-8e9c-a498a1c897e5",
+  "metadata": {
+    "name": "Bloody W70 Max",
+    "manufacturer": "Bloody",
+    "series": "W70",
+    "variant": "Max",
+    "part_numbers": []
+  },
+  "connectivity": ["Wired"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B093N9M42C"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "opendb_id": "6725a01f-f073-4212-b857-c62ee9d9e00c",
+  "metadata": {
+    "name": "MSI Clutch GM08",
+    "manufacturer": "MSI",
+    "part_numbers": ["CLUTCH GM08", "S12-0401800-CLA"],
+    "series": "CLUTCH",
+    "variant": "GM08",
+    "releaseYear": 2020
+  },
+  "connectivity": ["Wired USB-A"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B08DDLMGCY",
+    "newegg_sku": "N82E16826554042",
+    "walmart_sku": 155910358,
+    "manufacturer_url": "https://www.msi.com/Gaming-Gear/CLUTCH-GM08"
+  }
+}

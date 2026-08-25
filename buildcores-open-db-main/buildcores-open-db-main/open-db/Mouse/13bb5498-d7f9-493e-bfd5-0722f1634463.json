@@ -1,0 +1,16 @@
+{
+  "opendb_id": "13bb5498-d7f9-493e-bfd5-0722f1634463",
+  "metadata": {
+    "name": "Logitech G400",
+    "manufacturer": "Logitech",
+    "series": "G400",
+    "part_numbers": []
+  },
+  "grip_types": [],
+  "connectivity": ["Wired"],
+  "lighting": [],
+  "general_product_information": {
+    "amazon_sku": "B00573Y2RC",
+    "walmart_sku": 17129619
+  }
+}

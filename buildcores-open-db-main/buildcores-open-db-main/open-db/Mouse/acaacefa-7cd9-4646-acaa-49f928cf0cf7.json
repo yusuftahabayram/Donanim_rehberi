@@ -1,0 +1,23 @@
+{
+  "opendb_id": "acaacefa-7cd9-4646-acaa-49f928cf0cf7",
+  "metadata": {
+    "manufacturer": "Corsair",
+    "part_numbers": ["CH-9315411-NA"],
+    "series": "DARK CORE",
+    "variant": "RGB PRO Black",
+    "releaseYear": 2020,
+    "name": "Corsair Dark Core RGB Pro Wireless Gaming Mouse - Black"
+  },
+  "connectivity": ["Wireless 2.4GHz", "Bluetooth", "Wired USB-A"],
+  "rgb": true,
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B082LVNHW9",
+    "newegg_sku": "N82E16826816161",
+    "bestbuy_sku": 6394002,
+    "walmart_sku": 283794537,
+    "ibuypower_sku": "28082",
+    "manufacturer_url": "https://www.corsair.com/us/en/p/gaming-mouse/ch-9315411-na/dark-core-rgb-pro-wireless-gaming-mouse-ch-9315411-na?srsltid=AfmBOoovbUmT3hyFRZodcoqGynpb3AasQJPHrt7F49csvZfjNNyVdds6"
+  }
+}

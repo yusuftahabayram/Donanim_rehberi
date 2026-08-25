@@ -1,0 +1,288 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": ["object", "null"],
+  "title": "Monitor Schema",
+  "description": "Schema for Monitor components",
+  "required": ["metadata"],
+  "properties": {
+    "opendb_id": {
+      "type": ["string", "null"],
+      "description": "Unique identifier for the document (UUID v4)"
+    },
+    "screen_size": {
+      "description": "Screen size in inches",
+      "type": ["number", "null"]
+    },
+    "resolution": {
+      "description": "Resolution of the monitor",
+      "type": ["object", "null"],
+      "properties": {
+        "horizontalRes": {
+          "description": "Horizontal resolution in pixels",
+          "type": ["number", "null"]
+        },
+        "verticalRes": {
+          "description": "Vertical resolution in pixels",
+          "type": ["number", "null"]
+        }
+      }
+    },
+    "refresh_rate": {
+      "description": "Maximum refresh rate in Hz",
+      "type": ["number", "null"]
+    },
+    "panel_type": {
+      "description": "Type of panel (IPS, VA, TN, OLED, etc.)",
+      "type": ["string", "null"],
+      "enum": [
+        "IPS",
+        "VA",
+        "TN",
+        "OLED",
+        "QD-OLED",
+        "QD-VA",
+        "AHVA",
+        "PLS",
+        "PVA",
+        "WOLED",
+        "Mini LED",
+        "Mini LED IPS",
+        "Mini LED VA",
+        "Nano IPS",
+        null
+      ]
+    },
+    "response_time": {
+      "description": "Gray-to-gray response time in milliseconds",
+      "type": ["number", "null"]
+    },
+    "mprt_response_time": {
+      "description": "Moving picture response time in milliseconds",
+      "type": ["number", "null"]
+    },
+    "color": {
+      "description": "The color(s) of this product. Each color of the product should be included in the array. Do not use RGB here to describe lighting; use the Lighting field for RGB, ARGB, display, or fixed-color lighting.",
+      "type": ["array", "null"],
+      "items": {
+        "type": "string",
+        "enum": [
+          "BLACK",
+          "WHITE",
+          "RGB",
+          "RED",
+          "BLUE",
+          "GREEN",
+          "GREY",
+          "YELLOW",
+          "ORANGE",
+          "PURPLE",
+          "PINK",
+          "BROWN",
+          "GOLD"
+        ]
+      }
+    },
+    "lighting": {
+      "description": "Lighting capabilities for this product. Use RGB for non-addressable RGB, ARGB for addressable RGB, Multicolor for non-RGB multi-color lighting, Fixed for a single fixed lighting color, None when the product has no lighting, Display for configurable displays, and Fixed Color Display for displays limited to fixed colors such as black and white.",
+      "type": ["array", "null"],
+      "items": {
+        "type": "string",
+        "enum": ["RGB", "ARGB", "Multicolor", "Fixed", "None", "Display", "Fixed Color Display"]
+      }
+    },
+    "viewing_angle": {
+      "description": "Viewing angles (e.g., '178°/178°')",
+      "type": ["string", "null"]
+    },
+    "aspect_ratio": {
+      "description": "Aspect ratio (e.g., '16:9', '21:9')",
+      "type": ["string", "null"],
+      "enum": [
+        "16:9",
+        "21:9",
+        "16:10",
+        "5:4",
+        "32:9",
+        "12:5",
+        "4:3",
+        "64:27",
+        "3:2",
+        "256:135",
+        "16:5",
+        "8:9",
+        "1:1",
+        "11:6",
+        "683:240",
+        null
+      ]
+    },
+    "video_outputs": {
+      "type": ["object", "null"],
+      "properties": {
+        "hdmi_2_2": {
+          "description": "Number of HDMI 2.2 ports",
+          "type": ["number", "null"]
+        },
+        "hdmi_2_1": {
+          "description": "Number of HDMI 2.1 ports",
+          "type": ["number", "null"]
+        },
+        "hdmi_2_1a": {
+          "description": "Number of HDMI 2.1a ports",
+          "type": ["number", "null"]
+        },
+        "hdmi_2_1b": {
+          "description": "Number of HDMI 2.1b ports",
+          "type": ["number", "null"]
+        },
+        "hdmi_2_0": {
+          "description": "Number of HDMI 2.0 ports",
+          "type": ["number", "null"]
+        },
+        "hdmi_2_0a": {
+          "description": "Number of HDMI 2.0a ports",
+          "type": ["number", "null"]
+        },
+        "hdmi_2_0b": {
+          "description": "Number of HDMI 2.0b ports",
+          "type": ["number", "null"]
+        },
+        "displayport_2_1": {
+          "description": "Number of DisplayPort 2.1 ports",
+          "type": ["number", "null"]
+        },
+        "displayport_2_1a": {
+          "description": "Number of DisplayPort 2.1a ports",
+          "type": ["number", "null"]
+        },
+        "displayport_1_4a": {
+          "description": "Number of DisplayPort 1.4a ports",
+          "type": ["number", "null"]
+        },
+        "displayport_2_1_b": {
+          "description": "Number of DisplayPort 2.1b ports",
+          "type": ["number", "null"]
+        },
+        "usb_c": {
+          "description": "Number of USB-C ports",
+          "type": ["number", "null"]
+        },
+        "dvi_d": {
+          "description": "Number of DVI-D ports",
+          "type": ["number", "null"]
+        },
+        "vga": {
+          "description": "Number of VGA ports",
+          "type": ["number", "null"]
+        }
+      }
+    },
+    "connectors": {
+      "description": "Available ports and connections",
+      "type": ["string", "null"]
+    },
+    "max_brightness": {
+      "description": "Maximum brightness in nits",
+      "type": ["number", "null"]
+    },
+    "hdr": {
+      "description": "HDR support and certification",
+      "type": ["string", "null"]
+    },
+    "adaptive_sync": {
+      "description": "Adaptive sync technology (G-Sync, FreeSync, etc.)",
+      "type": ["string", "null"],
+      "enum": [
+        "None",
+        "FreeSync",
+        "FreeSync Premium",
+        "FreeSync Premium Pro",
+        "G-Sync",
+        "G-Sync Compatible",
+        "G-Sync Ultimate",
+        "VESA Adaptive-Sync",
+        null
+      ]
+    },
+    "general_product_information": {
+      "type": ["object", "null"],
+      "description": "General product information and retailer SKUs",
+      "properties": {
+        "amazon_sku": {
+          "type": ["string", "null"],
+          "description": "Amazon product SKU"
+        },
+        "newegg_sku": {
+          "type": ["string", "null"],
+          "description": "Newegg product SKU"
+        },
+        "bestbuy_sku": {
+          "type": ["number", "null"],
+          "description": "Best Buy product SKU"
+        },
+        "walmart_sku": {
+          "type": ["number", "null"],
+          "description": "Walmart product SKU"
+        },
+        "adorama_sku": {
+          "type": ["string", "null"],
+          "description": "Adorama product SKU"
+        },
+        "ibuypower_sku": {
+          "type": ["string", "null"],
+          "description": "iBuyPower product SKU"
+        },
+        "hyte_sku": {
+          "type": ["string", "null"],
+          "description": "HYTE product SKU"
+        },
+        "manufacturer_url": {
+          "type": ["string", "null"],
+          "description": "Official manufacturer product URL"
+        }
+      }
+    },
+    "metadata": {
+      "type": ["object", "null"],
+      "properties": {
+        "name": {
+          "description": "Full product name",
+          "type": ["string", "null"]
+        },
+        "manufacturer": {
+          "description": "The company that manufactured the display.",
+          "type": ["string", "null"]
+        },
+        "part_numbers": {
+          "description": "Array of manufacturer's part numbers/SKUs",
+          "type": ["array", "null"],
+          "items": {
+            "type": "string"
+          }
+        },
+        "series": {
+          "description": "Product series name",
+          "type": ["string", "null"]
+        },
+        "variant": {
+          "description": "Specific variant in the series",
+          "type": ["string", "null"]
+        },
+        "releaseYear": {
+          "description": "Year of release",
+          "type": ["number", "null"]
+        },
+        "manufacturer_color": {
+          "description": "Manufacturer's official color name for this product variant.",
+          "type": ["string", "null"]
+        },
+        "last_manually_spec_verified_at": {
+          "type": ["string", "null"],
+          "format": "date-time",
+          "description": "ISO 8601 timestamp of when the part specs were last manually verified by a human"
+        }
+      },
+      "required": ["name"]
+    }
+  }
+}

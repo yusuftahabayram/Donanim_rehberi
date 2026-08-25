@@ -1,0 +1,16 @@
+{
+  "opendb_id": "54fadafe-0a37-4e52-a97f-405d2df43ae3",
+  "metadata": {
+    "name": "ATK X1 Pro",
+    "manufacturer": "ATK",
+    "series": "X1",
+    "variant": "Pro",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FND433DC"
+  }
+}

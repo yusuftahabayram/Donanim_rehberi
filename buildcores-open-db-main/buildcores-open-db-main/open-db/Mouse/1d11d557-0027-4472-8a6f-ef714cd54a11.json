@@ -1,0 +1,16 @@
+{
+  "opendb_id": "1d11d557-0027-4472-8a6f-ef714cd54a11",
+  "metadata": {
+    "name": "ATK F1 Pro",
+    "manufacturer": "ATK",
+    "series": "F1",
+    "variant": "Pro",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FJLYC21W"
+  }
+}

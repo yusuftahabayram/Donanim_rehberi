@@ -1,0 +1,63 @@
+{
+  "opendb_id": "b6f5b046-0856-4ef3-9689-5d75ddc92608",
+  "cores": {
+    "total": 12,
+    "performance": 0,
+    "threads": 24,
+    "efficiency": 0
+  },
+  "clocks": {
+    "performance": {
+      "base": 4.4,
+      "boost": 5.6
+    },
+    "efficiency": {
+      "base": 0,
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l2": 12,
+    "l3": 64,
+    "l1": "12 × 64 KB (32 KB I-cache + 32 KB D-cache)"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "AMD Radeon Graphics",
+      "baseClock": 400,
+      "boostClock": 2200,
+      "shaderCount": 0
+    },
+    "memory": {
+      "maxSupport": 256,
+      "types": ["DDR5"],
+      "channels": 2
+    },
+    "tdp": 120,
+    "eccSupport": true,
+    "includesCooler": false,
+    "packaging": "Boxed",
+    "lithography": "TSMC 4nm FinFET, TSMC 6nm FinFET",
+    "simultaneousMultithreading": true,
+    "ppt": 162
+  },
+  "metadata": {
+    "name": "AMD Ryzen 9 9900X",
+    "manufacturer": "AMD",
+    "part_numbers": ["100-100000662WOF", "AMD Ryzen™ 9 9900X"],
+    "series": "Ryzen 9 9000",
+    "releaseYear": 2024,
+    "variant": "9900X"
+  },
+  "series": "Ryzen 9 9000",
+  "microarchitecture": "Zen 5",
+  "coreFamily": "Granite Ridge",
+  "socket": "AM5",
+  "general_product_information": {
+    "amazon_sku": "B0D6NN87T8",
+    "newegg_sku": "N82E16819113842",
+    "bestbuy_sku": 6589135,
+    "walmart_sku": 8875755088,
+    "manufacturer_url": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x.html"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "opendb_id": "5c4d8bc7-3410-48d3-b9f2-ff63473d4425",
+  "metadata": {
+    "name": "MCHOSE G7 Max",
+    "manufacturer": "MCHOSE",
+    "series": "G7",
+    "variant": "Max",
+    "part_numbers": []
+  },
+  "grip_types": [],
+  "connectivity": ["Bluetooth", "Wireless 2.4GHz", "Wired USB-C"],
+  "lighting": [],
+  "general_product_information": {}
+}

@@ -1,0 +1,22 @@
+{
+  "opendb_id": "5052b5e5-594d-4432-a1a9-922add89e21e",
+  "metadata": {
+    "name": "Razer DeathAdder Essential Wired Gaming Mouse - Black",
+    "manufacturer": "Razer",
+    "part_numbers": ["RZ01-02540100-R3U1"],
+    "series": "DeathAdder",
+    "releaseYear": 2018,
+    "variant": "Essential"
+  },
+  "connectivity": ["Wired", "Wired USB-A"],
+  "rgb": false,
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B07F7T8J9P",
+    "newegg_sku": "9SIAP3JKE79118",
+    "bestbuy_sku": 6311863,
+    "walmart_sku": 465410131,
+    "manufacturer_url": "https://www.razer.com/gaming-mice/razer-deathadder-essential?srsltid=AfmBOoq_ve3z6_oUCVM4MW-8SuoUCzQrOlEPPQQYnMd1iV6an5dAiesJ"
+  }
+}

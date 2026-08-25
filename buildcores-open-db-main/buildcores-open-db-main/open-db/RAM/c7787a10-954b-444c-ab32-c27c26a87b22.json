@@ -1,0 +1,29 @@
+{
+  "opendb_id": "c7787a10-954b-444c-ab32-c27c26a87b22",
+  "modules": {
+    "quantity": 2,
+    "capacity_gb": 32
+  },
+  "metadata": {
+    "name": "Corsair Vengeance Grey DDR5-6000 CL40 64GB (2x32GB)",
+    "manufacturer": "Corsair",
+    "part_numbers": ["CMK64GX5M2B6000Z40"],
+    "series": "Vengeance",
+    "manufacturer_color": "Grey"
+  },
+  "speed": 6000,
+  "ram_type": "DDR5",
+  "form_factor": "288-pin DIMM",
+  "capacity": 64,
+  "color": ["GREY"],
+  "cas_latency": 40,
+  "timings": "40-40-40-77",
+  "voltage": null,
+  "ecc": "Non-ECC",
+  "registered": "Unbuffered",
+  "heat_spreader": true,
+  "rgb": false,
+  "profile_support": ["EXPO", "XMP"],
+  "lighting": ["None"],
+  "general_product_information": {}
+}

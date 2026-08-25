@@ -1,0 +1,16 @@
+{
+  "opendb_id": "896e793d-9355-4e02-bda2-2813091abe4d",
+  "metadata": {
+    "name": "Pulsar X3 LHD Mini",
+    "manufacturer": "Pulsar",
+    "series": "X3",
+    "variant": "LHD Mini",
+    "part_numbers": []
+  },
+  "grip_types": [],
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "general_product_information": {
+    "amazon_sku": "B0DP98H7Y8"
+  }
+}

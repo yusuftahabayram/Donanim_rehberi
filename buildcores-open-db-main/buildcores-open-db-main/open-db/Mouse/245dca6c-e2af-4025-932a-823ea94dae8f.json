@@ -1,0 +1,19 @@
+{
+  "opendb_id": "245dca6c-e2af-4025-932a-823ea94dae8f",
+  "metadata": {
+    "name": "Logitech Lift Vertical Ergonomic Mouse",
+    "manufacturer": "Logitech",
+    "part_numbers": ["910-006479", "910-006466"],
+    "releaseYear": 2022
+  },
+  "connectivity": ["Bluetooth", "Wireless 2.4GHz"],
+  "lighting": ["None"],
+  "rgb": false,
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B09J1TB35S",
+    "newegg_sku": "9SIAZTUKS24493",
+    "bestbuy_sku": 6501169,
+    "walmart_sku": 646729552
+  }
+}

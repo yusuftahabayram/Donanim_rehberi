@@ -1,0 +1,59 @@
+{
+  "opendb_id": "58042e92-814b-4b53-879a-4a3d6bae7ab4",
+  "cores": {
+    "total": 8,
+    "performance": 0,
+    "threads": 8,
+    "efficiency": 0
+  },
+  "clocks": {
+    "performance": {
+      "base": 3.2,
+      "boost": 4
+    },
+    "efficiency": {
+      "base": 0,
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l2": 8,
+    "l3": 8,
+    "l1": "4 × 64 KB Instruction + 8 × 16 KB Data (384 KB total)"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "None",
+      "baseClock": 0,
+      "boostClock": 0,
+      "shaderCount": 0
+    },
+    "memory": {
+      "maxSupport": 32,
+      "types": ["DDR3"],
+      "channels": 2
+    },
+    "tdp": 95,
+    "eccSupport": false,
+    "includesCooler": false,
+    "packaging": "OEM/Tray",
+    "lithography": "32 nm",
+    "simultaneousMultithreading": false,
+    "ppt": 0
+  },
+  "metadata": {
+    "name": "AMD FX-8320E OEM/Tray",
+    "manufacturer": "AMD",
+    "part_numbers": ["FD832EWMW8KHK"],
+    "series": "FX 8000",
+    "variant": "8320E",
+    "releaseYear": 2014
+  },
+  "series": "FX 8000",
+  "microarchitecture": "Piledriver",
+  "coreFamily": "Vishera",
+  "socket": "AM3+",
+  "general_product_information": {
+    "amazon_sku": "B00TP527I4"
+  }
+}

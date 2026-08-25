@@ -1,0 +1,32 @@
+{
+  "opendb_id": "faa27793-d8b5-42d9-bbfc-ae33283151f7",
+  "metadata": {
+    "name": "Lian Li UNI Fan TL 140mm Wireless White Reverse PWM ARGB",
+    "manufacturer": "Lian Li",
+    "series": "UNI TL Wireless",
+    "variant": "140mm White Reverse Blade",
+    "part_numbers": ["14RTL1W1W"],
+    "releaseYear": 2025,
+    "manufacturer_color": "White",
+    "last_manually_spec_verified_at": "2026-03-19T19:00:57.604Z"
+  },
+  "size": 140,
+  "color": ["WHITE", "RGB"],
+  "quantity": 1,
+  "pwm": true,
+  "led": "Addressable RGB",
+  "flow_direction": "Reverse",
+  "isOEM": false,
+  "min_airflow": 103.9,
+  "min_noise_level": 31,
+  "connector": "4-pin PWM",
+  "controller": "None",
+  "static_pressure": 2.27,
+  "lighting": [],
+  "general_product_information": {
+    "amazon_sku": "B0DY7SKJ3G",
+    "newegg_sku": "9SIAFSTKFR4329",
+    "walmart_sku": 16682824161,
+    "manufacturer_url": "https://lian-li.com/product/uni-fan-tl-wireless/"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "opendb_id": "1f57e65a-30cb-40e4-bf02-84ee5d534ab8",
+  "metadata": {
+    "name": "AULA SC620",
+    "manufacturer": "AULA",
+    "series": "SC620",
+    "part_numbers": []
+  },
+  "connectivity": ["Bluetooth", "Wireless 2.4GHz", "Wired USB-C"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FX9XFBFC"
+  }
+}

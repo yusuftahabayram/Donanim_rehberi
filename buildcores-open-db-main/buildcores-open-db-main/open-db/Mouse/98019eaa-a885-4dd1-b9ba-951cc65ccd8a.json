@@ -1,0 +1,16 @@
+{
+  "opendb_id": "98019eaa-a885-4dd1-b9ba-951cc65ccd8a",
+  "metadata": {
+    "name": "Kysona M600 V2",
+    "manufacturer": "Kysona",
+    "series": "M600",
+    "variant": "V2",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0F1F1WT1Y"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "opendb_id": "6895dbb3-b9a6-4bf7-ab5e-73cee4668ff6",
+  "modules": {
+    "quantity": 2,
+    "capacity_gb": 16
+  },
+  "metadata": {
+    "name": "ADATA XPG Lancer Blade DDR5-6400 32GB (2x16GB) CL32 White",
+    "manufacturer": "ADATA",
+    "part_numbers": ["AX5U6400C3216G–DTLABWH"],
+    "series": "XPG LANCER BLADE",
+    "manufacturer_color": "White",
+    "releaseYear": 2023
+  },
+  "speed": 6400,
+  "ram_type": "DDR5",
+  "form_factor": "288-pin DIMM",
+  "capacity": 32,
+  "color": ["WHITE"],
+  "cas_latency": 32,
+  "voltage": 1.4,
+  "ecc": "Non-ECC",
+  "registered": "Unbuffered",
+  "heat_spreader": true,
+  "rgb": false,
+  "profile_support": ["XMP", "EXPO"],
+  "lighting": ["None"],
+  "timings": "32-39-39",
+  "height": 33.8,
+  "general_product_information": {
+    "amazon_sku": "B0CCK7M1QJ",
+    "newegg_sku": "N82E16820246081",
+    "manufacturer_url": "https://www.xpg.com/us/xpg/dram-modules-lancer-blade-ddr5"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "opendb_id": "4e748054-7228-4a00-be5f-a92ed430581a",
+  "metadata": {
+    "name": "ATK Zero Extreme",
+    "manufacturer": "ATK",
+    "series": "Zero",
+    "variant": "Extreme",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0GS5HFNL2"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "opendb_id": "d78c9404-df92-42d7-8455-4b67be86da76",
+  "metadata": {
+    "name": "ASUS ROG Keris II Origin",
+    "manufacturer": "ASUS",
+    "series": "ROG Keris II",
+    "variant": "Origin",
+    "part_numbers": ["90MP04A0-BMAA00", "90MP04A0-BMUA00"]
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FJCFFJKX",
+    "newegg_sku": "N82E16826785275",
+    "walmart_sku": 18055751277
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "opendb_id": "80e9fb9d-deb2-4a25-8c5a-6f479ab4099d",
+  "metadata": {
+    "name": "Zowie EC2-CW",
+    "manufacturer": "Zowie",
+    "series": "EC2-CW",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0BXGZ29M6"
+  }
+}

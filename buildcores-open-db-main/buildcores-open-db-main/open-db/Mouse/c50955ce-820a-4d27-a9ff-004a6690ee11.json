@@ -1,0 +1,16 @@
+{
+  "opendb_id": "c50955ce-820a-4d27-a9ff-004a6690ee11",
+  "metadata": {
+    "name": "LAMZU Atlantis Mini Pro",
+    "manufacturer": "LAMZU",
+    "series": "Atlantis Mini",
+    "variant": "Pro",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0CLYBDR26"
+  }
+}

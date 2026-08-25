@@ -1,0 +1,18 @@
+{
+  "opendb_id": "359361f6-12fe-4b20-8090-689fc1f614cd",
+  "metadata": {
+    "name": "Razer Seiren V3 Mini USB Microphone - Black",
+    "manufacturer": "Razer",
+    "part_numbers": ["RZ19-05050100-R3U1", "RZ19-05050100-R3M1"]
+  },
+  "connectivity_type": ["USB-A"],
+  "polar_pattern": ["Cardioid"],
+  "features": ["Mute Button"],
+  "lighting": [],
+  "general_product_information": {
+    "amazon_sku": "B0CT787NLW",
+    "newegg_sku": "0UK-00D7-00010",
+    "bestbuy_sku": 6573619,
+    "walmart_sku": 5370394131
+  }
+}

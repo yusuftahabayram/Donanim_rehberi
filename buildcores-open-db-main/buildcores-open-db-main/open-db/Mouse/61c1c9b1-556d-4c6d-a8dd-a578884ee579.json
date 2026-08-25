@@ -1,0 +1,16 @@
+{
+  "opendb_id": "61c1c9b1-556d-4c6d-a8dd-a578884ee579",
+  "metadata": {
+    "name": "Epomaker Click Lite",
+    "manufacturer": "Epomaker",
+    "series": "Click",
+    "variant": "Lite",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FFMBYWZK"
+  }
+}

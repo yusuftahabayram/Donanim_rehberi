@@ -1,0 +1,16 @@
+{
+  "opendb_id": "dbee01d8-d3d3-4cf3-97e3-38cd7f8cdc8d",
+  "metadata": {
+    "name": "Kysona Jupiter Pro",
+    "manufacturer": "Kysona",
+    "series": "Jupiter",
+    "variant": "Pro",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FHBLRTGF"
+  }
+}

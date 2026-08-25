@@ -1,0 +1,62 @@
+{
+  "opendb_id": "83aee1bc-820b-42e4-a062-efb06b659df2",
+  "cores": {
+    "total": 6,
+    "performance": 0,
+    "threads": 6,
+    "efficiency": 0
+  },
+  "clocks": {
+    "performance": {
+      "base": 3.7,
+      "boost": 4.6
+    },
+    "efficiency": {
+      "base": 0,
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l2": 1.5,
+    "l3": 9,
+    "l1": "6 × 32 KB Instruction + 6 × 32 KB Data (384 KB total)"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "None",
+      "baseClock": 0,
+      "boostClock": 0,
+      "shaderCount": 0
+    },
+    "memory": {
+      "maxSupport": 128,
+      "types": ["DDR4"],
+      "channels": 2
+    },
+    "tdp": 95,
+    "eccSupport": false,
+    "includesCooler": false,
+    "packaging": "Boxed",
+    "lithography": "14 nm",
+    "simultaneousMultithreading": false,
+    "ppt": 0
+  },
+  "metadata": {
+    "name": "Intel Core i5 9600KF",
+    "manufacturer": "Intel",
+    "part_numbers": ["BX80684I59600KF"],
+    "series": "Core i5 9000",
+    "variant": "9600KF",
+    "releaseYear": 2019
+  },
+  "series": "Core i5 9000",
+  "microarchitecture": "Coffee Lake",
+  "coreFamily": "Coffee Lake Refresh",
+  "socket": "LGA 1151",
+  "general_product_information": {
+    "amazon_sku": "B07MQP5LNM",
+    "newegg_sku": "N82E16819117996",
+    "walmart_sku": 975156288,
+    "manufacturer_url": "https://www.intel.com/content/www/us/en/products/sku/190884/intel-core-i59600kf-processor-9m-cache-up-to-4-60-ghz/specifications.html"
+  }
+}

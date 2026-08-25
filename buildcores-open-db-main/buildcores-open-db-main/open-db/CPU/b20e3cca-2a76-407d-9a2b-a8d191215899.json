@@ -1,0 +1,63 @@
+{
+  "opendb_id": "b20e3cca-2a76-407d-9a2b-a8d191215899",
+  "cores": {
+    "total": 10,
+    "threads": 16,
+    "performance": 6,
+    "efficiency": 4
+  },
+  "clocks": {
+    "performance": {
+      "base": 2.5,
+      "boost": 4.6
+    },
+    "efficiency": {
+      "base": 1.8,
+      "boost": 3.3
+    }
+  },
+  "cache": {
+    "l2": 9.5,
+    "l3": 20,
+    "l1": "6 × 80 KB + 4 × 64 KB (L1 per-core totals)"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "Intel UHD Graphics 730",
+      "baseClock": 300,
+      "boostClock": 1550,
+      "shaderCount": 192
+    },
+    "memory": {
+      "maxSupport": 192,
+      "types": ["DDR5", "DDR4"],
+      "channels": 2
+    },
+    "tdp": 65,
+    "eccSupport": false,
+    "includesCooler": true,
+    "packaging": "Boxed",
+    "lithography": "Intel 7",
+    "simultaneousMultithreading": true,
+    "ppt": 148
+  },
+  "metadata": {
+    "name": "Intel Core i5 13400",
+    "manufacturer": "Intel",
+    "part_numbers": ["BX8071513400"],
+    "series": "Core i5 13000",
+    "variant": "13400",
+    "releaseYear": 2023
+  },
+  "series": "Core i5 13000",
+  "microarchitecture": "Raptor Lake",
+  "coreFamily": "Raptor Cove / Gracemont",
+  "socket": "LGA 1700",
+  "general_product_information": {
+    "amazon_sku": "B0BQ68QB6R",
+    "newegg_sku": "N82E16819118430",
+    "bestbuy_sku": 6530250,
+    "walmart_sku": 2957629951,
+    "manufacturer_url": "https://www.intel.com/content/www/us/en/products/sku/230495/intel-core-i513400-processor-20m-cache-up-to-4-60-ghz/specifications.html"
+  }
+}

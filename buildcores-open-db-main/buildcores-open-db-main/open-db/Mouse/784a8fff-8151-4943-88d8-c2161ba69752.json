@@ -1,0 +1,14 @@
+{
+  "opendb_id": "784a8fff-8151-4943-88d8-c2161ba69752",
+  "metadata": {
+    "name": "Orbital Pathfinder LRR-000",
+    "manufacturer": "Orbital",
+    "series": "Pathfinder",
+    "variant": "LRR-000",
+    "part_numbers": []
+  },
+  "grip_types": [],
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "general_product_information": {}
+}

@@ -1,0 +1,16 @@
+{
+  "opendb_id": "bd53a41c-2d96-4f27-97b1-5e8e07eb97d2",
+  "metadata": {
+    "name": "MCHOSE G3 Ultra",
+    "manufacturer": "MCHOSE",
+    "series": "G3",
+    "variant": "Ultra",
+    "part_numbers": []
+  },
+  "grip_types": [],
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "general_product_information": {
+    "amazon_sku": "B0DDT67T42"
+  }
+}

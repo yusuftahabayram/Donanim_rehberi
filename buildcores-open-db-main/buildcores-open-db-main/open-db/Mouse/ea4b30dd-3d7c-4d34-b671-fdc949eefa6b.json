@@ -1,0 +1,15 @@
+{
+  "opendb_id": "ea4b30dd-3d7c-4d34-b671-fdc949eefa6b",
+  "metadata": {
+    "name": "WLMOUSE Strider",
+    "manufacturer": "WLMOUSE",
+    "series": "Strider",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0F1NL7VKR"
+  }
+}

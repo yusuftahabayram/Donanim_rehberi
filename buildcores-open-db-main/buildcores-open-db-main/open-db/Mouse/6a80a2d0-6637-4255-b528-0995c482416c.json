@@ -1,0 +1,16 @@
+{
+  "opendb_id": "6a80a2d0-6637-4255-b528-0995c482416c",
+  "metadata": {
+    "name": "ATK A9 Ultra",
+    "manufacturer": "ATK",
+    "series": "A9",
+    "variant": "Ultra",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FNC9V73S"
+  }
+}

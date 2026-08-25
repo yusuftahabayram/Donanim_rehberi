@@ -1,0 +1,61 @@
+{
+  "opendb_id": "0512ed1f-82fe-456e-8996-fbc141d8fa7c",
+  "cores": {
+    "total": 6,
+    "performance": 0,
+    "threads": 12,
+    "efficiency": 0
+  },
+  "clocks": {
+    "performance": {
+      "base": 3.4,
+      "boost": 3.9
+    },
+    "efficiency": {
+      "boost": 0,
+      "base": 0
+    }
+  },
+  "cache": {
+    "l2": 1.5,
+    "l3": 12,
+    "l1": "6 × 32 KB Instruction + 6 × 32 KB Data (384 KB total)"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "None",
+      "baseClock": 0,
+      "boostClock": 0,
+      "shaderCount": 0
+    },
+    "memory": {
+      "maxSupport": 64,
+      "types": ["DDR3"],
+      "channels": 4
+    },
+    "tdp": 130,
+    "eccSupport": false,
+    "includesCooler": false,
+    "packaging": "Boxed",
+    "lithography": "22 nm",
+    "simultaneousMultithreading": true,
+    "ppt": 0
+  },
+  "metadata": {
+    "name": "Intel Core i7 4930K",
+    "manufacturer": "Intel",
+    "part_numbers": ["BX80633I74930K"],
+    "series": "Core i7 4000",
+    "variant": "4930K",
+    "releaseYear": 2013
+  },
+  "series": "Core i7 4000",
+  "microarchitecture": "Ivy Bridge E",
+  "coreFamily": "Ivy Bridge-E",
+  "socket": "LGA 2011",
+  "general_product_information": {
+    "amazon_sku": "B00EMHM622",
+    "newegg_sku": "N82E16819116939",
+    "manufacturer_url": "https://www.intel.com/content/www/us/en/products/sku/77780/intel-core-i74930k-processor-12m-cache-up-to-3-90-ghz/specifications.html"
+  }
+}

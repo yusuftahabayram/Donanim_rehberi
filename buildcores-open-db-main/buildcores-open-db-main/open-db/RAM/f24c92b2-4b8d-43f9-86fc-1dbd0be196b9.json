@@ -1,0 +1,34 @@
+{
+  "opendb_id": "f24c92b2-4b8d-43f9-86fc-1dbd0be196b9",
+  "modules": {
+    "quantity": 2,
+    "capacity_gb": 16
+  },
+  "metadata": {
+    "name": "ADATA XPG LANCER RGB DDR5-6400 32GB (2x16GB) CL32 Black",
+    "manufacturer": "ADATA",
+    "part_numbers": ["AX5U6400C3216G-DCLARBK"],
+    "series": "XPG LANCER RGB",
+    "manufacturer_color": "Black",
+    "releaseYear": 2022
+  },
+  "speed": 6400,
+  "ram_type": "DDR5",
+  "form_factor": "288-pin DIMM",
+  "capacity": 32,
+  "color": ["BLACK"],
+  "cas_latency": 32,
+  "voltage": 1.4,
+  "ecc": "Non-ECC",
+  "registered": "Unbuffered",
+  "heat_spreader": true,
+  "rgb": true,
+  "profile_support": ["XMP", "EXPO"],
+  "lighting": ["ARGB"],
+  "timings": "32-39-39",
+  "height": 40,
+  "general_product_information": {
+    "amazon_sku": "B0BSVRQQ26",
+    "manufacturer_url": "https://www.xpg.com/us/xpg/dram-modules-lancer-rgb-ddr5"
+  }
+}

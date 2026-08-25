@@ -1,0 +1,60 @@
+{
+  "opendb_id": "a50400bf-d4b1-4f5d-a4e6-1dda7d69e352",
+  "cores": {
+    "total": 2,
+    "performance": 0,
+    "efficiency": 0,
+    "threads": 4
+  },
+  "clocks": {
+    "performance": {
+      "base": 3.5,
+      "boost": 0
+    },
+    "efficiency": {
+      "base": 0,
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l1": "2 × 64 KB Instruction + 2 × 32 KB Data (192 KB total)",
+    "l2": 1,
+    "l3": 4
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "AMD Radeon Vega 3 Graphics",
+      "baseClock": 0,
+      "boostClock": 1000,
+      "shaderCount": 192
+    },
+    "memory": {
+      "maxSupport": 64,
+      "types": ["DDR4"],
+      "channels": 2
+    },
+    "tdp": 35,
+    "eccSupport": false,
+    "includesCooler": false,
+    "packaging": "Boxed",
+    "lithography": "14 nm",
+    "simultaneousMultithreading": true,
+    "ppt": 0
+  },
+  "metadata": {
+    "name": "AMD Athlon 240GE",
+    "releaseYear": 2018,
+    "part_numbers": ["YD240GC6FBBOX", "YD220GC6FBBOX"],
+    "manufacturer": "AMD",
+    "series": "Athlon 200GE",
+    "variant": "240GE"
+  },
+  "series": "Athlon 200GE",
+  "microarchitecture": "Zen",
+  "coreFamily": "Raven Ridge",
+  "socket": "AM4",
+  "general_product_information": {
+    "amazon_sku": "B07L9V9F6H",
+    "manufacturer_url": "https://www.amd.com/en/support/downloads/drivers.html/processors/athlon/athlon-200-series/amd-athlon-240ge.html"
+  }
+}

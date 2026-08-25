@@ -1,0 +1,23 @@
+{
+  "opendb_id": "bdc5ac3c-9bf8-45f6-b2d8-ca05243fd5db",
+  "metadata": {
+    "name": "Logitech G305 LIGHTSPEED Wireless Optical White Gaming Mouse",
+    "manufacturer": "Logitech G",
+    "part_numbers": ["910-005289"],
+    "series": "LIGHTSPEED",
+    "variant": "G305 White",
+    "releaseYear": 2018
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "rgb": false,
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B07CMS5Q6N",
+    "newegg_sku": "N82E16826197309",
+    "bestbuy_sku": 6214344,
+    "walmart_sku": 774459101,
+    "ibuypower_sku": "28083",
+    "manufacturer_url": "https://www.logitechg.com/en-in/shop/p/g305-lightspeed-wireless-gaming-mouse"
+  }
+}

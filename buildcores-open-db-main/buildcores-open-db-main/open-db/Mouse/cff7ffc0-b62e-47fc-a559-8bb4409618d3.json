@@ -1,0 +1,15 @@
+{
+  "opendb_id": "cff7ffc0-b62e-47fc-a559-8bb4409618d3",
+  "metadata": {
+    "name": "ATK A9",
+    "manufacturer": "ATK",
+    "series": "A9",
+    "part_numbers": []
+  },
+  "connectivity": ["Bluetooth", "Wireless 2.4GHz", "Wired USB-C"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FNC42MGJ"
+  }
+}

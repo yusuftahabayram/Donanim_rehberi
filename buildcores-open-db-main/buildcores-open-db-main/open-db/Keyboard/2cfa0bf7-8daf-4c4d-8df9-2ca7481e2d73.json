@@ -1,0 +1,23 @@
+{
+  "opendb_id": "2cfa0bf7-8daf-4c4d-8df9-2ca7481e2d73",
+  "metadata": {
+    "name": "Corsair K70 CORE SE RGB with Palmrest Wired Gaming Keyboard",
+    "manufacturer": "Corsair",
+    "part_numbers": ["CH-9109D1E-NA"],
+    "releaseYear": 2023
+  },
+  "connectivity": ["Wired", "Wired USB-C", "Wired USB-A"],
+  "features": ["Knob"],
+  "lighting": ["RGB"],
+  "size": "Full Size",
+  "switch_type": "Linear",
+  "switch": "Linear Red",
+  "polling_rate": 1000,
+  "hot_swappable": false,
+  "backlighting": "RGB",
+  "keycap_material": "Double-shot PBT",
+  "frame_material": "ABS plastic",
+  "general_product_information": {
+    "amazon_sku": "B0D2HVKB4R"
+  }
+}

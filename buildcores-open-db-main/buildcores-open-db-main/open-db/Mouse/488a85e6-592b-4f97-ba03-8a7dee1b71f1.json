@@ -1,0 +1,17 @@
+{
+  "opendb_id": "488a85e6-592b-4f97-ba03-8a7dee1b71f1",
+  "metadata": {
+    "name": "Logitech Signature M650 Wireless Mouse - Rose",
+    "manufacturer": "Logitech",
+    "part_numbers": ["d5cc40573e3808a9", "910-006251"]
+  },
+  "connectivity": ["Bluetooth", "Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B09KXBJS7N",
+    "newegg_sku": "0TP-000C-01H79",
+    "bestbuy_sku": 6491145,
+    "walmart_sku": 491780943
+  }
+}

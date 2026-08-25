@@ -1,0 +1,62 @@
+{
+  "opendb_id": "63e78ef0-3723-44e2-b64d-ae7ef297cc46",
+  "cores": {
+    "total": 4,
+    "performance": 4,
+    "threads": 8,
+    "efficiency": 0
+  },
+  "clocks": {
+    "performance": {
+      "base": 3.3,
+      "boost": 4.3
+    },
+    "efficiency": {
+      "base": 0,
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l2": 5,
+    "l3": 12,
+    "l1": "320 KB (4×48 KB L1 Data + 4×32 KB L1 Instruction)"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "Intel UHD Graphics 730",
+      "baseClock": 300,
+      "boostClock": 1400,
+      "shaderCount": 192
+    },
+    "memory": {
+      "maxSupport": 128,
+      "types": ["DDR5", "DDR4"],
+      "channels": 2
+    },
+    "tdp": 60,
+    "eccSupport": false,
+    "includesCooler": true,
+    "packaging": "Boxed",
+    "lithography": "Intel 7",
+    "simultaneousMultithreading": true,
+    "ppt": 89
+  },
+  "metadata": {
+    "name": "Intel Core i3 12100",
+    "manufacturer": "Intel",
+    "part_numbers": ["BX8071512100"],
+    "series": "Core i3 12000",
+    "variant": "12100",
+    "releaseYear": 2022
+  },
+  "series": "Core i3 12000",
+  "microarchitecture": "Alder Lake",
+  "coreFamily": "Alder Lake-S",
+  "socket": "LGA 1700",
+  "general_product_information": {
+    "amazon_sku": "B09NPHJLPT",
+    "newegg_sku": "N82E16819118370",
+    "walmart_sku": 412116640,
+    "manufacturer_url": "https://www.intel.com/content/www/us/en/products/sku/134584/intel-core-i312100-processor-12m-cache-up-to-4-30-ghz/specifications.html"
+  }
+}

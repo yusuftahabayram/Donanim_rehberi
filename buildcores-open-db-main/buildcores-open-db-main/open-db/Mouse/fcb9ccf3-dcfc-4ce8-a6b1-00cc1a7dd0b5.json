@@ -1,0 +1,16 @@
+{
+  "opendb_id": "fcb9ccf3-dcfc-4ce8-a6b1-00cc1a7dd0b5",
+  "metadata": {
+    "name": "Pwnage StormBreaker V3",
+    "manufacturer": "Pwnage",
+    "series": "StormBreaker",
+    "variant": "V3",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0DXVC6HQL"
+  }
+}

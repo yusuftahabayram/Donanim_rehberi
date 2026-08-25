@@ -1,0 +1,30 @@
+{
+  "opendb_id": "f099c9b3-d71e-4d5c-ab94-f650de98420b",
+  "metadata": {
+    "name": "Noctua NF-A6x15 5V PWM",
+    "manufacturer": "Noctua",
+    "series": "NF-A6x15",
+    "variant": "5V PWM",
+    "manufacturer_color": "Brown",
+    "part_numbers": ["nf-a6x15-5v-pwm"],
+    "releaseYear": 2024
+  },
+  "size": 60,
+  "color": ["BROWN"],
+  "quantity": 1,
+  "pwm": true,
+  "connector": "4-pin PWM",
+  "lighting": ["None"],
+  "isOEM": false,
+  "flow_direction": "Standard",
+  "min_airflow": 13.77,
+  "min_noise_level": 19.8,
+  "led": "None",
+  "controller": "None",
+  "static_pressure": 2.43,
+  "general_product_information": {
+    "amazon_sku": "B0DJP3987K",
+    "newegg_sku": "9SIAADYKDG8843",
+    "manufacturer_url": "https://www.noctua.at/en/products/nf-a6x15-5v-pwm/specifications"
+  }
+}

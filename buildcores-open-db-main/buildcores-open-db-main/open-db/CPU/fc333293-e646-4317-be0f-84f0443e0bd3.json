@@ -1,0 +1,62 @@
+{
+  "opendb_id": "fc333293-e646-4317-be0f-84f0443e0bd3",
+  "cores": {
+    "total": 6,
+    "performance": 0,
+    "threads": 12,
+    "efficiency": 0
+  },
+  "clocks": {
+    "performance": {
+      "base": 4,
+      "boost": 4.9
+    },
+    "efficiency": {
+      "base": 0,
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l2": 1.5,
+    "l3": 12,
+    "l1": "6 × 32 KB Instruction + 6 × 32 KB Data (384 KB total)"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "Intel HD Graphics P630",
+      "baseClock": 300,
+      "boostClock": 1200,
+      "shaderCount": 192
+    },
+    "memory": {
+      "maxSupport": 128,
+      "types": ["DDR4"],
+      "channels": 2
+    },
+    "tdp": 95,
+    "eccSupport": true,
+    "includesCooler": false,
+    "packaging": "OEM/Tray",
+    "lithography": "14 nm",
+    "simultaneousMultithreading": true,
+    "ppt": 0
+  },
+  "metadata": {
+    "name": "Intel Xeon E-2286G OEM/Tray",
+    "manufacturer": "Intel",
+    "part_numbers": ["CM8068404173706"],
+    "series": "Xeon E 2200",
+    "variant": "2286G",
+    "releaseYear": 2019
+  },
+  "series": "Xeon E 2200",
+  "microarchitecture": "Coffee Lake",
+  "coreFamily": "Coffee Lake-S WS",
+  "socket": "LGA 1151",
+  "general_product_information": {
+    "amazon_sku": "B088WM9JNT",
+    "newegg_sku": "9SIBDKWKBX6516",
+    "walmart_sku": 5263371006,
+    "manufacturer_url": "https://www.intel.com/content/www/us/en/products/sku/191033/intel-xeon-e2286g-processor-12m-cache-4-00-ghz/specifications.html"
+  }
+}

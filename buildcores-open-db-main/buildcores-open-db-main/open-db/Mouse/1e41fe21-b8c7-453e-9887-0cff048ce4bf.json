@@ -1,0 +1,19 @@
+{
+  "opendb_id": "1e41fe21-b8c7-453e-9887-0cff048ce4bf",
+  "metadata": {
+    "name": "Logitech M220 Silent Wireless Mouse",
+    "manufacturer": "Logitech",
+    "part_numbers": ["910-004883", "910-006127"],
+    "releaseYear": 2016
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": ["None"],
+  "rgb": false,
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B01JPOM1K8",
+    "newegg_sku": "N82E16826197606",
+    "bestbuy_sku": 6481446,
+    "walmart_sku": 962460760
+  }
+}

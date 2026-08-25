@@ -1,0 +1,62 @@
+{
+  "opendb_id": "5a49ac5d-8247-4822-b065-5cfa926fbcb0",
+  "cores": {
+    "total": 16,
+    "threads": 24,
+    "performance": 8,
+    "efficiency": 8
+  },
+  "clocks": {
+    "performance": {
+      "base": 2.4,
+      "boost": 5.1
+    },
+    "efficiency": {
+      "base": 1.8,
+      "boost": 3.8
+    }
+  },
+  "cache": {
+    "l2": 14,
+    "l3": 30,
+    "l1": "16 × 32 KB Instruction + 16 × 48 KB Data (1,280 KB total)"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "None",
+      "baseClock": 0,
+      "boostClock": 0,
+      "shaderCount": 0
+    },
+    "memory": {
+      "maxSupport": 128,
+      "types": ["DDR5", "DDR4"],
+      "channels": 2
+    },
+    "tdp": 65,
+    "eccSupport": false,
+    "includesCooler": false,
+    "packaging": "Boxed",
+    "lithography": "Intel 7",
+    "simultaneousMultithreading": true,
+    "ppt": 202
+  },
+  "metadata": {
+    "name": "Intel Core i9 12900F",
+    "manufacturer": "Intel",
+    "part_numbers": ["BX8071512900F"],
+    "series": "Core i9 12000",
+    "variant": "12900F",
+    "releaseYear": 2022
+  },
+  "series": "Core i9 12000",
+  "microarchitecture": "Alder Lake",
+  "coreFamily": "Alder Lake-S",
+  "socket": "LGA 1700",
+  "general_product_information": {
+    "amazon_sku": "B09RPNW7CM",
+    "newegg_sku": "N82E16819118373",
+    "walmart_sku": 412790719,
+    "manufacturer_url": "https://www.intel.com/content/www/us/en/products/sku/134598/intel-core-i912900f-processor-30m-cache-up-to-5-10-ghz/specifications.html"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "opendb_id": "c7b62b4f-65b7-4b08-82b8-df758445d661",
+  "metadata": {
+    "name": "ARCTIC P14 Max 140mm Black PWM",
+    "manufacturer": "ARCTIC",
+    "part_numbers": ["ACFAN00287A"],
+    "series": "P14",
+    "manufacturer_color": "Black",
+    "variant": "MAX",
+    "releaseYear": 2024
+  },
+  "size": 140,
+  "color": ["BLACK"],
+  "quantity": 1,
+  "min_airflow": 95,
+  "max_airflow": null,
+  "min_noise_level": null,
+  "max_noise_level": null,
+  "pwm": true,
+  "led": "None",
+  "connector": "4-pin PWM",
+  "controller": "None",
+  "static_pressure": 4.18,
+  "flow_direction": "Standard",
+  "isOEM": false,
+  "lighting": ["None"],
+  "general_product_information": {
+    "amazon_sku": "B09VH2HXM1",
+    "walmart_sku": 5750163528,
+    "manufacturer_url": "https://www.arctic.de/en/P14-Max-White/ACFAN00304A"
+  }
+}

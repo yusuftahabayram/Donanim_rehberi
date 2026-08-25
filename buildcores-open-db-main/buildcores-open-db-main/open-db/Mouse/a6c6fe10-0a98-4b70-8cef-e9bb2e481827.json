@@ -1,0 +1,15 @@
+{
+  "opendb_id": "a6c6fe10-0a98-4b70-8cef-e9bb2e481827",
+  "metadata": {
+    "name": "MelGeek Horus",
+    "manufacturer": "MelGeek",
+    "series": "Horus",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0GH1KWFTF"
+  }
+}

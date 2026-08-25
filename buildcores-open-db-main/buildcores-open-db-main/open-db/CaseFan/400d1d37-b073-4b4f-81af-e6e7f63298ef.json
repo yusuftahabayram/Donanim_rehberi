@@ -1,0 +1,27 @@
+{
+  "opendb_id": "400d1d37-b073-4b4f-81af-e6e7f63298ef",
+  "metadata": {
+    "name": "Jungle Leopard Prism6 MAX White Forward Pack of 3",
+    "manufacturer": "Jungle Leopard",
+    "series": "Prism 6 MAX",
+    "manufacturer_color": "White",
+    "part_numbers": [""],
+    "releaseYear": 2025
+  },
+  "size": 120,
+  "quantity": 3,
+  "pwm": true,
+  "connector": "4-pin PWM + 3-pin 5V Addressable RGB",
+  "color": ["WHITE"],
+  "lighting": ["ARGB"],
+  "isOEM": false,
+  "flow_direction": "Standard",
+  "min_airflow": 58.36,
+  "min_noise_level": 29,
+  "static_pressure": 2.07,
+  "controller": "None",
+  "led": "Addressable RGB",
+  "general_product_information": {
+    "amazon_sku": "B0F7H2F51B"
+  }
+}

@@ -1,0 +1,151 @@
+name: Validate JSON Against Schemas
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+
+      - name: Install ajv-cli and ajv-formats
+        run: |
+          npm install -g ajv-cli@5.0.0 ajv-formats
+
+      - name: Get changed JSON files
+        id: changed-files
+        run: |
+          set -euo pipefail
+
+          # Write file lists to temporary files instead of environment variables
+          # This avoids "Argument list too long" errors with large PRs
+          : > /tmp/added_files.txt
+          : > /tmp/modified_files.txt
+          : > /tmp/deleted_files.txt
+          : > /tmp/renamed_files.tsv
+
+          git diff --name-status origin/${{ github.base_ref }} ${{ github.sha }} > /tmp/pr_changes.txt || true
+
+          awk '$1 == "A" && $2 ~ /\.json$/ && $2 !~ /\.schema\.json$/ { print $2 }' /tmp/pr_changes.txt > /tmp/added_files.txt
+          awk '$1 == "M" && $2 ~ /\.json$/ && $2 !~ /\.schema\.json$/ { print $2 }' /tmp/pr_changes.txt > /tmp/modified_files.txt
+          awk '$1 == "D" && $2 ~ /\.json$/ && $2 !~ /\.schema\.json$/ { print $2 }' /tmp/pr_changes.txt > /tmp/deleted_files.txt
+          awk '$1 ~ /^R[0-9]+$/ && $3 ~ /\.json$/ && $3 !~ /\.schema\.json$/ { print $2 "\t" $3 }' /tmp/pr_changes.txt > /tmp/renamed_files.tsv
+
+          # Combine added and modified files
+          cat /tmp/added_files.txt /tmp/modified_files.txt > /tmp/changed_files.txt
+          awk -F '\t' '{ print $2 }' /tmp/renamed_files.tsv >> /tmp/changed_files.txt
+
+          TOTAL_CHANGED=$(wc -l < /tmp/changed_files.txt | tr -d ' ')
+          RENAMED_COUNT=$(wc -l < /tmp/renamed_files.tsv | tr -d ' ')
+          echo "Total changed JSON files: $TOTAL_CHANGED"
+          echo "Renamed JSON files: $RENAMED_COUNT"
+
+          if [ "$TOTAL_CHANGED" -eq "0" ]; then
+            echo "No JSON files added or modified in this PR."
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "total_files=$TOTAL_CHANGED" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Validate JSON files against schemas
+        id: validation
+        if: steps.changed-files.outputs.has_changes == 'true'
+        run: |
+          EXIT_CODE=0
+          PASSED=0
+          FAILED=0
+          WARNINGS=0
+
+          # Create a file to store failed validations
+          > /tmp/failed_files.txt
+
+          # Process files in batches to avoid memory issues
+          while IFS= read -r file; do
+            # Skip empty lines
+            [ -z "$file" ] && continue
+            [ ! -f "$file" ] && continue
+            
+            # Determine change type
+            if grep -q "^${file}$" /tmp/added_files.txt 2>/dev/null; then
+              CHANGE_TYPE="added"
+            else
+              CHANGE_TYPE="modified"
+            fi
+            
+            # Check if filename matches opendb_id
+            FILENAME=$(basename "$file" .json)
+            OPENDB_ID=$(jq -r '.opendb_id | select(. != null)' "$file" 2>/dev/null || echo "")
+            
+            if [ -z "$OPENDB_ID" ]; then
+              WARNINGS=$((WARNINGS + 1))
+            elif [ "$FILENAME" != "$OPENDB_ID" ]; then
+              echo "❌ $file: Filename ($FILENAME) does not match opendb_id ($OPENDB_ID)"
+              echo "$file: Filename mismatch" >> /tmp/failed_files.txt
+              FAILED=$((FAILED + 1))
+              EXIT_CODE=1
+              continue
+            fi
+            
+            # Schema Validation
+            PART_CATEGORY=$(echo "$file" | cut -d'/' -f2)
+            SCHEMA_FILE="schemas/${PART_CATEGORY}.schema.json"
+            
+            if [ -f "$SCHEMA_FILE" ]; then
+              if ! ajv validate -s "$SCHEMA_FILE" -d "$file" -c ajv-formats --all-errors > /tmp/validation.log 2>&1; then
+                echo "❌ $file: Schema validation failed"
+                echo "$file: $(head -1 /tmp/validation.log)" >> /tmp/failed_files.txt
+                FAILED=$((FAILED + 1))
+                EXIT_CODE=1
+              else
+                PASSED=$((PASSED + 1))
+              fi
+            else
+              WARNINGS=$((WARNINGS + 1))
+            fi
+            
+            # Print progress every 100 files
+            TOTAL=$((PASSED + FAILED + WARNINGS))
+            if [ $((TOTAL % 100)) -eq 0 ]; then
+              echo "Progress: $TOTAL files processed..."
+            fi
+          done < /tmp/changed_files.txt
+
+          echo ""
+          echo "========================================"
+          echo "Validation Summary:"
+          echo "  ✅ Passed: $PASSED"
+          echo "  ❌ Failed: $FAILED"
+          echo "  ⚠️ Warnings: $WARNINGS"
+          echo "========================================"
+
+          if [ "$FAILED" -gt 0 ]; then
+            echo ""
+            echo "Failed files:"
+            cat /tmp/failed_files.txt
+          fi
+
+          echo "validation_failed=$EXIT_CODE" >> $GITHUB_OUTPUT
+          echo "passed=$PASSED" >> $GITHUB_OUTPUT
+          echo "failed=$FAILED" >> $GITHUB_OUTPUT
+          echo "warnings=$WARNINGS" >> $GITHUB_OUTPUT
+
+      - name: Fail job if validation errors occurred
+        if: steps.validation.outputs.validation_failed == '1'
+        run: |
+          echo "Validation failed for one or more files. Failing the job."
+          exit 1

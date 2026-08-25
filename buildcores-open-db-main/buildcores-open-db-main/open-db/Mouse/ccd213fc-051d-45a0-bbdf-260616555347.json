@@ -1,0 +1,13 @@
+{
+  "opendb_id": "ccd213fc-051d-45a0-bbdf-260616555347",
+  "metadata": {
+    "name": "ThundeRobot ML602",
+    "manufacturer": "ThundeRobot",
+    "series": "ML602",
+    "part_numbers": []
+  },
+  "grip_types": [],
+  "connectivity": ["Bluetooth", "Wireless 2.4GHz", "Wired USB-C"],
+  "lighting": [],
+  "general_product_information": {}
+}

@@ -1,0 +1,32 @@
+{
+  "opendb_id": "f3ad38c2-f1e2-40b5-9b8a-96c59fe50f94",
+  "connectors": {
+    "atx_24_pin": 1,
+    "eps_8_pin": 2,
+    "pcie_12vhpwr": 1,
+    "pcie_6_plus_2_pin": 2,
+    "sata": 4,
+    "molex_4_pin": 2,
+    "floppy_4_pin": 0
+  },
+  "metadata": {
+    "name": "MSI MAG A750GN PCIE5 Black ATX 750W Non-Modular 80+ Gold",
+    "manufacturer": "MSI",
+    "part_numbers": ["MAG A750GN PCIE5", "MAGA750GNPCIE5", "PSAG750-MAGA750GNPCIE5"],
+    "series": "MAG",
+    "variant": "750W Gold"
+  },
+  "wattage": 750,
+  "form_factor": "ATX",
+  "efficiency_rating": "80+ Gold",
+  "modular": "Non-Modular",
+  "color": ["BLACK"],
+  "length": 140,
+  "fanless": false,
+  "lighting": [],
+  "general_product_information": {
+    "amazon_sku": "B0FPDD9DGD",
+    "newegg_sku": "1HU-001W-000G5",
+    "walmart_sku": 15178967477
+  }
+}

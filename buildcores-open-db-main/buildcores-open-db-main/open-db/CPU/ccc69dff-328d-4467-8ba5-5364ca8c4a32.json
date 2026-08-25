@@ -1,0 +1,57 @@
+{
+  "opendb_id": "ccc69dff-328d-4467-8ba5-5364ca8c4a32",
+  "cores": {
+    "total": 4,
+    "performance": 0,
+    "threads": 4,
+    "efficiency": 0
+  },
+  "clocks": {
+    "performance": {
+      "base": 3.8,
+      "boost": 4
+    },
+    "efficiency": {
+      "base": 0,
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l2": 4,
+    "l3": 4,
+    "l1": "2 × 64 KB Instruction + 4 × 16 KB Data (192 KB total)"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "None",
+      "baseClock": 0,
+      "boostClock": 0,
+      "shaderCount": 0
+    },
+    "memory": {
+      "maxSupport": 32,
+      "types": ["DDR3"],
+      "channels": 2
+    },
+    "tdp": 95,
+    "eccSupport": false,
+    "includesCooler": false,
+    "packaging": "OEM/Tray",
+    "lithography": "32 nm",
+    "simultaneousMultithreading": false,
+    "ppt": 0
+  },
+  "metadata": {
+    "name": "AMD FX FX-4150 OEM/Tray",
+    "manufacturer": "AMD",
+    "part_numbers": ["FD4150WMW4KGU"],
+    "series": "FX 4000",
+    "releaseYear": 2012,
+    "variant": "4150"
+  },
+  "series": "FX 4000",
+  "microarchitecture": "Bulldozer",
+  "coreFamily": "Zambezi",
+  "socket": "AM3+",
+  "general_product_information": {}
+}

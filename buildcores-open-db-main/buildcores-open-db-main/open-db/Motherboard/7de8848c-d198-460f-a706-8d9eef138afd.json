@@ -1,0 +1,110 @@
+{
+  "opendb_id": "7de8848c-d198-460f-a706-8d9eef138afd",
+  "memory": {
+    "max": 64,
+    "ram_type": "DDR4",
+    "slots": 2
+  },
+  "storage_devices": {
+    "sata_6_gb_s": 4,
+    "sata_3_gb_s": 0,
+    "u2": 0
+  },
+  "usb_headers": {
+    "usb_2_0": 1,
+    "usb_3_2_gen_1": 1,
+    "usb_3_2_gen_2": 0,
+    "usb_3_2_gen_2x2": 0,
+    "usb_4": 0
+  },
+  "fan_headers": {
+    "cpu_fan": 1,
+    "case_fan": 1
+  },
+  "rgb_headers": {
+    "argb_5v": 3
+  },
+  "front_panel_headers": {
+    "power_button": true,
+    "power_led": true,
+    "hdd_led": true,
+    "reset_button": true
+  },
+  "other_headers": {
+    "com_port": 1
+  },
+  "power_connectors": {
+    "cpu_power": ["8-pin"],
+    "main_power": "24-pin"
+  },
+  "bios_features": {
+    "flashback": true,
+    "clear_cmos": false
+  },
+  "audio": {
+    "chipset": "Realtek",
+    "channels": "7.1"
+  },
+  "metadata": {
+    "name": "ASUS B760M-AYW WIFI D4 II",
+    "manufacturer": "ASUS",
+    "part_numbers": ["B760M-AYW WIFI D4 II"],
+    "variant": "B760M-AYW WIFI D4 II",
+    "manufacturer_color": "Black/Silver",
+    "series": "AYW",
+    "releaseYear": 2025
+  },
+  "socket": "LGA 1700",
+  "form_factor": "Micro ATX",
+  "chipset": "Intel B760",
+  "color": ["BLACK", "GREY"],
+  "pcie_slots": [
+    {
+      "gen": "5.0",
+      "quantity": 1,
+      "lanes": 16
+    },
+    {
+      "gen": "4.0",
+      "quantity": 2,
+      "lanes": 1
+    }
+  ],
+  "m2_slots": [
+    {
+      "size": "2280",
+      "key": "M",
+      "interface": "PCIe 4.0 x4"
+    },
+    {
+      "size": "2280",
+      "key": "M",
+      "interface": "PCIe 4.0 x4"
+    }
+  ],
+  "onboard_ethernet": [
+    {
+      "speed": "2.5 Gb/s",
+      "controller": "Realtek"
+    }
+  ],
+  "ecc_support": false,
+  "raid_support": true,
+  "back_connect_connectors": false,
+  "back_panel_ports": [
+    " 4 x USB 5Gbps ports (4 x Type-A)",
+    "2 x USB 2.0 ports (2 x Type-A）",
+    "1 x HDMI port",
+    "1 x Wi-Fi Module",
+    "1 x Realtek 2.5Gb Ethernet port",
+    "3 x Audio jacks"
+  ],
+  "lighting": [],
+  "wireless_networking": "WiFi 6 Bluetooth 5.3",
+  "general_product_information": {
+    "amazon_sku": "B0FP3MRTC1",
+    "newegg_sku": "N82E16813119744",
+    "walmart_sku": 17045421867,
+    "manufacturer_url": "https://www.asus.com/motherboards-components/motherboards/others/b760m-ayw-wifi-d4-ii/techspec/"
+  }
+}

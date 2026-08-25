@@ -1,0 +1,16 @@
+{
+  "opendb_id": "5c8bf8bf-2205-4840-8dbf-8dd3a2b1caff",
+  "metadata": {
+    "name": "Mionix Castor",
+    "manufacturer": "Mionix",
+    "series": "Castor",
+    "part_numbers": []
+  },
+  "grip_types": [],
+  "connectivity": ["Wired"],
+  "lighting": [],
+  "general_product_information": {
+    "amazon_sku": "B00XJZ59Y0",
+    "walmart_sku": 114397759
+  }
+}

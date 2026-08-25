@@ -1,0 +1,15 @@
+{
+  "opendb_id": "1b116172-cdc2-4b23-a3e1-2796430acf09",
+  "metadata": {
+    "name": "LTC GM022",
+    "manufacturer": "LTC",
+    "series": "GM022",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0CZ37NSPB"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "opendb_id": "b993c4a9-53c8-43b9-a838-e5a7f42d6f5c",
+  "metadata": {
+    "name": "PURE WINGS 2 120mm silent essential Fans",
+    "manufacturer": "be quiet!",
+    "variant": "120mm",
+    "releaseYear": null,
+    "part_numbers": ["BL046"]
+  },
+  "size": 120,
+  "color": ["BLACK"],
+  "quantity": 1,
+  "min_airflow": 51.4,
+  "max_airflow": 87,
+  "min_noise_level": null,
+  "max_noise_level": 19.2,
+  "pwm": true,
+  "led": "None",
+  "connector": "3-pin",
+  "controller": "None",
+  "static_pressure": 1.25,
+  "isOEM": false,
+  "lighting": [],
+  "general_product_information": {
+    "amazon_sku": "B00ECWKD6I",
+    "newegg_sku": "9SIAJ7W92P3919"
+  }
+}

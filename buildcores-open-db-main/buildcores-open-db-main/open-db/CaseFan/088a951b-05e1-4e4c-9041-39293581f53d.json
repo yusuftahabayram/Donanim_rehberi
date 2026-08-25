@@ -1,0 +1,32 @@
+{
+  "opendb_id": "088a951b-05e1-4e4c-9041-39293581f53d",
+  "metadata": {
+    "name": "ARCTIC P12 Silent 120mm Black",
+    "manufacturer": "ARCTIC",
+    "part_numbers": ["ACFAN00130A"],
+    "series": "P12",
+    "manufacturer_color": "Black",
+    "variant": "Silent",
+    "releaseYear": 2018
+  },
+  "size": 120,
+  "color": ["BLACK"],
+  "quantity": 1,
+  "min_airflow": 24.1,
+  "max_airflow": null,
+  "min_noise_level": null,
+  "max_noise_level": null,
+  "pwm": false,
+  "led": "None",
+  "connector": "3-pin",
+  "controller": "None",
+  "static_pressure": 0.5,
+  "flow_direction": "Standard",
+  "isOEM": false,
+  "lighting": ["None"],
+  "general_product_information": {
+    "amazon_sku": "B07GSTMRFB",
+    "walmart_sku": 273217439,
+    "manufacturer_url": "https://www.arctic.de/en/P12-Silent/ACFAN00130A"
+  }
+}

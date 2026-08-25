@@ -1,0 +1,16 @@
+{
+  "opendb_id": "43c7a090-6971-489b-830b-f6ef417c93cf",
+  "metadata": {
+    "name": "MCHOSE L7 Pro",
+    "manufacturer": "MCHOSE",
+    "series": "L7",
+    "variant": "Pro",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0DPN73QSS"
+  }
+}

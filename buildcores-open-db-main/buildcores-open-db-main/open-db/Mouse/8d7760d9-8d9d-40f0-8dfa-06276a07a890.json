@@ -1,0 +1,27 @@
+{
+  "opendb_id": "8d7760d9-8d9d-40f0-8dfa-06276a07a890",
+  "metadata": {
+    "name": "MSI VERSA 300 Wireless Gaming Mouse White",
+    "manufacturer": "MSI",
+    "part_numbers": [
+      "VERSA 300 WIRELESS",
+      "VERSA 300 W White",
+      "VERSA 300 W WHITE",
+      "S12-4301440-CLA"
+    ],
+    "series": "VERSA",
+    "variant": "300 WIRELESS White",
+    "releaseYear": 2025
+  },
+  "connectivity": ["Wired USB-A", "Wireless 2.4GHz", "Wired USB-C", "Bluetooth"],
+  "rgb": true,
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FBFZ3XF5",
+    "newegg_sku": "9SIA24GKKR4563",
+    "bestbuy_sku": 12069431,
+    "walmart_sku": 17799061948,
+    "manufacturer_url": "https://www.msi.com/Gaming-Gear/VERSA-300-WIRELESS-white"
+  }
+}

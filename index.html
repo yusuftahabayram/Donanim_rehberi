@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PC Hardware Donanım Kataloğu & Donanım & Uyum Rehberi</title>
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="styles.css?v=3.0">
+</head>
+<body>
+
+  <!-- Top Header Navigation -->
+  <header class="app-header">
+    <div class="header-left">
+      <div class="logo-badge">
+        <i class="fa-solid fa-microchip"></i>
+      </div>
+      <div class="brand-info">
+        <h1>Donanım Veri Portalı</h1>
+        <span class="sub-title">Donanım Kataloğu & Uyum Rehberi</span>
+      </div>
+    </div>
+
+    <!-- Main Navigation Views -->
+    <div class="nav-tabs">
+      <button class="nav-tab-btn active" id="nav-btn-explorer">
+        <i class="fa-solid fa-magnifying-glass"></i> Donanım Kataloğu
+      </button>
+      <button class="nav-tab-btn" id="nav-btn-builder">
+        <i class="fa-solid fa-wand-magic-sparkles"></i> Akıllı PC Toplama Sihirbazı
+      </button>
+      <button class="nav-tab-btn" id="nav-btn-guide">
+        <i class="fa-solid fa-book-open-reader"></i> Donanım & Uyum Rehberi
+      </button>
+    </div>
+
+    <div class="header-right">
+    </div>
+  </header>
+
+  <div class="main-wrapper">
+    
+    <!-- Sidebar / Category Selector (Only shown in Catalog Explorer View) -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <span class="badge" id="category-total-badge">36 Kategori</span>
+      </div>
+      
+      <div class="category-search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="category-filter-input" placeholder="Kategori ara (örn: İşlemci, Anakart)...">
+      </div>
+
+      <div class="category-list" id="category-list">
+        <!-- Dynamic Category Items loaded via JS -->
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="content-area">
+
+      <!-- View Panel 1: Donanım Kataloğu Explorer View -->
+      <div id="view-explorer" class="view-panel active">
+        
+        <!-- Controls & Filter Toolbar -->
+        <div class="toolbar">
+          <!-- Search input -->
+          <div class="search-field">
+            <i class="fa-solid fa-search"></i>
+            <input type="text" id="input-search" placeholder="Donanım veya model ara (örn: Ryzen 9, RTX 4080, AM5, DDR5)...">
+            <button class="clear-search" id="btn-clear-search"><i class="fa-solid fa-times"></i></button>
+          </div>
+
+          <div class="filter-group">
+            <!-- Manufacturer Filter -->
+            <div class="select-wrapper">
+              <i class="fa-solid fa-building"></i>
+              <select id="select-manufacturer">
+                <option value="">Tüm Markalar</option>
+              </select>
+            </div>
+
+            <!-- Sort By -->
+            <div class="select-wrapper">
+              <i class="fa-solid fa-sort"></i>
+              <select id="select-sort">
+                <option value="releaseYear" selected>Çıkış Tarihi (Yeniden Eskiye)</option>
+                <option value="name">Model İsmi (A-Z)</option>
+                <option value="manufacturer">Üretici Marka</option>
+              </select>
+            </div>
+
+            <button class="icon-btn" id="btn-sort-order" title="Sıralama Yönünü Değiştir">
+              <i class="fa-solid fa-sort-amount-down"></i>
+            </button>
+
+            <!-- View Toggle Buttons -->
+            <div class="view-toggle">
+              <button class="view-btn active" id="btn-view-grid" title="Izgara Görünümü">
+                <i class="fa-solid fa-grid-2"></i> Kartlar
+              </button>
+              <button class="view-btn" id="btn-view-table" title="Tablo Görünümü">
+                <i class="fa-solid fa-table-list"></i> Liste
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sub-Category Tabs Container (İşlemci / Ekran Kartı Alt Dalları) -->
+        <div class="subtab-container" id="subtab-container" style="display: none;">
+          <div class="subtab-bar">
+            <button class="subtab-btn active" data-gpu-type="all">
+              <i class="fa-solid fa-layer-group"></i> Tüm Ürünler
+              <span class="subtab-count" id="count-gpu-all">0</span>
+            </button>
+            <button class="subtab-btn" data-gpu-type="desktop">
+              <i class="fa-solid fa-desktop"></i> Masaüstü Modelleri
+              <span class="subtab-count" id="count-gpu-desktop">0</span>
+            </button>
+            <button class="subtab-btn" data-gpu-type="mobile">
+              <i class="fa-solid fa-laptop-code"></i> Mobil Modelleri
+              <span class="subtab-count" id="count-gpu-mobile">0</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Meta Info & Results Banner -->
+        <div class="results-bar">
+          <div class="results-count">
+            <span id="current-category-name" class="cat-highlight">İşlemci (CPU)</span> kategorisinden
+            <strong id="results-count-number">0</strong> ürün bulunuyor
+          </div>
+        </div>
+
+        <!-- Products Grid / Table Container -->
+        <div class="products-grid" id="products-container">
+          <!-- Dynamic Hardware Cards loaded via JS -->
+        </div>
+
+        <!-- Pagination Controls -->
+        <div class="pagination-bar">
+          <div class="page-info" id="page-info-text">Sayfa 1 / 1</div>
+          <div class="page-buttons">
+            <button class="page-btn" id="btn-prev-page"><i class="fa-solid fa-chevron-left"></i> Önceki</button>
+            <div class="page-numbers" id="page-numbers-container"></div>
+            <button class="page-btn" id="btn-next-page">Sonraki <i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- View Panel 2: Akıllı Adım Adım PC Toplama Sihirbazı (Builder View) -->
+      <div id="view-builder" class="view-panel">
+        
+        <!-- Step Indicator Progress Bar -->
+        <div class="builder-wizard-bar">
+          <div class="wizard-header-title">
+            <h2><i class="fa-solid fa-wand-magic-sparkles"></i> Sıfırdan Bilgisayar Toplama Sihirbazı</h2>
+            <p>Adım adım ilerleyin. Her adımda önceki parçalarınızın soket, bellek tipi ve Watt gücüyle %100 uyumlu parçalar otomatik önerilir.</p>
+          </div>
+
+          <div class="wizard-steps-track" id="wizard-steps-track">
+            <!-- Dynamic 8 Steps Rendered via JS -->
+          </div>
+        </div>
+
+        <div class="builder-layout">
+          
+          <!-- Left Column: Step Hardware Catalog -->
+          <div class="builder-catalog-col">
+            <div class="builder-step-header">
+              <div class="step-info-group">
+                <span class="step-number-badge" id="builder-step-num">Adım 1 / 8</span>
+                <h3 id="builder-step-title">Kasa Seçimi</h3>
+              </div>
+              
+              <!-- Search inside builder -->
+              <div class="builder-search">
+                <i class="fa-solid fa-search"></i>
+                <input type="text" id="builder-search-input" placeholder="Bu adımda parça ara (örn: AM5, B650, DDR5)...">
+              </div>
+            </div>
+
+            <!-- Compatibility Tip Banner -->
+            <div class="compatibility-notice-banner" id="compatibility-notice-banner">
+              <i class="fa-solid fa-circle-check"></i>
+              <span id="compatibility-notice-text">Henüz parça seçilmedi. Tüm kasalar listeleniyor.</span>
+            </div>
+
+            <!-- Builder Products Grid -->
+            <div class="products-grid" id="builder-products-container">
+              <!-- Step items rendered via JS -->
+            </div>
+          </div>
+
+          <!-- Right Column: Live Build Summary Cart Panel -->
+          <aside class="build-summary-panel">
+            <div class="summary-header">
+              <h3><i class="fa-solid fa-cart-shopping"></i> Toplanan Sistem</h3>
+              <button class="btn btn-sm btn-secondary" id="btn-reset-build" title="Tüm Seçimleri Sıfırla">
+                <i class="fa-solid fa-rotate-left"></i> Sıfırla
+              </button>
+            </div>
+
+            <!-- Wattage & System Health Meter -->
+            <div class="wattage-meter-box">
+              <div class="watt-label-row">
+                <span>Tahmini Sistem TDP Gücü</span>
+                <strong id="summary-total-watt">100W</strong>
+              </div>
+              <div class="watt-bar-bg">
+                <div class="watt-bar-fill" id="summary-watt-bar" style="width: 15%;"></div>
+              </div>
+            </div>
+
+            <!-- Selected Parts List -->
+            <div class="selected-parts-list" id="selected-parts-list">
+              <!-- Rendered via JS -->
+            </div>
+
+            <!-- Build Export Action Buttons -->
+            <div class="summary-actions">
+              <button class="btn btn-primary btn-full" id="btn-export-build-txt">
+                <i class="fa-solid fa-file-arrow-down"></i> Sistemi Metin (TXT) İndir
+              </button>
+              <button class="btn btn-secondary btn-full" id="btn-export-build-json">
+                <i class="fa-solid fa-code"></i> JSON Şemasını İndir
+              </button>
+            </div>
+          </aside>
+
+        </div>
+
+      </div>
+
+      <!-- View Panel 3: Donanım & Uyum Rehberi (Beginner Educational Guide View) -->
+      <div id="view-guide" class="view-panel">
+        
+        <!-- Guide Hero Banner -->
+        <div class="guide-hero">
+          <div class="hero-content">
+            <span class="hero-badge"><i class="fa-solid fa-graduation-cap"></i> Başlangıç & İleri Düzey Rehber</span>
+            <h2>Bilgisayar Parçaları ve Uyum Rehberi</h2>
+            <p>Bilgisayar bileşenlerini hiç bilmeyen birine anlatır gibi sade örneklerle (benzetmelerle) öğrenin. Soketler, frekanslar, CL gecikmeleri ve pin yapıları hakkında merak ettiğiniz her şey!</p>
+          </div>
+          
+          <div class="guide-search-wrapper">
+            <i class="fa-solid fa-search"></i>
+            <input type="text" id="guide-search-input" placeholder="Rehberde konu ara (örn: AM5 soket, CL nedir, pinler, DDR5)...">
+          </div>
+        </div>
+
+        <!-- Filter Chips -->
+        <div class="guide-filter-chips">
+          <button class="guide-chip active" data-guide-filter="all"><i class="fa-solid fa-layer-group"></i> Tüm Konular</button>
+          <button class="guide-chip" data-guide-filter="cpu"><i class="fa-solid fa-microchip"></i> İşlemci & Pinler</button>
+          <button class="guide-chip" data-guide-filter="motherboard"><i class="fa-solid fa-border-all"></i> Anakart & Soketler</button>
+          <button class="guide-chip" data-guide-filter="ram"><i class="fa-solid fa-memory"></i> RAM & CL Mantığı</button>
+          <button class="guide-chip" data-guide-filter="gpu"><i class="fa-solid fa-tv"></i> Ekran Kartı</button>
+          <button class="guide-chip" data-guide-filter="storage"><i class="fa-solid fa-hard-drive"></i> Depolama (SSD/HDD)</button>
+        </div>
+
+        <!-- Guide Articles Grid -->
+        <div class="guide-grid" id="guide-grid">
+          
+          <!-- Card 1: İşlemci (CPU) & Pin Yapısı -->
+          <article class="guide-card" data-category="cpu">
+            <div class="card-hero-head cpu-head">
+              <img src="assets/images/cpu.webp" alt="İşlemci (CPU)" class="guide-card-img">
+              <div>
+                <h3>İşlemci (CPU) ve Pin Olayı Nedir?</h3>
+              </div>
+            </div>
+
+            <div class="guide-card-body">
+              <div class="analogy-box">
+                <i class="fa-solid fa-lightbulb"></i>
+                <div>
+                  <strong>💡 Sade Benzetme: Bilgisayarın Fabrika Müdürü</strong>
+                  <p>İşlemci, bilgisayardaki tüm komutları hesaplayan ana beyindir. Çekirdekler (Cores) fabrikadaki işçi sayısı, Threads (İş Parçacığı) ise bu işçilerin el sayısıdır.</p>
+                </div>
+              </div>
+
+              <h4>📌 İşlemcilerde Pin Olayı (PGA vs LGA Farkı):</h4>
+              <p>İşlemcinin anakart ile elektrik ve veri alışverişi yapabilmesi için altında yüzlerce altın iğne uç bulunur. Buna **Pin Yapısı** denir.</p>
+
+              <div class="socket-comparison-grid">
+                <div class="concept-card">
+                  <h5>PGA (Pin Grid Array)</h5>
+                  <p>İğne pinler <strong>doğrudan işlemcinin altındadır</strong>. (Örn: AMD Ryzen 3000 / 5000 serisi - AM4 soket).</p>
+                  <span class="warning-tag">⚠️ Dikkat: İşlemciyi takarken pinler eğrilirse işlemci bozulabilir!</span>
+                </div>
+                <div class="concept-card">
+                  <h5>LGA (Land Grid Array)</h5>
+                  <p>İşlemcinin altı düzdür, iğne pinler <strong>anakart yuvasının içindedir</strong>. (Örn: AMD AM5, Intel LGA1700).</p>
+                  <span class="warning-tag">⚠️ Dikkat: Anakart yuvasındaki pinlere el sürülmemelidir.</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Anakart & Soket Mantığı (AM3, AM4, AM5) -->
+          <article class="guide-card" data-category="motherboard">
+            <div class="card-hero-head mb-head">
+              <img src="assets/images/motherboard.webp" alt="Anakart" class="guide-card-img">
+              <div>
+                <h3>Anakart ve Soket Uyum Mantığı (AM3 - AM4 - AM5)</h3>
+              </div>
+            </div>
+
+            <div class="guide-card-body">
+              <div class="analogy-box">
+                <i class="fa-solid fa-lightbulb"></i>
+                <div>
+                  <strong>💡 Sade Benzetme: Şehir Otobanı & Anahtar-Kilit Yatağı</strong>
+                  <p>Anakart, tüm parçaların üzerine takıldığı ana iskelettir. Üzerindeki İşlemci Yuvasına <strong>Soket</strong> denir.</p>
+                </div>
+              </div>
+
+              <h4>🔑 Soket Mantığı Nedir? Neden Birebir Uymak Zorunda?</h4>
+              <p>Soket, bir kapının kilidi gibidir. İşlemci ise o kilidin anahtarıdır. Kilit yapısı uymayan bir anahtar kapıyı açamayacağı gibi, soketi uymayan bir işlemci de anakarta oturmaz.</p>
+
+              <div class="socket-timeline">
+                <div class="timeline-item">
+                  <span class="timeline-badge">AM3 / AM3+</span>
+                  <p>Eski nesil AMD soketi (DDR3 bellek desteği). Yeni işlemcilerle kesinlikle uyumsuzdur.</p>
+                </div>
+                <div class="timeline-item">
+                  <span class="timeline-badge">AM4 Soket</span>
+                  <p>AMD Ryzen 1000 - 5000 serisi işlemcilerin soketidir (PGA pinli). <strong>Sadece DDR4 RAM</strong> ile çalışır.</p>
+                </div>
+                <div class="timeline-item highlight">
+                  <span class="timeline-badge active">AM5 Soket</span>
+                  <p>En güncel AMD Ryzen 7000/9000 soketi (LGA pinli). <strong>Sadece DDR5 RAM</strong> destekler.</p>
+                </div>
+              </div>
+
+              <div class="rule-callout">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <div>
+                  <strong>Önemli Kural:</strong> AM4 işlemci (örn: Ryzen 5 5600) AM5 anakarta (örn: B650) <u>asla takılamaz</u>. Soket pin yapıları ve çentikleri tamamen farklıdır.
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: RAM Bellek, Frekans (MHz) & CL Mantığı -->
+          <article class="guide-card" data-category="ram">
+            <div class="card-hero-head ram-head">
+              <img src="assets/images/ram.webp" alt="RAM Bellek" class="guide-card-img">
+              <div>
+                <h3>RAM Bellek, Frekans (MHz) ve CL Mantığı Nedir?</h3>
+              </div>
+            </div>
+
+            <div class="guide-card-body">
+              <div class="analogy-box">
+                <i class="fa-solid fa-lightbulb"></i>
+                <div>
+                  <strong>💡 Sade Benzetme: Üzerinde Çalışılan Çalışma Masası</strong>
+                  <p>RAM, o an açık olan oyunların ve programların hızlıca ulaştığı geçici çalışma masasıdır. Masa ne kadar büyükse (16GB, 32GB) o kadar çok sekme donmadan çalışır.</p>
+                </div>
+              </div>
+
+              <h4>🚀 1. DDR Türleri ve Sistem Frekans Uyumu (MHz):</h4>
+              <p>RAM'in çalışma hızına **Frekans (MHz)** denir (Örn: 3200MHz, 6000MHz). Anakartınızın desteklediği maksimum frekans değeri RAM hızınızı belirler.</p>
+              <ul>
+                <li><strong>DDR4 RAM:</strong> Orta çentiği sağa yakındır. DDR5 anakarta takılamaz.</li>
+                <li><strong>DDR5 RAM:</strong> Orta çentiği tam ortadadır, 2 kat daha hızlı bant genişliği sunar.</li>
+              </ul>
+
+              <h4 class="mt-4">⏱️ 2. RAM'deki CL Mantığı (CAS Latency - Gecikme Süresi):</h4>
+              <p>CL değeri, RAM'in kendisine verilen bir emri işleme koyması için geçen **Gecikme Süresidir (Latency)**.</p>
+
+              <div class="cl-demo-box">
+                <div class="cl-analogy">
+                  <i class="fa-solid fa-utensils"></i>
+                  <p><strong>Garson Benzetmesi:</strong> Restoranda siparişi garsona verdiniz. <strong>CL30</strong> olan garson siparişi mutfağa 30 salisede götürür, <strong>CL40</strong> olan garson ise 40 salisede götürür.</p>
+                </div>
+
+                <div class="cl-rule-badge">
+                  <i class="fa-solid fa-star"></i>
+                  <span><strong>Altın Kural:</strong> RAM seçerken <strong>CL Değeri DÜŞÜK OLAN</strong> (Örn: CL30), daha hızlı tepki verdiği için daima daha performanslıdır!</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Ekran Kartı (GPU) -->
+          <article class="guide-card" data-category="gpu">
+            <div class="card-hero-head gpu-head">
+              <img src="assets/images/gpu.webp" alt="Ekran Kartı (GPU)" class="guide-card-img">
+              <div>
+                <h3>Ekran Kartı (GPU) ve VRAM Nedir?</h3>
+              </div>
+            </div>
+
+            <div class="guide-card-body">
+              <div class="analogy-box">
+                <i class="fa-solid fa-lightbulb"></i>
+                <div>
+                  <strong>💡 Sade Benzetme: Görsel Sanatçı & Ressam</strong>
+                  <p>Ekran kartı, oyundaki 3D karakterleri, ışıklandırmaları ve dokuları saniyede onlarca kez çizip ekrana yansıtan özel çizim işlemcisidir.</p>
+                </div>
+              </div>
+
+              <h4>🖥️ Masaüstü GPU vs 📱 Mobil (Laptop) GPU Farkı:</h4>
+              <p>Masaüstü ekran kartları devasa soğutucu fanlara ve yüksek watt gücüne sahip harici kartlardır. Dizüstü (Laptop) ekran kartları ise ince kasa içine sığabilmesi için güç limitli çip olarak tasarlanır.</p>
+
+              <h4 class="mt-4">🖼️ VRAM (Video RAM) Ne İşe Yarar?</h4>
+              <p>Ekran kartının kendi üzerindeki yüksek hızlı belleğidir (Örn: 8GB, 12GB, 16GB VRAM). Yüksek çözünürlükte (4K / 2K) oyun oynarken kaplama dokularının sığması için yüksek VRAM gereklidir.</p>
+            </div>
+          </article>
+
+          <!-- Card 5: Depolama Birimleri -->
+          <article class="guide-card" data-category="storage">
+            <div class="card-hero-head storage-head">
+              <img src="assets/images/storage.webp" alt="Depolama Birimleri" class="guide-card-img">
+              <div>
+                <h3>Depolama Birimleri</h3>
+              </div>
+            </div>
+
+            <div class="guide-card-body">
+              <div class="analogy-box">
+                <i class="fa-solid fa-lightbulb"></i>
+                <div>
+                  <strong>💡 Sade Benzetme: Kalıcı Arşiv Dolabı</strong>
+                  <p>Bilgisayar kapansa bile fotoğraflarınızın, oyunlarınızın ve dosyalarınızın silinmeden saklandığı ana kütüphanedir.</p>
+                </div>
+              </div>
+
+              <div class="storage-tech-comparison">
+                <div class="storage-type-card">
+                  <div class="st-head"><i class="fa-solid fa-compact-disc"></i> HDD (Mekanik Disk)</div>
+                  <p>İçinde dönen magnetik plakalar vardır. Yavaştır (100 MB/s). Günümüz oyunları için önerilmez.</p>
+                </div>
+                <div class="storage-type-card">
+                  <div class="st-head"><i class="fa-solid fa-microchip"></i> SATA SSD</div>
+                  <p>Kablolu dijital çip hafıza. HDD'ye göre 5 kat daha hızlıdır (550 MB/s).</p>
+                </div>
+                <div class="storage-type-card highlight">
+                  <div class="st-head active"><i class="fa-solid fa-bolt"></i> NVMe M.2 SSD</div>
+                  <p>Doğrudan anakart üzerine takılan çip. <strong>70 kat daha hızlıdır (7000 MB/s)</strong>. Bilgisayarı 5 saniyede açar.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Güç Kaynağı (PSU) -->
+          <article class="guide-card" data-category="psu">
+            <div class="card-hero-head psu-head">
+              <img src="assets/images/psu.webp" alt="Güç Kaynağı (PSU)" class="guide-card-img">
+              <div>
+                <h3>Güç Kaynağı (PSU)</h3>
+              </div>
+            </div>
+
+            <div class="guide-card-body">
+              <div class="analogy-box">
+                <i class="fa-solid fa-lightbulb"></i>
+                <div>
+                  <strong>💡 Sade Benzetme: Kalp ve Trafosu</strong>
+                  <p>PSU evdeki 220V elektriği parçaların kullanacağı 12V/5V seviyesine düşürüp dağıtan hayati organdır.</p>
+                </div>
+              </div>
+
+              <h4>⚡ Güç İhtiyacı ve 80+ Sertifikası:</h4>
+              <p>Ekran kartı ve işlemcinin toplam çektiği Watt değerinden yüksek bir PSU seçilmelidir (Örn: RTX 4080 sistem için 750W / 850W). **80 Plus (Bronze, Gold)** etiketi elektriği ısınmadan ne kadar verimli dönüştürdüğünü gösterir.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Summary Compatibility Cheat Sheet Table -->
+        <div class="cheat-sheet-section">
+          <h3><i class="fa-solid fa-table-cells"></i> Hızlı Donanım Uyum Özet Çizelgesi</h3>
+          <div class="table-responsive">
+            <table class="compat-cheat-table">
+              <thead>
+                <tr>
+                  <th>İşlemci Ailesi</th>
+                  <th>Uyumlu Anakart Soketi</th>
+                  <th>Desteklenen RAM Türü</th>
+                  <th>Pin Mimarisi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>AMD Ryzen 7000 / 9000</strong></td>
+                  <td><span class="table-badge green">AM5 Soket</span></td>
+                  <td><span class="table-badge blue">Sadece DDR5</span></td>
+                  <td>LGA (Pinler anakartta)</td>
+                </tr>
+                <tr>
+                  <td><strong>AMD Ryzen 3000 / 5000</strong></td>
+                  <td><span class="table-badge purple">AM4 Soket</span></td>
+                  <td><span class="table-badge amber">Sadece DDR4</span></td>
+                  <td>PGA (Pinler işlemcide)</td>
+                </tr>
+                <tr>
+                  <td><strong>Intel Core 13. / 14. Nesil</strong></td>
+                  <td><span class="table-badge green">LGA1700</span></td>
+                  <td><span class="table-badge blue">DDR4 veya DDR5</span></td>
+                  <td>LGA (Pinler anakartta)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- View Panel 4: Code Integration View Panel -->
+      <div id="view-code" class="view-panel">
+        <div class="code-integration-container">
+          <div class="code-header">
+            <div>
+              <h2><i class="fa-solid fa-code-branch"></i> Web Projenize JSON Verilerini Bağlama Rehberi</h2>
+              <p>Hazırlanan `pcDataEngine.js` modülünü web projenizde kullanarak Türkçe donanım verilerini saniyeler içinde okuyabilirsiniz.</p>
+            </div>
+            <div class="code-tabs">
+              <button class="tab-btn active" data-tab="js">Vanilla JS</button>
+              <button class="tab-btn" data-tab="react">React / Next.js</button>
+              <button class="tab-btn" data-tab="node">Node.js API</button>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <div class="code-box-header">
+              <span id="code-lang-label">JavaScript (Browser)</span>
+              <button class="btn btn-sm btn-secondary" id="btn-copy-code">
+                <i class="fa-solid fa-copy"></i> Kodu Kopyala
+              </button>
+            </div>
+            <pre><code id="code-content-area"></code></pre>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Read-Only Product Specification Details Modal (Türkçe Şema Görünümü) -->
+  <div class="modal-backdrop" id="detail-modal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div class="modal-icon-badge" id="modal-item-icon">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <div>
+            <h3 id="modal-item-title">Ürün Teknik Özellikleri</h3>
+            <span class="file-path-badge" id="modal-file-path">path/to/file.json</span>
+          </div>
+        </div>
+        <button class="modal-close" id="btn-close-modal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Visual Spec Grid (Read Only & Turkish Translated) -->
+        <div class="detail-spec-grid" id="detail-spec-grid">
+          <!-- Dynamic Product Properties Rendered Here -->
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="btn-close-modal-footer">Pencereyi Kapat</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gemini AI & RAG Chatbot Floating Widget -->
+  <div class="chat-widget-container">
+    <!-- Floating Toggle Button -->
+    <button class="chat-widget-btn" id="chat-widget-toggle" title="Gemini AI Donanım Asistanı">
+      <i class="fa-solid fa-robot"></i>
+      <span class="chat-badge">AI</span>
+    </button>
+
+    <!-- Floating Chat Window -->
+    <div class="chat-window" id="chat-window" style="display: none;">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <div class="chat-avatar">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <div>
+            <h4>Gemini AI Donanım Asistanı</h4>
+            <span class="chat-status"><i class="fa-solid fa-database"></i> ChromaDB RAG Bağlantılı</span>
+          </div>
+        </div>
+        <div class="chat-header-actions">
+          <button id="btn-clear-chat" title="Sohbeti Temizle"><i class="fa-solid fa-trash-can"></i></button>
+          <button id="btn-close-chat" title="Kapat"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+
+      <div class="chat-body" id="chat-body">
+        <!-- Default Welcome Message -->
+        <div class="chat-message bot-message">
+          <div class="message-content">
+            <p>👋 Merhaba! Ben sizin <strong>PC Donanım & Bilgisayar Toplama Asistanınızım</strong>.</p>
+            <p>ChromaDB vektör veritabanı ve Gemini 1.5 Flash AI altyapısıyla donanım tavsiyeleri verebilir, ürünleri karşılaştırabilir ve sorularınızı yanıtlayabilirim.</p>
+          </div>
+        </div>
+
+        <!-- Quick Suggestion Chips -->
+        <div class="chat-suggestions" id="chat-suggestions">
+          <button class="chip-btn" data-query="1080p oyun için en iyi fiyat/performans ekran kartı hangisi?">🎮 1080p GPU Tavsiyesi</button>
+          <button class="chip-btn" data-query="RTX 4060 ile RX 7600 arasındaki farklar nelerdir, hangisini almalıyım?">⚖️ RTX 4060 vs RX 7600</button>
+          <button class="chip-btn" data-query="Ryzen 5 7600X işlemciye uygun DDR5 anakart ve RAM önerir misin?">⚡ AM5 Sistem Tavsiyesi</button>
+          <button class="chip-btn" data-query="650W PSU RTX 4070 Ti Super için yeterli midir?">🔌 PSU Güç Uyumluluğu</button>
+        </div>
+
+        <!-- Message List Container -->
+        <div id="chat-messages-container"></div>
+
+        <!-- Typing Indicator -->
+        <div class="chat-message bot-message typing-indicator" id="chat-typing" style="display: none;">
+          <div class="message-content">
+            <div class="dot-flashing"><span></span><span></span><span></span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-footer">
+        <form id="chat-form" class="chat-input-wrapper">
+          <input type="text" id="chat-input" placeholder="Donanım veya uyumluluk sorusu sorun..." autocomplete="off">
+          <button type="submit" id="chat-send-btn" title="Gönder"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+        <div class="chat-footer-note">
+          <small><i class="fa-solid fa-shield-halved"></i> Powered by Gemini 1.5 Flash & ChromaDB RAG</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="pcDataEngine.js?v=10.0"></script>
+  <script src="app.js?v=10.0"></script>
+</body>
+</html>

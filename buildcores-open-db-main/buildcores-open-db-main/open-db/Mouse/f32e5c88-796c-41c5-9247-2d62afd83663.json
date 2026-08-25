@@ -1,0 +1,22 @@
+{
+  "opendb_id": "f32e5c88-796c-41c5-9247-2d62afd83663",
+  "metadata": {
+    "name": "Glorious Model O 2 Wired/Wireless/Bluetooth Gaming Mouse- White",
+    "manufacturer": "Glorious",
+    "part_numbers": ["GLO-MS-OWV2-MW"],
+    "series": "Model O",
+    "variant": "2 White",
+    "releaseYear": 2023
+  },
+  "connectivity": ["Bluetooth", "Wireless 2.4GHz", "Wired USB-C"],
+  "rgb": true,
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0BLFMS36J",
+    "newegg_sku": "9SIC5DJKSS5381",
+    "bestbuy_sku": 6547949,
+    "ibuypower_sku": "30311",
+    "manufacturer_url": "https://www.gloriousgaming.com/products/model-o-2-wireless-mouse?srsltid=AfmBOorsM_295_Pj65tlyj3POITRZ75Lt4vTmlz2cCyJ2lVOIoWTmpgV&variant=43698922520751"
+  }
+}

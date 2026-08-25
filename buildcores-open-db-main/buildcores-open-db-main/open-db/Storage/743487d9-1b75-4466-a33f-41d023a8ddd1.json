@@ -1,0 +1,22 @@
+{
+  "opendb_id": "743487d9-1b75-4466-a33f-41d023a8ddd1",
+  "metadata": {
+    "name": "Seagate IronWolf NAS 6TB HDD 5400RPM 3.5\" SATA",
+    "manufacturer": "Seagate",
+    "part_numbers": ["ST6000VN006"],
+    "series": "IronWolf",
+    "variant": "6000GB"
+  },
+  "capacity": 6000,
+  "type": "HDD",
+  "form_factor": "3.5\"",
+  "interface": "SATA 6.0 Gb/s",
+  "nvme": false,
+  "storage_type": "HDD",
+  "lighting": [],
+  "general_product_information": {
+    "amazon_sku": "B0BNGN1DL3",
+    "newegg_sku": "1Z4-002P-02HT3",
+    "walmart_sku": 2148822552
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "opendb_id": "e3b092e9-56a0-44cc-9069-d7af07b18e1b",
+  "metadata": {
+    "name": "Logitech M220 Wireless Mouse with Silent Clicks",
+    "manufacturer": "Logitech",
+    "part_numbers": ["910-004878", "910-006127"],
+    "releaseYear": 2016
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": ["None"],
+  "rgb": false,
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B01JPOM1K8",
+    "newegg_sku": "N82E16826197606",
+    "bestbuy_sku": 6481446,
+    "walmart_sku": 962460760
+  }
+}

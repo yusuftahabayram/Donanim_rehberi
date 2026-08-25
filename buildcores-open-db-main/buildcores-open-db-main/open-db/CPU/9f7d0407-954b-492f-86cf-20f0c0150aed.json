@@ -1,0 +1,62 @@
+{
+  "opendb_id": "9f7d0407-954b-492f-86cf-20f0c0150aed",
+  "cores": {
+    "total": 4,
+    "performance": 0,
+    "threads": 8,
+    "efficiency": 0
+  },
+  "clocks": {
+    "performance": {
+      "base": 3.5,
+      "boost": 4.7
+    },
+    "efficiency": {
+      "base": 0,
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l2": 5,
+    "l3": 12,
+    "l1": "4 × 32 KB Instruction Cache + 4 × 48 KB Data Cache"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "None",
+      "baseClock": 0,
+      "boostClock": 0,
+      "shaderCount": 0
+    },
+    "memory": {
+      "maxSupport": 192,
+      "types": ["DDR5", "DDR4"],
+      "channels": 2
+    },
+    "tdp": 58,
+    "eccSupport": false,
+    "includesCooler": true,
+    "packaging": "Boxed",
+    "lithography": "Intel 7",
+    "simultaneousMultithreading": true,
+    "ppt": 110
+  },
+  "metadata": {
+    "name": "Intel Core i3 14100F",
+    "manufacturer": "Intel",
+    "part_numbers": ["BX8071514100F", "14100F"],
+    "series": "Core i3 14000",
+    "variant": "14100F",
+    "releaseYear": 2024
+  },
+  "series": "Core i3 14000",
+  "microarchitecture": "Raptor Lake Refresh",
+  "coreFamily": "Raptor Cove",
+  "socket": "LGA 1700",
+  "general_product_information": {
+    "amazon_sku": "B0CQ1MN1Y2",
+    "newegg_sku": "N82E16819118492",
+    "walmart_sku": 5323211868,
+    "manufacturer_url": "https://www.intel.com/content/www/us/en/products/sku/236786/intel-core-i3-processor-14100f-12m-cache-up-to-4-70-ghz/specifications.html"
+  }
+}

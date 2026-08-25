@@ -1,0 +1,15 @@
+{
+  "opendb_id": "a2affa78-cc29-4acd-a6a1-100f6216847f",
+  "metadata": {
+    "name": "Glorious Model O Wireless",
+    "manufacturer": "Glorious",
+    "series": "Model O Wireless",
+    "part_numbers": ["GLO-MS-OW-MB"]
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B08HR84S47"
+  }
+}

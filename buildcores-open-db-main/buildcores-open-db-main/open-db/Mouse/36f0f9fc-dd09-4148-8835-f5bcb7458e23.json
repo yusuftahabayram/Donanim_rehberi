@@ -1,0 +1,17 @@
+{
+  "opendb_id": "36f0f9fc-dd09-4148-8835-f5bcb7458e23",
+  "metadata": {
+    "name": "ASUS ROG Strix Impact III Wireless",
+    "manufacturer": "ASUS",
+    "series": "ROG Strix Impact III Wireless",
+    "part_numbers": ["90MP03D0-BMUA00"]
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0CVR5DM26",
+    "bestbuy_sku": 6606310,
+    "walmart_sku": 5541110124
+  }
+}

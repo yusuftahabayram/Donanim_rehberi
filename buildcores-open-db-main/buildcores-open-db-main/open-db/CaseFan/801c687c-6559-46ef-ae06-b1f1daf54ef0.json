@@ -1,0 +1,30 @@
+{
+  "opendb_id": "801c687c-6559-46ef-ae06-b1f1daf54ef0",
+  "metadata": {
+    "name": "NF-A14x25r G2 PWM chromax.black",
+    "manufacturer": "Noctua",
+    "series": "NF",
+    "variant": "Round Frame",
+    "manufacturer_color": "Chromax Black",
+    "part_numbers": ["nf-a14x25r-g2-pwm-chromax-black", "NF-A14X25RG2PWMCHR"],
+    "releaseYear": 2025
+  },
+  "size": 140,
+  "color": ["BLACK"],
+  "lighting": ["None"],
+  "quantity": 1,
+  "pwm": true,
+  "connector": "4-pin PWM",
+  "isOEM": false,
+  "flow_direction": "Standard",
+  "min_airflow": 91.58,
+  "min_noise_level": 24.8,
+  "led": "None",
+  "controller": "None",
+  "static_pressure": 2.56,
+  "general_product_information": {
+    "amazon_sku": "B0FXGV5X12",
+    "newegg_sku": "9SIAZTUKPX3838",
+    "manufacturer_url": "https://www.noctua.at/en/products/nf-a14x25r-g2-pwm-chromax-black"
+  }
+}

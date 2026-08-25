@@ -1,0 +1,36 @@
+{
+  "opendb_id": "a0f85eaf-7572-4d77-8463-0a7940002c3e",
+  "modules": {
+    "quantity": 2,
+    "capacity_gb": 24
+  },
+  "metadata": {
+    "name": "G.Skill Trident Z5 Royal Neo RGB Silver DDR5-6000 CL28 48GB (2x24GB)",
+    "manufacturer": "G.SKILL",
+    "part_numbers": ["F5-6000J2836F24GX2-TR5NS", "F5-6000J2636H32GX2-TR5NS"],
+    "series": "Trident Z5 Royal Neo RGB",
+    "manufacturer_color": "Silver (Mirror Finish)",
+    "releaseYear": 2024
+  },
+  "speed": 6000,
+  "ram_type": "DDR5",
+  "form_factor": "288-pin DIMM",
+  "capacity": 48,
+  "color": ["GREY"],
+  "cas_latency": 28,
+  "timings": "28-36-36-96",
+  "voltage": 1.35,
+  "ecc": "Non-ECC",
+  "registered": "Unbuffered",
+  "heat_spreader": true,
+  "rgb": false,
+  "profile_support": ["EXPO"],
+  "lighting": ["ARGB"],
+  "height": 44,
+  "general_product_information": {
+    "amazon_sku": "B0F1XD2MX6",
+    "newegg_sku": "N82E16820374707",
+    "walmart_sku": 16179974513,
+    "manufacturer_url": "https://www.gskill.com/product/165/425/1736132937/F5-6000J2836F24GX2-TR5NS"
+  }
+}

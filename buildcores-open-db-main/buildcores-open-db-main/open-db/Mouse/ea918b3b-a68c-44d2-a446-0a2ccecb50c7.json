@@ -1,0 +1,16 @@
+{
+  "opendb_id": "ea918b3b-a68c-44d2-a446-0a2ccecb50c7",
+  "metadata": {
+    "name": "ATK Z1 Ultra",
+    "manufacturer": "ATK",
+    "series": "Z1",
+    "variant": "Ultra",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FNCPVNNN"
+  }
+}

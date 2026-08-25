@@ -1,0 +1,30 @@
+{
+  "opendb_id": "9de4e999-027c-40d3-9422-0a0135184e90",
+  "metadata": {
+    "name": "Noctua NF-A9 5V PWM",
+    "manufacturer": "Noctua",
+    "series": "NF-A",
+    "variant": "5V PWM",
+    "manufacturer_color": "Brown",
+    "part_numbers": ["nf-a9-5v-pwm"],
+    "releaseYear": 2018
+  },
+  "size": 92,
+  "color": ["BROWN"],
+  "lighting": ["None"],
+  "quantity": 1,
+  "pwm": true,
+  "connector": "4-pin PWM",
+  "isOEM": false,
+  "flow_direction": "Standard",
+  "min_airflow": 46.4,
+  "min_noise_level": 22.8,
+  "static_pressure": 2.28,
+  "controller": "None",
+  "led": "None",
+  "general_product_information": {
+    "amazon_sku": "B07DXTN515",
+    "newegg_sku": "9SIAADY7K70250",
+    "walmart_sku": 19988715846
+  }
+}

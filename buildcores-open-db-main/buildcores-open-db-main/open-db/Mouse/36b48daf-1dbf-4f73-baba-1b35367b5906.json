@@ -1,0 +1,15 @@
+{
+  "opendb_id": "36b48daf-1dbf-4f73-baba-1b35367b5906",
+  "metadata": {
+    "name": "Logitech G3",
+    "manufacturer": "Logitech",
+    "series": "G3",
+    "part_numbers": []
+  },
+  "connectivity": ["Wired"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B000GUK31K"
+  }
+}

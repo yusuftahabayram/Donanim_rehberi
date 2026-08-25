@@ -1,0 +1,20 @@
+{
+  "opendb_id": "f55eb03a-d70f-4fcb-96de-b537cc5f97c5",
+  "metadata": {
+    "name": "Seagate Barracuda Compute 1TB 3.5\" HDD 5400RPM SATA",
+    "manufacturer": "Seagate",
+    "part_numbers": ["ST1000DMZ10"],
+    "series": "Barracuda",
+    "variant": "1000GB"
+  },
+  "capacity": 1000,
+  "type": "HDD",
+  "form_factor": "3.5\"",
+  "interface": "SATA 6.0 Gb/s",
+  "nvme": false,
+  "storage_type": "HDD",
+  "lighting": [],
+  "general_product_information": {
+    "newegg_sku": "9SIAG98JHT6039"
+  }
+}

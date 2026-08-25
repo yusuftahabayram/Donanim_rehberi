@@ -1,0 +1,17 @@
+{
+  "opendb_id": "8a2bc865-bb98-4d86-9e95-f18c3ea06143",
+  "metadata": {
+    "name": "ASUS ROG Gladius II Origin",
+    "manufacturer": "ASUS",
+    "series": "ROG Gladius II",
+    "variant": "Origin",
+    "part_numbers": []
+  },
+  "connectivity": ["Wired"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B079RYNX33",
+    "walmart_sku": 301975837
+  }
+}

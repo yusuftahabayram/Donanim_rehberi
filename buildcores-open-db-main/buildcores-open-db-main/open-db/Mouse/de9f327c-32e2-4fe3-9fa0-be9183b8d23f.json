@@ -1,0 +1,15 @@
+{
+  "opendb_id": "de9f327c-32e2-4fe3-9fa0-be9183b8d23f",
+  "metadata": {
+    "name": "Logitech M171",
+    "manufacturer": "Logitech",
+    "series": "M171",
+    "part_numbers": ["910-004424"]
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B01A9GXEOI"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "opendb_id": "1bacabc7-9703-497b-9c7a-5a12fcf89287",
+  "metadata": {
+    "name": "MCHOSE G3 SE",
+    "manufacturer": "MCHOSE",
+    "series": "G3",
+    "variant": "SE",
+    "part_numbers": []
+  },
+  "grip_types": [],
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "general_product_information": {
+    "amazon_sku": "B0DDT67T42"
+  }
+}

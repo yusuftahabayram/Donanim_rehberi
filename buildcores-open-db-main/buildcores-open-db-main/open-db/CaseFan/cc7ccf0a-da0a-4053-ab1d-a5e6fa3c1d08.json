@@ -1,0 +1,31 @@
+{
+  "opendb_id": "cc7ccf0a-da0a-4053-ab1d-a5e6fa3c1d08",
+  "metadata": {
+    "name": "Noctua NF-A4x10 PWM",
+    "manufacturer": "Noctua",
+    "series": "A4x10",
+    "variant": "PWM",
+    "manufacturer_color": "Brown",
+    "part_numbers": ["nf-a4x10-pwm", "NF-A4x10-PWM"],
+    "releaseYear": 2018
+  },
+  "size": 40,
+  "color": ["BROWN"],
+  "quantity": 1,
+  "pwm": true,
+  "connector": "4-pin PWM",
+  "lighting": ["None"],
+  "isOEM": false,
+  "flow_direction": "Standard",
+  "min_airflow": 5.24,
+  "min_noise_level": 19.6,
+  "static_pressure": 1.95,
+  "led": "None",
+  "controller": "None",
+  "general_product_information": {
+    "amazon_sku": "B07DXRNYNX",
+    "newegg_sku": "9SIAZTUKK39057",
+    "walmart_sku": 20348272253,
+    "manufacturer_url": "https://www.noctua.at/en/products/nf-a4x10-pwm/specifications"
+  }
+}

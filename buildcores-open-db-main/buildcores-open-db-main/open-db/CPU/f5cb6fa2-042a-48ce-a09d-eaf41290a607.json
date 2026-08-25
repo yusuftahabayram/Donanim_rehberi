@@ -1,0 +1,62 @@
+{
+  "opendb_id": "f5cb6fa2-042a-48ce-a09d-eaf41290a607",
+  "cores": {
+    "total": 14,
+    "threads": 20,
+    "performance": 6,
+    "efficiency": 8
+  },
+  "clocks": {
+    "performance": {
+      "base": 2.5,
+      "boost": 4.8
+    },
+    "efficiency": {
+      "base": 1.8,
+      "boost": 3.5
+    }
+  },
+  "cache": {
+    "l2": 11.5,
+    "l3": 24,
+    "l1": "896 KB total (6 P-cores × 64 KB + 8 E-cores × 64 KB per core equivalent)"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "Intel UHD Graphics 770",
+      "baseClock": 300,
+      "boostClock": 1550,
+      "shaderCount": 256
+    },
+    "memory": {
+      "maxSupport": 192,
+      "types": ["DDR5", "DDR4"],
+      "channels": 2
+    },
+    "tdp": 65,
+    "eccSupport": true,
+    "includesCooler": true,
+    "packaging": "Boxed",
+    "lithography": "Intel 7",
+    "simultaneousMultithreading": true,
+    "ppt": 154
+  },
+  "metadata": {
+    "name": "Intel Core i5 13500",
+    "manufacturer": "Intel",
+    "part_numbers": ["BX8071513500", "BX8071513400F"],
+    "variant": "13500",
+    "releaseYear": 2023,
+    "series": "Core i5 13000"
+  },
+  "series": "Core i5 13000",
+  "microarchitecture": "Raptor Lake",
+  "coreFamily": "Raptor Lake-S",
+  "socket": "LGA 1700",
+  "general_product_information": {
+    "amazon_sku": "B0BN5YLBRG",
+    "bestbuy_sku": 6530251,
+    "walmart_sku": 2066661668,
+    "manufacturer_url": "https://www.intel.com/content/www/us/en/products/sku/230580/intel-core-i513500-processor-24m-cache-up-to-4-80-ghz/specifications.html"
+  }
+}

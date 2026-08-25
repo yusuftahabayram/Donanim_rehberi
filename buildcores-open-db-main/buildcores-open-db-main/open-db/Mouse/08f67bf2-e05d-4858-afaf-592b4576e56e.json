@@ -1,0 +1,18 @@
+{
+  "opendb_id": "08f67bf2-e05d-4858-afaf-592b4576e56e",
+  "metadata": {
+    "name": "HyperX Pulsefire Fuse",
+    "manufacturer": "HyperX",
+    "series": "Pulsefire Fuse",
+    "part_numbers": ["A1KY6AA"]
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0DSQ3J7JD",
+    "newegg_sku": "N82E16826738043",
+    "bestbuy_sku": 6626288,
+    "walmart_sku": 15754969062
+  }
+}

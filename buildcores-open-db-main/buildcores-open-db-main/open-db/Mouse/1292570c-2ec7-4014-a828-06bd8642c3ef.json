@@ -1,0 +1,16 @@
+{
+  "opendb_id": "1292570c-2ec7-4014-a828-06bd8642c3ef",
+  "metadata": {
+    "name": "AJAZZ AM3 Max",
+    "manufacturer": "AJAZZ",
+    "series": "AM3",
+    "variant": "Max",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0DG51Z3RH"
+  }
+}

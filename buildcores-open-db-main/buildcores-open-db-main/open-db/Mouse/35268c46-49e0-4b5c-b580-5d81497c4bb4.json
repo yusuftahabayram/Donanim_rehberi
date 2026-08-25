@@ -1,0 +1,16 @@
+{
+  "opendb_id": "35268c46-49e0-4b5c-b580-5d81497c4bb4",
+  "metadata": {
+    "name": "MCHOSE G3 Max",
+    "manufacturer": "MCHOSE",
+    "series": "G3",
+    "variant": "Max",
+    "part_numbers": []
+  },
+  "grip_types": [],
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "general_product_information": {
+    "amazon_sku": "B0DDT67T42"
+  }
+}

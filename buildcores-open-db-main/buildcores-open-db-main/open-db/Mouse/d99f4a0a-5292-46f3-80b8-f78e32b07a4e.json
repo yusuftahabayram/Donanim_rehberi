@@ -1,0 +1,16 @@
+{
+  "opendb_id": "d99f4a0a-5292-46f3-80b8-f78e32b07a4e",
+  "metadata": {
+    "name": "Zowie ZA11-C",
+    "manufacturer": "Zowie",
+    "series": "ZA11-C",
+    "part_numbers": []
+  },
+  "grip_types": [],
+  "connectivity": ["Wired"],
+  "lighting": [],
+  "general_product_information": {
+    "amazon_sku": "B09MF3JXQ3",
+    "walmart_sku": 1337291746
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "opendb_id": "27778427-bef4-4f66-91df-9b3be67b7e2e",
+  "cores": {
+    "total": 2,
+    "performance": 0,
+    "threads": 2,
+    "efficiency": 0
+  },
+  "clocks": {
+    "performance": {
+      "base": 3.5,
+      "boost": 3.9
+    },
+    "efficiency": {
+      "boost": 0,
+      "base": 0
+    }
+  },
+  "cache": {
+    "l2": 1,
+    "l3": 0,
+    "l1": "2 × 32 KB Instruction + 2 × 32 KB Data (64 KB total)"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "AMD Radeon R5 Graphics",
+      "boostClock": 758,
+      "baseClock": 0,
+      "shaderCount": 0
+    },
+    "memory": {
+      "maxSupport": 32,
+      "types": ["DDR3"],
+      "channels": 2
+    },
+    "tdp": 65,
+    "eccSupport": false,
+    "packaging": "Boxed",
+    "lithography": "28 nm",
+    "simultaneousMultithreading": false,
+    "ppt": 0,
+    "includesCooler": false
+  },
+  "metadata": {
+    "name": "AMD A6-7400K",
+    "manufacturer": "AMD",
+    "part_numbers": ["AD740KYBJABOX"],
+    "series": "A6-7000",
+    "variant": "A6-7400K",
+    "releaseYear": 2014
+  },
+  "series": "A6-7000",
+  "microarchitecture": "Steamroller",
+  "coreFamily": "Kaveri",
+  "socket": "FM2+",
+  "general_product_information": {
+    "amazon_sku": "B00LUH17XG",
+    "newegg_sku": "N82E16819113370",
+    "walmart_sku": 39520847,
+    "manufacturer_url": "https://www.amd.com/en/support/downloads/drivers.html/processors/a-series/a6-series-apu-for-desktops/a6-7400k-with-radeon-r5-series.html"
+  }
+}

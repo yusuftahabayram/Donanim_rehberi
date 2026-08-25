@@ -1,0 +1,16 @@
+{
+  "opendb_id": "61cdada2-a9a1-4319-b82d-cb162b64b273",
+  "metadata": {
+    "name": "MACHENIKE L8 Max",
+    "manufacturer": "MACHENIKE",
+    "series": "L8",
+    "variant": "Max",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0D95R8LFL"
+  }
+}

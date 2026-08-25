@@ -1,0 +1,18 @@
+{
+  "opendb_id": "d714b7b5-d688-4174-a332-016c81f26efd",
+  "metadata": {
+    "name": "Turtle Beach Burst II Air",
+    "manufacturer": "Turtle Beach",
+    "series": "Burst II Air",
+    "part_numbers": ["TBM-2101-15"]
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0D1CS6C2L",
+    "newegg_sku": "173-023K-00015",
+    "bestbuy_sku": 6579502,
+    "walmart_sku": 13479117352
+  }
+}

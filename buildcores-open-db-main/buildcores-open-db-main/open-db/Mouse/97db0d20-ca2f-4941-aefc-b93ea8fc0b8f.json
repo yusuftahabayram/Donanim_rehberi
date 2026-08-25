@@ -1,0 +1,16 @@
+{
+  "opendb_id": "97db0d20-ca2f-4941-aefc-b93ea8fc0b8f",
+  "metadata": {
+    "name": "Logitech M238",
+    "manufacturer": "Logitech",
+    "series": "M238",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B08HVG4NNQ",
+    "walmart_sku": 428460291
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "opendb_id": "da07eb58-65e8-4975-919a-ec1bdea318f0",
+  "metadata": {
+    "name": "Turtle Beach Kone II Air",
+    "manufacturer": "Turtle Beach",
+    "series": "Kone II",
+    "variant": "Air",
+    "part_numbers": ["TBM-1104-05"]
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0D9MDNG7D",
+    "newegg_sku": "173-023K-00024",
+    "bestbuy_sku": 6596706,
+    "walmart_sku": 13495553727
+  }
+}

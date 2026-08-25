@@ -1,0 +1,15 @@
+{
+  "opendb_id": "39b82310-7bf5-49e0-8db4-e121991766ca",
+  "metadata": {
+    "name": "ATK U2",
+    "manufacturer": "ATK",
+    "series": "U2",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FHHDR9NQ"
+  }
+}

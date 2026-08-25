@@ -1,0 +1,61 @@
+{
+  "opendb_id": "ea572259-ac1a-4233-9294-5981726af669",
+  "cores": {
+    "total": 6,
+    "performance": 0,
+    "threads": 12,
+    "efficiency": 0
+  },
+  "clocks": {
+    "performance": {
+      "base": 3.4,
+      "boost": 4.8
+    },
+    "efficiency": {
+      "base": 0,
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l2": 1.5,
+    "l3": 12,
+    "l1": "6 × 32 KB Instruction + 6 × 32 KB Data (384 KB total)"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "None",
+      "baseClock": 0,
+      "boostClock": 0,
+      "shaderCount": 0
+    },
+    "memory": {
+      "maxSupport": 128,
+      "types": ["DDR4"],
+      "channels": 2
+    },
+    "tdp": 80,
+    "eccSupport": true,
+    "includesCooler": false,
+    "packaging": "OEM/Tray",
+    "lithography": "14 nm",
+    "simultaneousMultithreading": true,
+    "ppt": 0
+  },
+  "metadata": {
+    "name": "Intel Xeon E-2236 OEM/Tray",
+    "manufacturer": "Intel",
+    "part_numbers": ["CM8068404174603"],
+    "series": "Xeon E 2200",
+    "releaseYear": 2019,
+    "variant": "2236"
+  },
+  "series": "Xeon E 2200",
+  "microarchitecture": "Coffee Lake",
+  "coreFamily": "Coffee Lake-S WS",
+  "socket": "LGA 1151",
+  "general_product_information": {
+    "amazon_sku": "B088WL697P",
+    "walmart_sku": 10692270066,
+    "manufacturer_url": "https://www.intel.com/content/www/us/en/products/sku/191040/intel-xeon-e2236-processor-12m-cache-3-40-ghz/specifications.html"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "opendb_id": "4e7cc444-43db-41c6-8f70-fdee1932ee05",
+  "cores": {
+    "total": 8,
+    "performance": 0,
+    "threads": 16,
+    "efficiency": 0
+  },
+  "clocks": {
+    "performance": {
+      "base": 3.1,
+      "boost": 5
+    },
+    "efficiency": {
+      "boost": 0,
+      "base": 0
+    }
+  },
+  "cache": {
+    "l2": 2,
+    "l3": 16,
+    "l1": "8 × 32 KB Instruction + 8 × 32 KB Data (512 KB total)"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "Intel UHD Graphics 630",
+      "baseClock": 350,
+      "boostClock": 1200,
+      "shaderCount": 192
+    },
+    "memory": {
+      "maxSupport": 128,
+      "types": ["DDR4"],
+      "channels": 2
+    },
+    "tdp": 65,
+    "eccSupport": false,
+    "includesCooler": true,
+    "packaging": "Boxed",
+    "lithography": "14 nm",
+    "simultaneousMultithreading": true,
+    "ppt": 0
+  },
+  "metadata": {
+    "name": "Intel Core i9 9900",
+    "manufacturer": "Intel",
+    "part_numbers": ["BX80684I99900", "i9-9900"],
+    "series": "Core i9 9000",
+    "variant": "9900",
+    "releaseYear": 2019
+  },
+  "series": "Core i9 9000",
+  "microarchitecture": "Coffee Lake Refresh",
+  "coreFamily": "Coffee Lake",
+  "socket": "LGA 1151",
+  "general_product_information": {
+    "amazon_sku": "B07RXX3Y2T",
+    "newegg_sku": "9SIAM8PJS64319",
+    "bestbuy_sku": 6347262,
+    "walmart_sku": 547567713,
+    "manufacturer_url": "https://www.intel.com/content/www/us/en/products/sku/191789/intel-core-i99900-processor-16m-cache-up-to-5-00-ghz/specifications.html"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "opendb_id": "2c4c4bad-f2b5-436d-93a3-d8acb401775b",
+  "metadata": {
+    "name": "Corsair SABRE v2 PRO UltraLight FPS Wireless Gaming Mouse – White",
+    "manufacturer": "Corsair",
+    "series": "Sabre v2 Pro",
+    "variant": "CF",
+    "part_numbers": ["CH-931G001-WW"],
+    "releaseYear": 2024
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": ["None"],
+  "rgb": false,
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FKHRDL6N"
+  }
+}

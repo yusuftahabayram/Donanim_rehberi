@@ -1,0 +1,35 @@
+{
+  "opendb_id": "a0a8af39-9da8-4a8d-bf90-5f58cbdcc32c",
+  "connectors": {
+    "atx_24_pin": 1,
+    "eps_8_pin": 2,
+    "sata": 12,
+    "floppy_4_pin": 0,
+    "molex_4_pin": 6,
+    "pcie_12vhpwr": 1,
+    "pcie_6_plus_2_pin": 10
+  },
+  "metadata": {
+    "name": "Asus ROG THOR T3 GAMING Black 1600W Fully Modular 80+ Titanium Certified",
+    "manufacturer": "Asus",
+    "part_numbers": ["ROG-THOR-1600T3-GAMING", "ROG-THOR-1600T-GAMING"],
+    "series": "ROG Thor",
+    "variant": "1600W Titanium III",
+    "manufacturer_color": "Black/Silver"
+  },
+  "wattage": 1600,
+  "form_factor": "ATX",
+  "efficiency_rating": "80+ Titanium",
+  "modular": "Full",
+  "color": ["BLACK"],
+  "length": 200,
+  "fanless": false,
+  "lighting": ["ARGB", "Display"],
+  "cybernetics_efficiency_rating": "Cybenetics Titanium",
+  "cybernetics_noise_rating": "Cybenetics A++",
+  "general_product_information": {
+    "amazon_sku": "B08H21WHLJ",
+    "newegg_sku": "1HU-009B-001N6",
+    "manufacturer_url": "https://rog.asus.com/power-supply-units/rog-thor/rog-thor-1600t-gaming-model/spec/"
+  }
+}

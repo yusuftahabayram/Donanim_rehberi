@@ -1,0 +1,22 @@
+{
+  "opendb_id": "f5c18f53-7211-4090-b021-3a9610cb1ff7",
+  "metadata": {
+    "name": "MSI CLUTCH GM41 LIGHTWEIGHT V2",
+    "manufacturer": "MSI",
+    "part_numbers": ["CLUTCH GM41 LIGHTWEIGHT V2", "ClutchGM41", "Clutch GM41"],
+    "series": "CLUTCH",
+    "variant": "GM41 LIGHTWEIGHT V2",
+    "releaseYear": 2022
+  },
+  "connectivity": ["Wired USB-A"],
+  "rgb": true,
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B08WJFMR7C",
+    "newegg_sku": "9SIA24GHPH4123",
+    "bestbuy_sku": 10327969,
+    "walmart_sku": 997209259,
+    "manufacturer_url": "https://www.msi.com/Gaming-Gear/CLUTCH-GM41-LIGHTWEIGHT-V2/Specification"
+  }
+}

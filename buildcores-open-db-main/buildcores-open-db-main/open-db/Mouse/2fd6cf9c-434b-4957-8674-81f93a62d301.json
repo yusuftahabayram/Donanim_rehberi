@@ -1,0 +1,15 @@
+{
+  "opendb_id": "2fd6cf9c-434b-4957-8674-81f93a62d301",
+  "metadata": {
+    "name": "MCHOSE AX5",
+    "manufacturer": "MCHOSE",
+    "series": "AX5",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0CTJJ99WK"
+  }
+}

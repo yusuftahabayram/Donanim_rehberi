@@ -1,0 +1,16 @@
+{
+  "opendb_id": "a35db137-d54c-4264-a0db-0e3522d0da97",
+  "metadata": {
+    "name": "ASUS ROG Strix Evolve",
+    "manufacturer": "ASUS",
+    "series": "ROG Strix Evolve",
+    "part_numbers": []
+  },
+  "connectivity": ["Wired"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B073SX44NX",
+    "walmart_sku": 956168103
+  }
+}

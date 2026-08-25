@@ -1,0 +1,18 @@
+{
+  "opendb_id": "d33d4d0d-8860-4f19-8552-1e00decd62fe",
+  "metadata": {
+    "name": "Nintendo Joy-Con 2",
+    "manufacturer": "Nintendo",
+    "series": "Joy-Con 2",
+    "part_numbers": ["BEEAJAAAA"]
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B09Z1KQLW2",
+    "newegg_sku": "N82E16878966020",
+    "bestbuy_sku": 6625915,
+    "walmart_sku": 15898519412
+  }
+}

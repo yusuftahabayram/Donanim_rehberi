@@ -1,0 +1,18 @@
+{
+  "opendb_id": "2a64a9cd-ce03-4a36-8711-24a437353221",
+  "metadata": {
+    "name": "SteelSeries Rival 3 Gen 2",
+    "manufacturer": "SteelSeries",
+    "series": "Rival 3 Gen 2",
+    "part_numbers": ["62702"]
+  },
+  "connectivity": ["Wired"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0F6BDV5Q8",
+    "newegg_sku": "N82E16826249282",
+    "bestbuy_sku": 6621855,
+    "walmart_sku": 14706066124
+  }
+}

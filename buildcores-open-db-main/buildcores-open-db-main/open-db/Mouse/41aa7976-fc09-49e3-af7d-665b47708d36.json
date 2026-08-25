@@ -1,0 +1,15 @@
+{
+  "opendb_id": "41aa7976-fc09-49e3-af7d-665b47708d36",
+  "metadata": {
+    "name": "Ducky Feather",
+    "manufacturer": "Ducky",
+    "series": "Feather",
+    "part_numbers": []
+  },
+  "connectivity": ["Wired"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0928F9YFQ"
+  }
+}

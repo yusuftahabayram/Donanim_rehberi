@@ -1,0 +1,23 @@
+{
+  "opendb_id": "c0a9c9b8-e0b3-49fb-8398-d3d0661cc87c",
+  "metadata": {
+    "name": "Razer Viper V3 Pro Wireless/Wired Gaming Mouse Black",
+    "manufacturer": "Razer",
+    "part_numbers": ["RZ01-05120100-R3U1", "RZ01-05120100-R3G1"],
+    "series": "Viper",
+    "variant": "V3 Pro",
+    "releaseYear": 2024
+  },
+  "connectivity": ["Wireless 2.4GHz", "Wired USB-A"],
+  "rgb": false,
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0CW25XR5R",
+    "newegg_sku": "26J-05FW-00003",
+    "bestbuy_sku": 6576242,
+    "walmart_sku": 5464020169,
+    "ibuypower_sku": "29694",
+    "manufacturer_url": "https://www.razer.com/gaming-mice/razer-viper-v3-pro"
+  }
+}

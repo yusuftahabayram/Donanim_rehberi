@@ -1,0 +1,30 @@
+{
+  "opendb_id": "253f4366-c492-4a9a-ae25-b03a9f6498fb",
+  "metadata": {
+    "name": "Noctua P14s redux-900 140mm Black / Gray",
+    "manufacturer": "Noctua",
+    "part_numbers": ["NF-P14s redux-900", "NF-P14S.REDUX-900"],
+    "series": "Redux P14",
+    "variant": "900",
+    "manufacturer_color": "Grey"
+  },
+  "size": 140,
+  "color": ["BLACK", "GREY"],
+  "quantity": 1,
+  "min_airflow": 49.26,
+  "max_airflow": null,
+  "min_noise_level": 13.2,
+  "max_noise_level": null,
+  "pwm": false,
+  "led": "None",
+  "connector": "3-pin",
+  "controller": "None",
+  "static_pressure": 0.77,
+  "flow_direction": "Standard",
+  "isOEM": false,
+  "lighting": [],
+  "general_product_information": {
+    "amazon_sku": "B00KF7NGUE",
+    "newegg_sku": "N82E16835608062"
+  }
+}

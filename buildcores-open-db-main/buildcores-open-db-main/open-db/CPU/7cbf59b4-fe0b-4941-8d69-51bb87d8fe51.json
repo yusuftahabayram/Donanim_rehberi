@@ -1,0 +1,63 @@
+{
+  "opendb_id": "7cbf59b4-fe0b-4941-8d69-51bb87d8fe51",
+  "cores": {
+    "total": 14,
+    "threads": 14,
+    "performance": 6,
+    "efficiency": 8
+  },
+  "clocks": {
+    "performance": {
+      "base": 4.2,
+      "boost": 5.2
+    },
+    "efficiency": {
+      "base": 3.6,
+      "boost": 4.6
+    }
+  },
+  "cache": {
+    "l2": 26,
+    "l3": 24,
+    "l1": "192KB per P-core, 96KB per E-core"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "Intel Xe-LPG Graphics",
+      "baseClock": 300,
+      "boostClock": 1.9,
+      "shaderCount": 512
+    },
+    "memory": {
+      "maxSupport": 256,
+      "types": ["DDR5"],
+      "channels": 2
+    },
+    "tdp": 125,
+    "eccSupport": true,
+    "includesCooler": false,
+    "packaging": "Boxed",
+    "lithography": "TSMC N3B",
+    "simultaneousMultithreading": false,
+    "ppt": 159
+  },
+  "metadata": {
+    "name": "Intel Core Ultra 5 245K",
+    "manufacturer": "Intel",
+    "part_numbers": ["BX80768245K", "Intel Core Ultra 5 245K"],
+    "series": "Core Ultra 5 200",
+    "variant": "245K",
+    "releaseYear": 2024
+  },
+  "series": "Core Ultra 5 200",
+  "microarchitecture": "Arrow Lake",
+  "coreFamily": "Lion Cove / Skymont",
+  "socket": "LGA 1851",
+  "general_product_information": {
+    "amazon_sku": "B0DFK2P311",
+    "newegg_sku": "N82E16819118508",
+    "bestbuy_sku": 6602199,
+    "walmart_sku": 13530310617,
+    "manufacturer_url": "https://www.intel.com/content/www/us/en/products/sku/241067/intel-core-ultra-5-processor-245k-24m-cache-up-to-5-20-ghz/specifications.html"
+  }
+}

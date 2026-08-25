@@ -1,0 +1,61 @@
+{
+  "opendb_id": "e965f4ea-3d0e-4804-9364-309370fbb503",
+  "cores": {
+    "total": 6,
+    "performance": 0,
+    "efficiency": 0,
+    "threads": 12
+  },
+  "clocks": {
+    "performance": {
+      "base": 3.3,
+      "boost": 4.8
+    },
+    "efficiency": {
+      "base": 0,
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l1": "6 × 32 KB Instruction + 6 × 32 KB Data (384 KB total)",
+    "l2": 1.5,
+    "l3": 12
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "Intel UHD Graphics 630",
+      "baseClock": 350,
+      "boostClock": 1200,
+      "shaderCount": 192
+    },
+    "memory": {
+      "maxSupport": 128,
+      "types": ["DDR4"],
+      "channels": 2
+    },
+    "tdp": 65,
+    "eccSupport": false,
+    "includesCooler": false,
+    "packaging": "Boxed",
+    "lithography": "14 nm",
+    "simultaneousMultithreading": true,
+    "ppt": 0
+  },
+  "metadata": {
+    "name": "Intel Core i5 10600",
+    "part_numbers": ["BX8070110600"],
+    "releaseYear": 2020,
+    "manufacturer": "Intel",
+    "series": "Core i5 10000",
+    "variant": "10600"
+  },
+  "series": "Core i5 10000",
+  "microarchitecture": "Comet Lake",
+  "coreFamily": "Comet Lake",
+  "socket": "LGA 1200",
+  "general_product_information": {
+    "amazon_sku": "B086MG2B41",
+    "walmart_sku": 492720636,
+    "manufacturer_url": "https://www.intel.com/content/www/us/en/products/sku/199273/intel-core-i510600-processor-12m-cache-up-to-4-80-ghz/specifications.html"
+  }
+}

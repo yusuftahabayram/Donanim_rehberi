@@ -1,0 +1,19 @@
+{
+  "opendb_id": "38131c0f-dfed-4522-9a5e-37d094b0ca73",
+  "metadata": {
+    "name": "Logitech ERGO M575 Wireless Trackball",
+    "manufacturer": "Logitech",
+    "part_numbers": ["910-005873", "910-006197"],
+    "releaseYear": 2020
+  },
+  "connectivity": ["Bluetooth", "Wireless 2.4GHz"],
+  "lighting": ["None"],
+  "rgb": false,
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B09DKD9W52",
+    "newegg_sku": "9SIC6XKKZC1471",
+    "bestbuy_sku": 6609151,
+    "walmart_sku": 931785440
+  }
+}

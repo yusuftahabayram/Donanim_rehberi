@@ -1,0 +1,60 @@
+{
+  "opendb_id": "0b720985-1e1d-41a9-8ea8-aefcd398e2c5",
+  "cores": {
+    "total": 4,
+    "performance": 0,
+    "threads": 4,
+    "efficiency": 0
+  },
+  "clocks": {
+    "performance": {
+      "base": 3.1,
+      "boost": 3.8
+    },
+    "efficiency": {
+      "base": 0,
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l2": 2,
+    "l3": 0,
+    "l1": "4 × 32 KB Instruction + 4 × 32 KB Data (256 KB total)"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "AMD Radeon R7 Graphics",
+      "boostClock": 900,
+      "shaderCount": 0,
+      "baseClock": 0
+    },
+    "memory": {
+      "maxSupport": 64,
+      "types": ["DDR4"],
+      "channels": 2
+    },
+    "tdp": 35,
+    "eccSupport": false,
+    "includesCooler": false,
+    "packaging": "Boxed",
+    "lithography": "28 nm",
+    "simultaneousMultithreading": false,
+    "ppt": 0
+  },
+  "metadata": {
+    "name": "AMD A12-9800E",
+    "manufacturer": "AMD",
+    "part_numbers": ["AD9800AHABBOX", "B961023"],
+    "series": "A12-9000",
+    "variant": "9800E",
+    "releaseYear": 2017
+  },
+  "series": "A12-9000",
+  "microarchitecture": "Excavator",
+  "coreFamily": "Bristol Ridge",
+  "socket": "AM4",
+  "general_product_information": {
+    "amazon_sku": "B074BKRVL7",
+    "manufacturer_url": "https://www.amd.com/en/support/downloads/drivers.html/processors/pro-a-series/pro-a-series-a12-apu-for-desktops/7th-gen-amd-pro-a12-9800e-apu.html"
+  }
+}

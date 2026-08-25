@@ -1,0 +1,27 @@
+{
+  "opendb_id": "060659b6-1098-4bbc-82e5-53c6652e84f1",
+  "resolution": {
+    "horizontalRes": 1600,
+    "verticalRes": 1200
+  },
+  "metadata": {
+    "name": "LG L2000CP-BF 20\" 1600x1200 60Hz Monitor",
+    "manufacturer": "LG",
+    "part_numbers": ["L2000CP-BF"],
+    "series": "",
+    "variant": ""
+  },
+  "screen_size": 20,
+  "refresh_rate": 60,
+  "panel_type": null,
+  "response_time": 8,
+  "color": [],
+  "viewing_angle": "178° H x 178° V",
+  "aspect_ratio": "4:3",
+  "connectors": "1 x VGA                                                    1 x DVI",
+  "max_brightness": 300,
+  "hdr": "",
+  "adaptive_sync": "None",
+  "lighting": [],
+  "general_product_information": {}
+}

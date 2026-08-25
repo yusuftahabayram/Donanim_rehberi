@@ -1,0 +1,16 @@
+{
+  "opendb_id": "518032aa-a73e-4922-ae39-f0a44dd7cace",
+  "metadata": {
+    "name": "Fantech Tanto E",
+    "manufacturer": "Fantech",
+    "series": "Tanto",
+    "variant": "E",
+    "part_numbers": ["MSFTWG13EBK"]
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FV8SZYJP"
+  }
+}

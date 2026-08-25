@@ -1,0 +1,16 @@
+{
+  "opendb_id": "4cb66d44-61c7-4468-aa1f-2ceae2f70427",
+  "metadata": {
+    "name": "ATK X1 S",
+    "manufacturer": "ATK",
+    "series": "X1",
+    "variant": "S",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FND3KMC8"
+  }
+}

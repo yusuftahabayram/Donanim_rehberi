@@ -1,0 +1,60 @@
+{
+  "opendb_id": "d59fa7b6-066f-42cb-b1dd-d7a6b8b758fc",
+  "cores": {
+    "total": 14,
+    "performance": 0,
+    "efficiency": 0,
+    "threads": 28
+  },
+  "clocks": {
+    "performance": {
+      "base": 3.3,
+      "boost": 4.5
+    },
+    "efficiency": {
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l1": "14 × 32 KB Instruction + 14 × 32 KB Data (896 KB total)",
+    "l2": 14,
+    "l3": 19.25
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "None",
+      "baseClock": 0,
+      "boostClock": 0,
+      "shaderCount": 0
+    },
+    "memory": {
+      "maxSupport": 128,
+      "types": ["DDR4"],
+      "channels": 4
+    },
+    "tdp": 165,
+    "eccSupport": false,
+    "includesCooler": false,
+    "packaging": "Boxed",
+    "lithography": "14 nm",
+    "simultaneousMultithreading": true,
+    "ppt": 0
+  },
+  "metadata": {
+    "name": "Intel Core i9 9940X",
+    "part_numbers": ["BX80673I99940X"],
+    "releaseYear": 2018,
+    "manufacturer": "Intel",
+    "variant": "9940X",
+    "series": "Core i9 9000"
+  },
+  "series": "Core i9 9000",
+  "microarchitecture": "Skylake",
+  "coreFamily": "Skylake-X",
+  "socket": "LGA 2066",
+  "general_product_information": {
+    "amazon_sku": "B07JFH771Y",
+    "newegg_sku": "N82E16819117964",
+    "manufacturer_url": "https://www.intel.com/content/www/us/en/products/sku/189125/intel-core-i99940x-xseries-processor-19-25m-cache-up-to-4-50-ghz/specifications.html"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "opendb_id": "c7d21bb9-7688-49bd-ac6c-f5730c2a5b7f",
+  "cores": {
+    "total": 8,
+    "performance": 0,
+    "threads": 8,
+    "efficiency": 0
+  },
+  "clocks": {
+    "performance": {
+      "base": 3,
+      "boost": 4.7
+    },
+    "efficiency": {
+      "boost": 0,
+      "base": 0
+    }
+  },
+  "cache": {
+    "l2": 2,
+    "l3": 12,
+    "l1": "8 × 32 KB Instruction + 8 × 32 KB Data (512 KB total)"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "Intel HD Graphics 630",
+      "baseClock": 350,
+      "boostClock": 1200,
+      "shaderCount": 192
+    },
+    "memory": {
+      "maxSupport": 128,
+      "types": ["DDR4"],
+      "channels": 2
+    },
+    "tdp": 65,
+    "eccSupport": false,
+    "includesCooler": true,
+    "packaging": "Boxed",
+    "lithography": "14 nm",
+    "simultaneousMultithreading": false,
+    "ppt": 0
+  },
+  "metadata": {
+    "name": "Intel Core i7 9700",
+    "manufacturer": "Intel",
+    "part_numbers": ["CM8068403874521"],
+    "series": "Core i7 9000",
+    "variant": "9700",
+    "releaseYear": 2019
+  },
+  "series": "Core i7 9000",
+  "microarchitecture": "Coffee Lake Refresh",
+  "coreFamily": "Coffee Lake Refresh",
+  "socket": "LGA 1151",
+  "general_product_information": {
+    "amazon_sku": "B07T7GHT9Q",
+    "walmart_sku": 675410578,
+    "manufacturer_url": "https://www.intel.com/content/www/us/en/products/sku/191792/intel-core-i79700-processor-12m-cache-up-to-4-70-ghz/specifications.html"
+  }
+}

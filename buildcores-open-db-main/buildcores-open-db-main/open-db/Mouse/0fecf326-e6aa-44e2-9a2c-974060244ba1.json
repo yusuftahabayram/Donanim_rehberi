@@ -1,0 +1,16 @@
+{
+  "opendb_id": "0fecf326-e6aa-44e2-9a2c-974060244ba1",
+  "metadata": {
+    "name": "Higround Yuma",
+    "manufacturer": "Higround",
+    "series": "Yuma",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0DNPJGDR9",
+    "bestbuy_sku": 6616982
+  }
+}

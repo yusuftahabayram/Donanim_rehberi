@@ -1,0 +1,19 @@
+{
+  "opendb_id": "5557e99c-64ba-415f-a843-8d6948b250d3",
+  "metadata": {
+    "name": "Logitech G502 X Plus LIGHTSPEED Wireless RGB Gaming Mouse",
+    "manufacturer": "Logitech G",
+    "part_numbers": ["910-006164"],
+    "releaseYear": 2022
+  },
+  "connectivity": ["Wireless 2.4GHz", "Wired USB-C"],
+  "rgb": true,
+  "lighting": ["RGB"],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B092CB69Q4",
+    "newegg_sku": "N82E16826197558",
+    "bestbuy_sku": 6512122,
+    "walmart_sku": 1710691658
+  }
+}

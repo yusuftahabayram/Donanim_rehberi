@@ -1,0 +1,16 @@
+{
+  "opendb_id": "dcaaa625-e7f6-4f5d-af6c-912e90fae1cb",
+  "metadata": {
+    "name": "Delux M900 Pro",
+    "manufacturer": "Delux",
+    "series": "M900",
+    "variant": "Pro",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0CZDPFXGX"
+  }
+}

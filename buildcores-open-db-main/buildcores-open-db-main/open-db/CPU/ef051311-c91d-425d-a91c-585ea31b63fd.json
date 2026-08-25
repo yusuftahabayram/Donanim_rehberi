@@ -1,0 +1,63 @@
+{
+  "opendb_id": "ef051311-c91d-425d-a91c-585ea31b63fd",
+  "cores": {
+    "total": 12,
+    "threads": 20,
+    "performance": 8,
+    "efficiency": 4
+  },
+  "clocks": {
+    "performance": {
+      "base": 3.6,
+      "boost": 5
+    },
+    "efficiency": {
+      "base": 2.7,
+      "boost": 3.8
+    }
+  },
+  "cache": {
+    "l2": 12,
+    "l3": 25,
+    "l1": "80 KB per P-core; 96 KB per E-core cluster"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "None",
+      "baseClock": 0,
+      "boostClock": 0,
+      "shaderCount": 0
+    },
+    "memory": {
+      "maxSupport": 128,
+      "types": ["DDR5", "DDR4"],
+      "channels": 2
+    },
+    "tdp": 125,
+    "eccSupport": false,
+    "includesCooler": false,
+    "packaging": "Boxed",
+    "lithography": "Intel 7",
+    "simultaneousMultithreading": true,
+    "ppt": 190
+  },
+  "metadata": {
+    "name": "Intel Core i7 12700KF",
+    "manufacturer": "Intel",
+    "part_numbers": ["BX8071512700KF"],
+    "series": "Core i7 12000",
+    "variant": "12700KF",
+    "releaseYear": 2021
+  },
+  "series": "Core i7 12000",
+  "microarchitecture": "Alder Lake",
+  "coreFamily": "Golden Cove / Gracemont",
+  "socket": "LGA 1700",
+  "general_product_information": {
+    "amazon_sku": "B09FXKHN7M",
+    "newegg_sku": "N82E16819118345",
+    "bestbuy_sku": 6483674,
+    "walmart_sku": 664508244,
+    "manufacturer_url": "https://www.intel.com/content/www/us/en/products/sku/134595/intel-core-i712700kf-processor-25m-cache-up-to-5-00-ghz/specifications.html"
+  }
+}

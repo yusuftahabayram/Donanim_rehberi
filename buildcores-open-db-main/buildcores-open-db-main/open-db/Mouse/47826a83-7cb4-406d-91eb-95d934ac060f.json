@@ -1,0 +1,16 @@
+{
+  "opendb_id": "47826a83-7cb4-406d-91eb-95d934ac060f",
+  "metadata": {
+    "name": "Mionix Naos 8200",
+    "manufacturer": "Mionix",
+    "series": "Naos 8200",
+    "part_numbers": []
+  },
+  "grip_types": [],
+  "connectivity": ["Wired"],
+  "lighting": [],
+  "general_product_information": {
+    "amazon_sku": "B00ANIRU7U",
+    "walmart_sku": 24723312
+  }
+}

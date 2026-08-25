@@ -1,0 +1,62 @@
+{
+  "opendb_id": "0d19c5b2-c8fc-432b-a4d4-aa31365c5261",
+  "cores": {
+    "total": 2,
+    "performance": 0,
+    "efficiency": 0,
+    "threads": 2
+  },
+  "clocks": {
+    "performance": {
+      "base": 3.5,
+      "boost": 0
+    },
+    "efficiency": {
+      "base": 0,
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l1": "2 × 32 KB Instruction + 2 × 32 KB Data (128 KB total)",
+    "l2": 0,
+    "l3": 2
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "Intel UHD Graphics 610",
+      "baseClock": 350,
+      "boostClock": 1050,
+      "shaderCount": 0
+    },
+    "memory": {
+      "maxSupport": 128,
+      "types": ["DDR4"],
+      "channels": 2
+    },
+    "tdp": 58,
+    "eccSupport": false,
+    "includesCooler": true,
+    "packaging": "Boxed",
+    "lithography": "14 nm",
+    "simultaneousMultithreading": false,
+    "ppt": 0
+  },
+  "metadata": {
+    "name": "Intel Celeron G5920",
+    "part_numbers": ["BX80701G5920"],
+    "releaseYear": 2020,
+    "variant": "G5920",
+    "series": "Celeron G5000",
+    "manufacturer": "Intel"
+  },
+  "series": "Celeron G5000",
+  "microarchitecture": "Comet Lake",
+  "coreFamily": "Comet Lake",
+  "socket": "LGA 1200",
+  "general_product_information": {
+    "amazon_sku": "B086MG1C7P",
+    "newegg_sku": "N82E16819118142",
+    "walmart_sku": 552579815,
+    "manufacturer_url": "https://www.intel.com/content/www/us/en/products/sku/199290/intel-celeron-processor-g5920-2m-cache-3-50-ghz/specifications.html"
+  }
+}

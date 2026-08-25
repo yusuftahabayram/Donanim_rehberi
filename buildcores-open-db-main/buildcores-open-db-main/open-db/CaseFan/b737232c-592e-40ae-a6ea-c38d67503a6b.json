@@ -1,0 +1,33 @@
+{
+  "opendb_id": "b737232c-592e-40ae-a6ea-c38d67503a6b",
+  "metadata": {
+    "name": "ARCTIC P12 Slim 120mm Black PWM PST",
+    "manufacturer": "ARCTIC",
+    "part_numbers": ["ACFAN00187A"],
+    "series": "P12",
+    "variant": "Slim PST",
+    "manufacturer_color": "Black",
+    "releaseYear": 2021
+  },
+  "size": 120,
+  "color": ["BLACK"],
+  "quantity": 1,
+  "max_airflow": null,
+  "max_noise_level": null,
+  "pwm": true,
+  "led": "None",
+  "connector": "4-pin PWM",
+  "controller": "None",
+  "static_pressure": 1.45,
+  "flow_direction": "Standard",
+  "isOEM": false,
+  "lighting": ["None"],
+  "min_airflow": 34.51,
+  "min_noise_level": 0,
+  "general_product_information": {
+    "amazon_sku": "B08QDKGCCW",
+    "newegg_sku": "9SIA2W0JNC0713",
+    "walmart_sku": 904100831,
+    "manufacturer_url": "https://www.arctic.de/en/P12-Slim-PWM-PST/ACFAN00187A"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "opendb_id": "484186d8-8b5f-4cc6-8179-ab7abf37401e",
+  "metadata": {
+    "name": "Rapoo MT760 Pro",
+    "manufacturer": "Rapoo",
+    "series": "MT760",
+    "variant": "Pro",
+    "part_numbers": ["MT760 PRO-GR"]
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0F1ZX3FQC"
+  }
+}

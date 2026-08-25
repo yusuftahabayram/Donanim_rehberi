@@ -1,0 +1,16 @@
+{
+  "opendb_id": "ee358728-610e-4f97-b8f3-0b5ca5a5603b",
+  "metadata": {
+    "name": "AULA SC900 Pro",
+    "manufacturer": "AULA",
+    "series": "SC900",
+    "variant": "Pro",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FCM7DXBP"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "opendb_id": "c8c0ecc7-f086-4741-9851-7b99b4c9eb2b",
+  "metadata": {
+    "name": "ARCTIC P14 Pro PST 140mm White PWM PST",
+    "manufacturer": "ARCTIC",
+    "part_numbers": ["ACFAN00317A"],
+    "series": "P14",
+    "variant": "Pro PST",
+    "manufacturer_color": "White",
+    "releaseYear": 2025
+  },
+  "size": 140,
+  "color": ["WHITE"],
+  "quantity": 1,
+  "min_airflow": 110,
+  "max_airflow": null,
+  "min_noise_level": null,
+  "max_noise_level": null,
+  "pwm": true,
+  "led": "None",
+  "connector": "4-pin PWM",
+  "controller": "None",
+  "static_pressure": 5.2,
+  "flow_direction": "Standard",
+  "isOEM": false,
+  "lighting": ["None"],
+  "general_product_information": {
+    "amazon_sku": "B0DPX6D61P",
+    "walmart_sku": 17806970091,
+    "manufacturer_url": "https://www.arctic.de/en/P14-Pro-PST-White/ACFAN00317A"
+  }
+}

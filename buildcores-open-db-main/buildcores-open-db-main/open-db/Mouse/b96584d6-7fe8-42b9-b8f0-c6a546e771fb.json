@@ -1,0 +1,25 @@
+{
+  "opendb_id": "b96584d6-7fe8-42b9-b8f0-c6a546e771fb",
+  "metadata": {
+    "name": "MSI CLUTCH GM31 LIGHTWEIGHT WIRELESS",
+    "manufacturer": "MSI",
+    "part_numbers": [
+      "CLUTCH GM31 LIGHTWEIGHT WIRELESS",
+      "ClutchGM31LW",
+      "Clutch GM31 Lightweight Wireless"
+    ],
+    "series": "CLUTCH",
+    "variant": "GM31",
+    "releaseYear": 2023
+  },
+  "connectivity": ["Wired USB-C", "Wireless 2.4GHz"],
+  "rgb": true,
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0BNBFXDZD",
+    "newegg_sku": "N82E16826554071",
+    "walmart_sku": 3411729389,
+    "manufacturer_url": "https://us.msi.com/Gaming-Gear/CLUTCH-GM31-LIGHTWEIGHT-WIRELESS/Gallery"
+  }
+}

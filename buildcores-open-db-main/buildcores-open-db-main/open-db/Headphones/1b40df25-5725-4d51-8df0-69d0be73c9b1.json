@@ -1,0 +1,36 @@
+{
+  "opendb_id": "1b40df25-5725-4d51-8df0-69d0be73c9b1",
+  "metadata": {
+    "name": "Razer Kraken V4 Pro Wired Closed-Back Headphones",
+    "manufacturer": "Razer",
+    "part_numbers": ["RZ04-05160100-R3U1", "RZ04-05160100-R3M1"],
+    "releaseYear": 2024
+  },
+  "connection_types": ["USB-A"],
+  "ear_pad_material": ["Memory Foam"],
+  "features": [],
+  "platforms": ["Mobile", "PC", "Console"],
+  "use_cases": ["Gaming", "Casual"],
+  "lighting": ["RGB"],
+  "headphone_type": "Closed-Back",
+  "battery_life": 50,
+  "driver_size": 40,
+  "frequency_response_low": 20,
+  "frequency_response_high": 28,
+  "frame_material": "Plastic",
+  "ear_cup_type": "Over-Ear",
+  "bluetooth_version": "5.2",
+  "charging_port": "USB-C",
+  "weight": 397,
+  "wireless_range": 33,
+  "microphone_type": "Built-In",
+  "has_microphone": true,
+  "latency": 15,
+  "noise_cancellation_mic": false,
+  "general_product_information": {
+    "amazon_sku": "B0DG3L8WMM",
+    "newegg_sku": "N82E16826153368",
+    "bestbuy_sku": 6589878,
+    "walmart_sku": 12124820434
+  }
+}

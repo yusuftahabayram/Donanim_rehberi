@@ -1,0 +1,30 @@
+{
+  "opendb_id": "121d7573-01f7-452d-97c9-44ae9dbb10ab",
+  "metadata": {
+    "name": "Noctua NF-F12 industrialPPC-24V-3000 SP IP67 PWM",
+    "manufacturer": "Noctua",
+    "series": "Noctua Industrial",
+    "variant": "24V 3000 SP IP67 PWM",
+    "manufacturer_color": "Black",
+    "part_numbers": ["nf-f12-industrialppc-24v-3000-sp-ip67-pwm"],
+    "releaseYear": 2023
+  },
+  "size": 120,
+  "color": ["BLACK", "BROWN"],
+  "quantity": 1,
+  "pwm": true,
+  "connector": "4-pin PWM",
+  "flow_direction": "Standard",
+  "lighting": ["None"],
+  "isOEM": false,
+  "min_airflow": 109.89,
+  "min_noise_level": 43.5,
+  "static_pressure": 7.63,
+  "led": "None",
+  "controller": "None",
+  "general_product_information": {
+    "amazon_sku": "B0BKGTVCPC",
+    "newegg_sku": "9SIAZTUKBH5643",
+    "walmart_sku": 20018310841
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "opendb_id": "c298ccef-2a0f-4a44-a639-a4c199d3301b",
+  "metadata": {
+    "name": "ID-COOLING AS-140-K Black PWM",
+    "manufacturer": "ID-COOLING",
+    "part_numbers": [],
+    "series": "AS",
+    "variant": "140-K",
+    "releaseYear": 2025,
+    "manufacturer_color": "Black"
+  },
+  "size": 140,
+  "color": ["BLACK"],
+  "quantity": 1,
+  "min_airflow": 72.2,
+  "max_airflow": null,
+  "min_noise_level": 24.9,
+  "max_noise_level": null,
+  "pwm": true,
+  "led": "None",
+  "connector": "4-pin PWM",
+  "controller": "None",
+  "static_pressure": 1.65,
+  "flow_direction": "Standard",
+  "isOEM": false,
+  "lighting": ["None"],
+  "general_product_information": {
+    "manufacturer_url": "https://www.idcooling.com/product/detail?id=440&name=AS-140-K#gallery"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "opendb_id": "1ce327a1-7eca-4bdd-a1e6-903dbe252359",
+  "metadata": {
+    "name": "Nixeus Revel",
+    "manufacturer": "Nixeus",
+    "series": "Revel",
+    "part_numbers": []
+  },
+  "connectivity": ["Wired"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B075MSPG3P"
+  }
+}

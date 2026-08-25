@@ -1,0 +1,16 @@
+{
+  "opendb_id": "11318c30-c956-4790-8b92-c4315468d4cc",
+  "metadata": {
+    "name": "Zowie FK2-B",
+    "manufacturer": "Zowie",
+    "series": "FK2-B",
+    "part_numbers": []
+  },
+  "connectivity": ["Wired"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B08BZTVC4M",
+    "walmart_sku": 985901822
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "opendb_id": "1002eec1-9165-4d47-9cad-5bca7b86d4f4",
+  "metadata": {
+    "name": "G-Wolves HTX Ace",
+    "manufacturer": "G-Wolves",
+    "series": "HTX",
+    "variant": "Ace",
+    "part_numbers": []
+  },
+  "grip_types": [],
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "general_product_information": {
+    "amazon_sku": "B0CTQBNW19"
+  }
+}

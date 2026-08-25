@@ -1,0 +1,48 @@
+{
+  "opendb_id": "5509f5a5-44e2-4693-8824-9a016a48e197",
+  "dimensions_mm": {
+    "width": 342,
+    "height": 551,
+    "depth": 281
+  },
+  "metadata": {
+    "name": "Thermaltake The Tower 300 MicroATX Mini Tower Tempered Glass Side Panel - Peach Fuzz",
+    "manufacturer": "Thermaltake",
+    "part_numbers": ["CA-1Y4-00SKWN-00"],
+    "series": "The Tower 300",
+    "variant": "300 Peach Fuzz",
+    "manufacturer_color": "Peach Fuzz",
+    "releaseYear": 2024,
+    "last_manually_spec_verified_at": "2026-04-09T03:27:10.916Z"
+  },
+  "supported_motherboard_form_factors": ["Micro ATX", "Mini-ITX"],
+  "form_factor": "Micro ATX Mini Tower",
+  "color": ["PINK", "BLUE", "ORANGE"],
+  "power_supply": "None",
+  "side_panel": "Tempered Glass",
+  "has_transparent_side_panel": true,
+  "front_panel_usb": "USB 3.2 (Gen 2) Type-C x 1                                                   USB 3.0 x 2",
+  "max_video_card_length": 400,
+  "max_cpu_cooler_height": 210,
+  "internal_3_5_bays": 3,
+  "internal_2_5_bays": 3,
+  "expansion_slots": 4,
+  "dimensions": "342 x 281 x 551",
+  "volume": 52.952,
+  "weight": 18.2,
+  "supported_power_supply_form_factors": ["ATX"],
+  "front_usb_ports": ["1 x USB 3.2 Gen 2 Type-C ", "2 x USB 3.0 Type-A"],
+  "power_supply_included": false,
+  "max_psu_length": 220,
+  "external_3_5_bays": 0,
+  "external_5_25_bays": 0,
+  "power_supply_shroud": true,
+  "supports_rear_connecting_motherboard": true,
+  "lighting": [],
+  "general_product_information": {
+    "amazon_sku": "B0D9VNPNMZ",
+    "newegg_sku": "2AM-000X-00333",
+    "walmart_sku": 8427208234,
+    "manufacturer_url": "https://www.thermaltake.com/the-tower-300-peach-fuzz-micro-tower-chassis.html"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "opendb_id": "ce27c057-2284-4b4b-904e-c6749da6240d",
+  "metadata": {
+    "name": "Noctua NF-A12x25 5V PWM",
+    "manufacturer": "Noctua",
+    "series": "NF",
+    "variant": "5V PWM",
+    "manufacturer_color": "Brown",
+    "part_numbers": ["nf-a12x25-5v-pwm", "NF-A12x25-5V-PWM"],
+    "releaseYear": 2018
+  },
+  "size": 120,
+  "quantity": 1,
+  "pwm": true,
+  "connector": "3-pin",
+  "isOEM": false,
+  "color": ["BROWN"],
+  "lighting": ["None"],
+  "flow_direction": "Standard",
+  "min_airflow": 56.62,
+  "min_noise_level": 21.4,
+  "static_pressure": 2.07,
+  "led": "None",
+  "controller": "None",
+  "general_product_information": {
+    "amazon_sku": "B07DXQTCK6",
+    "newegg_sku": "9SIAZTUKCV3441",
+    "walmart_sku": 20351523310,
+    "manufacturer_url": "https://www.noctua.at/en/products/nf-a12x25-5v-pwm/specifications"
+  }
+}

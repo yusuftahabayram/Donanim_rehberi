@@ -1,0 +1,60 @@
+{
+  "opendb_id": "891fb125-0c86-4ea2-ab5a-85bf033d8c6b",
+  "cores": {
+    "total": 20,
+    "performance": 0,
+    "threads": 40,
+    "efficiency": 0
+  },
+  "clocks": {
+    "performance": {
+      "base": 2.2,
+      "boost": 3.6
+    },
+    "efficiency": {
+      "base": 0,
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l2": 5,
+    "l3": 50,
+    "l1": "20 × 32 KB Instruction + 20 × 32 KB Data (1280 KB total)"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "None",
+      "baseClock": 0,
+      "shaderCount": 0,
+      "boostClock": 0
+    },
+    "memory": {
+      "maxSupport": 1536,
+      "types": ["DDR4"],
+      "channels": 4
+    },
+    "tdp": 135,
+    "eccSupport": true,
+    "includesCooler": false,
+    "packaging": "OEM/Tray",
+    "lithography": "14 nm",
+    "simultaneousMultithreading": true,
+    "ppt": 0
+  },
+  "metadata": {
+    "name": "Intel Xeon E5-2698 v4 OEM/Tray",
+    "manufacturer": "Intel",
+    "part_numbers": ["CM8066002024000"],
+    "series": "E5-2600 v4",
+    "variant": "E5-2698 v4",
+    "releaseYear": 2016
+  },
+  "series": "E5-2600 v4",
+  "microarchitecture": "Broadwell",
+  "coreFamily": "Broadwell-EP",
+  "socket": "LGA 2011-3",
+  "general_product_information": {
+    "amazon_sku": "B01DTYQHTG",
+    "manufacturer_url": "https://www.intel.com/content/www/us/en/products/sku/91753/intel-xeon-processor-e52698-v4-50m-cache-2-20-ghz/specifications.html"
+  }
+}

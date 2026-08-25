@@ -1,0 +1,16 @@
+{
+  "opendb_id": "7444ca23-c18f-4dff-82d3-100bee76c068",
+  "metadata": {
+    "name": "Apple Magic Mouse",
+    "manufacturer": "Apple",
+    "series": "Magic Mouse",
+    "part_numbers": []
+  },
+  "connectivity": ["Bluetooth"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B09BRD98T4",
+    "walmart_sku": 14761771243
+  }
+}

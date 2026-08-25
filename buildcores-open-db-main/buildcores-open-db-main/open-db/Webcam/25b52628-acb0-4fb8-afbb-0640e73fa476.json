@@ -1,0 +1,15 @@
+{
+  "opendb_id": "25b52628-acb0-4fb8-afbb-0640e73fa476",
+  "metadata": {
+    "name": "NexiGo N660P 1080p Webcam",
+    "manufacturer": "NexiGo",
+    "part_numbers": ["N660PWHT", "N660P WHITE"]
+  },
+  "connectivity_type": ["Wired", "Wired USB-A"],
+  "frame_rate": "60fps",
+  "resolution": "1080p",
+  "lighting": [],
+  "general_product_information": {
+    "amazon_sku": "B08ZK9JJ1M"
+  }
+}

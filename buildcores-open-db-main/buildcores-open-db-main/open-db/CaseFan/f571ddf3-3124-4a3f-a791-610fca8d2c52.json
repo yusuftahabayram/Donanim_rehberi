@@ -1,0 +1,31 @@
+{
+  "opendb_id": "f571ddf3-3124-4a3f-a791-610fca8d2c52",
+  "metadata": {
+    "name": "ARCTIC P12 PWM PST CO 120mm Black",
+    "manufacturer": "ARCTIC",
+    "part_numbers": ["ACFAN00121A"],
+    "series": "P12",
+    "variant": "PST CO",
+    "manufacturer_color": "Black",
+    "releaseYear": 2018
+  },
+  "size": 120,
+  "color": ["BLACK"],
+  "quantity": 1,
+  "min_airflow": 56.3,
+  "max_airflow": null,
+  "min_noise_level": null,
+  "max_noise_level": null,
+  "pwm": true,
+  "led": "None",
+  "connector": "4-pin PWM",
+  "controller": "None",
+  "static_pressure": 2.2,
+  "flow_direction": "Standard",
+  "isOEM": false,
+  "lighting": ["None"],
+  "general_product_information": {
+    "amazon_sku": "B07GSRRHZT",
+    "manufacturer_url": "https://www.arctic.de/en/P12-PWM-PST-CO/ACFAN00121A"
+  }
+}

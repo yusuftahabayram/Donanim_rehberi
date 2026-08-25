@@ -1,0 +1,15 @@
+{
+  "opendb_id": "b03b078c-8ff6-4077-b6de-d831b39262f8",
+  "metadata": {
+    "name": "LAMZU Atlantis",
+    "manufacturer": "LAMZU",
+    "series": "Atlantis",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0CM3KXND9"
+  }
+}

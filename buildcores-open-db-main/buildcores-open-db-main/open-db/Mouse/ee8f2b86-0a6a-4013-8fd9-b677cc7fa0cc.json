@@ -1,0 +1,15 @@
+{
+  "opendb_id": "ee8f2b86-0a6a-4013-8fd9-b677cc7fa0cc",
+  "metadata": {
+    "name": "Incott G23",
+    "manufacturer": "Incott",
+    "series": "G23",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0DHSRVYJ9"
+  }
+}

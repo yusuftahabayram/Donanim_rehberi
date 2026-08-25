@@ -1,0 +1,16 @@
+{
+  "opendb_id": "8f70eed0-12a7-466a-b99c-e38ae7f017b4",
+  "metadata": {
+    "name": "Pulsar X2H Wired",
+    "manufacturer": "Pulsar",
+    "series": "X2H",
+    "variant": "Wired",
+    "part_numbers": []
+  },
+  "connectivity": ["Wired"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0DFW63MWK"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "opendb_id": "905cf2e4-a0e5-48e0-8811-cf780f6e7cb6",
+  "memory": {
+    "max": 256,
+    "ram_type": "DDR5",
+    "slots": 4
+  },
+  "storage_devices": {
+    "sata_6_gb_s": 4,
+    "sata_3_gb_s": 0,
+    "u2": 0
+  },
+  "usb_headers": {
+    "usb_2_0": 2,
+    "usb_3_2_gen_1": 1,
+    "usb_3_2_gen_2": 0,
+    "usb_3_2_gen_2x2": 1,
+    "usb_4": 0
+  },
+  "fan_headers": {
+    "cpu_fan": 1,
+    "cpu_opt": 1,
+    "pump": 1,
+    "case_fan": 4
+  },
+  "rgb_headers": {
+    "argb_5v": 3
+  },
+  "front_panel_headers": {
+    "power_button": true,
+    "power_led": true,
+    "hdd_led": true,
+    "reset_button": true
+  },
+  "other_headers": {
+    "com_port": 1
+  },
+  "power_connectors": {
+    "cpu_power": ["8-pin", "8-pin"],
+    "main_power": "24-pin"
+  },
+  "bios_features": {
+    "flashback": true,
+    "clear_cmos": false
+  },
+  "audio": {
+    "chipset": "Realtek",
+    "channels": "7.1"
+  },
+  "metadata": {
+    "name": "Asus X870 AYW GAMING WIFI W DDR5 ATX",
+    "manufacturer": "ASUS",
+    "part_numbers": ["X870 AYW GAMING WIFI W", "X870AYW GMNG WIFIW"],
+    "series": "X870",
+    "variant": "AYW GAMING WIFI W",
+    "manufacturer_color": "White",
+    "releaseYear": 2025
+  },
+  "socket": "AM5",
+  "form_factor": "ATX",
+  "chipset": "AMD X870",
+  "color": ["WHITE", "GREY"],
+  "pcie_slots": [
+    {
+      "gen": "5.0",
+      "quantity": 1,
+      "lanes": 16,
+      "_id": "69b3ac213722c3e205bd3126"
+    },
+    {
+      "gen": "4.0",
+      "quantity": 2,
+      "lanes": 1,
+      "_id": "69c9b179220c6012025e1483"
+    },
+    {
+      "gen": "3.0",
+      "quantity": 1,
+      "lanes": 1,
+      "_id": "69c9b179220c6012025e1484"
+    }
+  ],
+  "m2_slots": [
+    {
+      "size": "2280",
+      "key": "M",
+      "interface": "PCIe 5.0 x4",
+      "_id": "69b3ac213722c3e205bd3127"
+    },
+    {
+      "size": "2242/2260/2280",
+      "key": "M",
+      "interface": "PCIe 4.0 x4",
+      "_id": "69b3ac213722c3e205bd3128"
+    },
+    {
+      "size": "2280",
+      "key": "M",
+      "interface": "PCIe 4.0 x4",
+      "_id": "69b3ac213722c3e205bd3129"
+    }
+  ],
+  "onboard_ethernet": [
+    {
+      "speed": "2.5 Gb/s",
+      "controller": "Realtek",
+      "_id": "69b3ac213722c3e205bd312b"
+    }
+  ],
+  "ecc_support": true,
+  "raid_support": true,
+  "back_connect_connectors": false,
+  "back_panel_ports": [
+    "2 x USB4® (40Gbps) ports (2 x USB Type-C)",
+    "1 x USB 10Gbps port (1 x Type-A)",
+    "3 x USB 5Gbps ports (3 x Type-A)",
+    "4 x USB 2.0 ports (4 x Type-A)",
+    "1 x HDMI port",
+    "1 x Wi-Fi module",
+    "1 x Realtek 2.5Gb Ethernet port",
+    "3 x Audio jacks",
+    "1 x BIOS FlashBack button"
+  ],
+  "wireless_networking": "Wifi 6 Bluetooth 5.2",
+  "lighting": [],
+  "general_product_information": {
+    "amazon_sku": "B0FG3H1R3R",
+    "newegg_sku": "N82E16813119737",
+    "bestbuy_sku": 6643436,
+    "walmart_sku": 15995323829,
+    "ibuypower_sku": "32082",
+    "manufacturer_url": "https://www.asus.com/me-en/motherboards-components/motherboards/all-series/x870-ayw-gaming-wifi-w/"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "opendb_id": "fe670d09-2136-4aae-9705-757e5039b9f6",
+  "metadata": {
+    "name": "Logitech MX Master 3",
+    "manufacturer": "Logitech",
+    "series": "MX Master 3",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B07S395RWD"
+  }
+}

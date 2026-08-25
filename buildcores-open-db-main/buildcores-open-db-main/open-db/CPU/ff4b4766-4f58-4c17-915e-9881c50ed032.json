@@ -1,0 +1,63 @@
+{
+  "opendb_id": "ff4b4766-4f58-4c17-915e-9881c50ed032",
+  "cores": {
+    "total": 6,
+    "performance": 0,
+    "threads": 12,
+    "efficiency": 0
+  },
+  "clocks": {
+    "performance": {
+      "base": 2.5,
+      "boost": 4.4
+    },
+    "efficiency": {
+      "base": 0,
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l2": 7.5,
+    "l3": 18,
+    "l1": "80KB per core"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "Intel UHD Graphics 730",
+      "baseClock": 300,
+      "boostClock": 1.45,
+      "shaderCount": 192
+    },
+    "memory": {
+      "maxSupport": 128,
+      "types": ["DDR5", "DDR4"],
+      "channels": 2
+    },
+    "tdp": 65,
+    "eccSupport": false,
+    "includesCooler": true,
+    "packaging": "Boxed",
+    "lithography": "Intel 7",
+    "simultaneousMultithreading": true,
+    "ppt": 117
+  },
+  "metadata": {
+    "name": "Intel Core i5 12400",
+    "manufacturer": "Intel",
+    "part_numbers": ["BX8071512400"],
+    "series": "Core i5 12000",
+    "variant": "12400",
+    "releaseYear": 2022
+  },
+  "series": "Core i5 12000",
+  "microarchitecture": "Alder Lake",
+  "coreFamily": "Golden Cove",
+  "socket": "LGA 1700",
+  "general_product_information": {
+    "amazon_sku": "B09NMPD8V2",
+    "newegg_sku": "N82E16819118358",
+    "bestbuy_sku": 6492599,
+    "walmart_sku": 701068537,
+    "manufacturer_url": "https://www.intel.com/content/www/us/en/products/sku/134586/intel-core-i512400-processor-18m-cache-up-to-4-40-ghz/specifications.html"
+  }
+}

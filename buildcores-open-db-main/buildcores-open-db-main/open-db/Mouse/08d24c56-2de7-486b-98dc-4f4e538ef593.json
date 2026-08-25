@@ -1,0 +1,15 @@
+{
+  "opendb_id": "08d24c56-2de7-486b-98dc-4f4e538ef593",
+  "metadata": {
+    "name": "ATK Zero",
+    "manufacturer": "ATK",
+    "series": "Zero",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0GHYZL6MQ"
+  }
+}

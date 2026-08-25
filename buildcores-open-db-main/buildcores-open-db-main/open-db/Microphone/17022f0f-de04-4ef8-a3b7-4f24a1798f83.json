@@ -1,0 +1,19 @@
+{
+  "opendb_id": "17022f0f-de04-4ef8-a3b7-4f24a1798f83",
+  "metadata": {
+    "part_numbers": ["NTUSBMINI", "NT-USB-MINI"],
+    "name": "Rode NT-USB Mini",
+    "manufacturer": "RODE"
+  },
+  "connectivity_type": ["USB-C"],
+  "features": [],
+  "polar_pattern": ["Cardioid"],
+  "lighting": [],
+  "general_product_information": {
+    "amazon_sku": "B084P1CXFD",
+    "newegg_sku": "9SIAKZYB4F7431",
+    "bestbuy_sku": 6406846,
+    "walmart_sku": 436727968,
+    "manufacturer_url": "https://rode.com/en-us/products/nt-usb-mini"
+  }
+}

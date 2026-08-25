@@ -1,0 +1,13 @@
+{
+  "opendb_id": "3424bbc4-7123-41a4-888b-6c333fc47482",
+  "metadata": {
+    "name": "IPI Float",
+    "manufacturer": "IPI",
+    "series": "Float",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {}
+}

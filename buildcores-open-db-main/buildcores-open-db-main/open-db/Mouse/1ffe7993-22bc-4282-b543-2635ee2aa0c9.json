@@ -1,0 +1,15 @@
+{
+  "opendb_id": "1ffe7993-22bc-4282-b543-2635ee2aa0c9",
+  "metadata": {
+    "name": "Zowie EC2-B V2",
+    "manufacturer": "Zowie",
+    "series": "EC2-B V2",
+    "part_numbers": []
+  },
+  "connectivity": ["Wired"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0B9W8DVKY"
+  }
+}

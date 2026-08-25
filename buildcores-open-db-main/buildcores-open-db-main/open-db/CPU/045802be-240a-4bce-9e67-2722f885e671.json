@@ -1,0 +1,63 @@
+{
+  "opendb_id": "045802be-240a-4bce-9e67-2722f885e671",
+  "cores": {
+    "total": 24,
+    "threads": 32,
+    "performance": 8,
+    "efficiency": 16
+  },
+  "clocks": {
+    "performance": {
+      "base": 3,
+      "boost": 5.8
+    },
+    "efficiency": {
+      "base": 2.2,
+      "boost": 4.3
+    }
+  },
+  "cache": {
+    "l2": 32,
+    "l3": 36,
+    "l1": "80 KB per P-core, 96 per E-core Cluster"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "Intel UHD Graphics 770",
+      "baseClock": 300,
+      "boostClock": 1.65,
+      "shaderCount": 32
+    },
+    "memory": {
+      "maxSupport": 192,
+      "types": ["DDR5", "DDR4"],
+      "channels": 2
+    },
+    "tdp": 125,
+    "eccSupport": true,
+    "includesCooler": false,
+    "packaging": "Boxed",
+    "lithography": "Intel 7",
+    "ppt": 253,
+    "simultaneousMultithreading": true
+  },
+  "metadata": {
+    "name": "Intel Core i9 13900K",
+    "manufacturer": "Intel",
+    "part_numbers": ["BX8071513900K", "i9-13900K"],
+    "series": "Core i9 13000",
+    "variant": "13900K",
+    "releaseYear": 2022
+  },
+  "series": "Core i9 13000",
+  "microarchitecture": "Raptor Lake Refresh",
+  "coreFamily": "Raptor Cove / Gracemont",
+  "socket": "LGA 1700",
+  "general_product_information": {
+    "amazon_sku": "B0BCF54SR1",
+    "newegg_sku": "N82E16819118412R",
+    "bestbuy_sku": 6521190,
+    "walmart_sku": 1371985797,
+    "manufacturer_url": "https://www.intel.com/content/www/us/en/products/sku/230496/intel-core-i913900k-processor-36m-cache-up-to-5-80-ghz/specifications.html"
+  }
+}

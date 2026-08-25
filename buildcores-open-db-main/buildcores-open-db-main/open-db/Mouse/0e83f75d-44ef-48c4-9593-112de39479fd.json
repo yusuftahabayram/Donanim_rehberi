@@ -1,0 +1,15 @@
+{
+  "opendb_id": "0e83f75d-44ef-48c4-9593-112de39479fd",
+  "metadata": {
+    "name": "RAWM MH01",
+    "manufacturer": "RAWM",
+    "series": "MH01",
+    "part_numbers": []
+  },
+  "grip_types": [],
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "general_product_information": {
+    "amazon_sku": "B0F7XMWS1S"
+  }
+}

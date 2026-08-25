@@ -1,0 +1,30 @@
+{
+  "opendb_id": "2ddb2817-72ed-412e-bb0e-85adc6ecfe58",
+  "metadata": {
+    "name": "Noctua NF-A12x25 G2 PWM Sx2-PP chromax.black",
+    "manufacturer": "Noctua",
+    "series": "NF",
+    "variant": "G2",
+    "manufacturer_color": "Chromax Black",
+    "part_numbers": ["nf-a12x25-g2-pwm-sx2-pp-chromax-black"],
+    "releaseYear": 2026
+  },
+  "size": 120,
+  "color": ["BLACK"],
+  "lighting": ["None"],
+  "quantity": 2,
+  "pwm": true,
+  "connector": "4-pin PWM",
+  "flow_direction": "Standard",
+  "isOEM": false,
+  "min_airflow": 63.15,
+  "min_noise_level": 22.5,
+  "led": "None",
+  "controller": "None",
+  "static_pressure": 3.14,
+  "general_product_information": {
+    "amazon_sku": "B0GWJ8TN5N",
+    "newegg_sku": "9SIA4REKWZ8000",
+    "manufacturer_url": "https://www.noctua.at/en/products/nf-a12x25-g2-pwm-sx2-pp-chromax-black/specifications"
+  }
+}

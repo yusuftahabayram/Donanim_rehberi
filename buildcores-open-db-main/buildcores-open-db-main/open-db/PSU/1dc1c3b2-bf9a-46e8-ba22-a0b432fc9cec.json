@@ -1,0 +1,36 @@
+{
+  "opendb_id": "1dc1c3b2-bf9a-46e8-ba22-a0b432fc9cec",
+  "connectors": {
+    "atx_24_pin": 1,
+    "sata": 7,
+    "floppy_4_pin": 0,
+    "eps_8_pin": 2,
+    "pcie_12vhpwr": 1,
+    "pcie_6_plus_2_pin": 4,
+    "molex_4_pin": 6
+  },
+  "metadata": {
+    "name": "Asus ROG Thor P3 Hatsune Miku Edition Blue / Pink 1200W Fully Modular 80+ Platinum Certified",
+    "manufacturer": "Asus",
+    "part_numbers": ["rog-thor-1200p3-miku"],
+    "series": "ROG Thor",
+    "variant": "1200W Hatsune Miku Platinum III",
+    "manufacturer_color": "Blue/Pink"
+  },
+  "wattage": 1200,
+  "form_factor": "ATX",
+  "efficiency_rating": "80+ Platinum",
+  "modular": "Full",
+  "color": ["BLUE", "PINK"],
+  "length": 190,
+  "fanless": false,
+  "lighting": ["ARGB", "Display"],
+  "cybernetics_efficiency_rating": "Cybenetics Platinum",
+  "cybernetics_noise_rating": "Cybenetics A++",
+  "general_product_information": {
+    "amazon_sku": "B0FWDSTSDL",
+    "newegg_sku": "9SIC4WSKXM0029",
+    "walmart_sku": 18805264461,
+    "manufacturer_url": "https://rog.asus.com/power-supply-units/rog-thor/rog-thor-1200p3-miku/"
+  }
+}

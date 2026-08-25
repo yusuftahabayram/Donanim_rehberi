@@ -1,0 +1,15 @@
+{
+  "opendb_id": "1e691bf8-40fb-41ca-83a4-0a6b028b1daa",
+  "metadata": {
+    "name": "8BitDo Retro R8",
+    "manufacturer": "8BitDo",
+    "series": "Retro R8",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0DMVLD2HC"
+  }
+}

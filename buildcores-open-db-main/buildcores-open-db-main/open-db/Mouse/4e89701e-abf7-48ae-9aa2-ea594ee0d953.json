@@ -1,0 +1,19 @@
+{
+  "opendb_id": "4e89701e-abf7-48ae-9aa2-ea594ee0d953",
+  "metadata": {
+    "name": "Microsoft Arc Bluetooth Wireless Optical Mouse Soft Pink",
+    "manufacturer": "Microsoft",
+    "part_numbers": ["ELG-00027"],
+    "series": "Arc Wireless",
+    "releaseYear": 2019,
+    "variant": "Soft Pink"
+  },
+  "connectivity": ["Bluetooth"],
+  "rgb": false,
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B07Y41FHQR",
+    "manufacturer_url": "https://www.microsoft.com/en-us/d/surface-arc-mouse/8p5sv2rx3rn5"
+  }
+}

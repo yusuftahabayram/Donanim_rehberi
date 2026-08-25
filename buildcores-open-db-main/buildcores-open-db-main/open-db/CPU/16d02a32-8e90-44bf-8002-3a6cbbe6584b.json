@@ -1,0 +1,62 @@
+{
+  "opendb_id": "16d02a32-8e90-44bf-8002-3a6cbbe6584b",
+  "cores": {
+    "total": 2,
+    "performance": 0,
+    "efficiency": 0,
+    "threads": 4
+  },
+  "clocks": {
+    "performance": {
+      "base": 3.8,
+      "boost": 0
+    },
+    "efficiency": {
+      "base": 0,
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l1": "2 × 32 KB Instruction + 2 × 32 KB Data (128 KB total)",
+    "l2": 0.5,
+    "l3": 4
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "Intel UHD Graphics 630",
+      "baseClock": 350,
+      "boostClock": 1100,
+      "shaderCount": 192
+    },
+    "memory": {
+      "maxSupport": 64,
+      "types": ["DDR4"],
+      "channels": 2
+    },
+    "tdp": 54,
+    "eccSupport": true,
+    "includesCooler": true,
+    "packaging": "Boxed",
+    "lithography": "14 nm",
+    "simultaneousMultithreading": true,
+    "ppt": 0
+  },
+  "metadata": {
+    "name": "Intel Pentium Gold G5500",
+    "releaseYear": 2018,
+    "part_numbers": ["BX80684G5500"],
+    "manufacturer": "Intel",
+    "variant": "G5500",
+    "series": "Pentium Gold G5000"
+  },
+  "series": "Pentium Gold G5000",
+  "microarchitecture": "Coffee Lake",
+  "coreFamily": "Coffee Lake",
+  "socket": "LGA 1151",
+  "general_product_information": {
+    "amazon_sku": "B0793DYTCQ",
+    "newegg_sku": "N82E16819117877",
+    "walmart_sku": 510437540,
+    "manufacturer_url": "https://www.intel.com/content/www/us/en/products/sku/129946/intel-pentium-gold-g5500-processor-4m-cache-3-80-ghz/specifications.html"
+  }
+}

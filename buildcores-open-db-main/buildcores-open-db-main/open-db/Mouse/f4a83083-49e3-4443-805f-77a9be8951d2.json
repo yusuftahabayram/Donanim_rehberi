@@ -1,0 +1,15 @@
+{
+  "opendb_id": "f4a83083-49e3-4443-805f-77a9be8951d2",
+  "metadata": {
+    "name": "TMKB Falcon M1",
+    "manufacturer": "TMKB",
+    "series": "Falcon M1",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FPQDCS42"
+  }
+}

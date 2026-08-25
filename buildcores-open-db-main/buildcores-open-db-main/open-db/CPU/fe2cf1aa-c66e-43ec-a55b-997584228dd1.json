@@ -1,0 +1,63 @@
+{
+  "opendb_id": "fe2cf1aa-c66e-43ec-a55b-997584228dd1",
+  "cores": {
+    "total": 6,
+    "performance": 0,
+    "threads": 12,
+    "efficiency": 0
+  },
+  "clocks": {
+    "performance": {
+      "base": 4.7,
+      "boost": 5.3
+    },
+    "efficiency": {
+      "base": 0,
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l2": 6,
+    "l3": 32,
+    "l1": "6 × 64 KB (32 KB L1I + 32 KB L1D)"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "AMD Radeon Graphics",
+      "boostClock": 2200,
+      "baseClock": 0,
+      "shaderCount": 128
+    },
+    "memory": {
+      "maxSupport": 128,
+      "types": ["DDR5"],
+      "channels": 2
+    },
+    "tdp": 105,
+    "eccSupport": true,
+    "includesCooler": false,
+    "packaging": "Boxed",
+    "lithography": "TSMC 5nm FinFET, TSMC 6nm FinFET",
+    "simultaneousMultithreading": true,
+    "ppt": 142
+  },
+  "metadata": {
+    "name": "AMD Ryzen 5 7600X",
+    "manufacturer": "AMD",
+    "part_numbers": ["100-100000593WOF", "RYZEN 5 7600X", "100100000593WOF"],
+    "series": "Ryzen 5 7000",
+    "variant": "7600X",
+    "releaseYear": 2022
+  },
+  "series": "Ryzen 5 7000",
+  "microarchitecture": "Zen 4",
+  "coreFamily": "Raphael",
+  "socket": "AM5",
+  "general_product_information": {
+    "amazon_sku": "B0BBJDS62N",
+    "newegg_sku": "N82E16819113770",
+    "bestbuy_sku": 6519479,
+    "walmart_sku": 1693068603,
+    "manufacturer_url": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7600x.html"
+  }
+}

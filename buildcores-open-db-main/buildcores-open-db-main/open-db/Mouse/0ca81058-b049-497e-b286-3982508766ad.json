@@ -1,0 +1,15 @@
+{
+  "opendb_id": "0ca81058-b049-497e-b286-3982508766ad",
+  "metadata": {
+    "name": "Drevo Falcon",
+    "manufacturer": "Drevo",
+    "series": "Falcon",
+    "part_numbers": []
+  },
+  "grip_types": [],
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "general_product_information": {
+    "amazon_sku": "B086X9DS7C"
+  }
+}

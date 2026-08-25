@@ -1,0 +1,20 @@
+{
+  "opendb_id": "c47a1d69-806c-49d3-8982-e68a67636e32",
+  "metadata": {
+    "name": "Logitech G502 Proteus Core Optical Wired Gaming Mouse",
+    "manufacturer": "Logitech",
+    "part_numbers": ["910-004075", "920-002245"],
+    "series": "G502",
+    "variant": "Proteus Core",
+    "releaseYear": 2014
+  },
+  "connectivity": ["Wired USB-A"],
+  "rgb": true,
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B00IRHE892",
+    "newegg_sku": "9SIAE9AJYC0278",
+    "manufacturer_url": "https://support.logi.com/hc/en-gb/articles/360023306914-Logitech-G502-Proteus-Core-Technical-Specifications"
+  }
+}

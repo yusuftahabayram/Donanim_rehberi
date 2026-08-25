@@ -1,0 +1,16 @@
+{
+  "opendb_id": "51f4fdbc-a3e6-43f3-8755-563d64d77811",
+  "metadata": {
+    "name": "MACHENIKE M7 Pro",
+    "manufacturer": "MACHENIKE",
+    "series": "M7",
+    "variant": "Pro",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0CN914Z8H"
+  }
+}

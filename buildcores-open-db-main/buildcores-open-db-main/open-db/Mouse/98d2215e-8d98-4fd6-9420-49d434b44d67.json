@@ -1,0 +1,15 @@
+{
+  "opendb_id": "98d2215e-8d98-4fd6-9420-49d434b44d67",
+  "metadata": {
+    "name": "Keychron G4",
+    "manufacturer": "Keychron",
+    "series": "G4",
+    "part_numbers": ["MSKCG4B1"]
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FY55P87D"
+  }
+}

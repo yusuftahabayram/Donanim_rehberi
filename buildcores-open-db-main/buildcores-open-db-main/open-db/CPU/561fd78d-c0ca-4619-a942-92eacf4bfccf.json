@@ -1,0 +1,62 @@
+{
+  "opendb_id": "561fd78d-c0ca-4619-a942-92eacf4bfccf",
+  "cores": {
+    "total": 4,
+    "threads": 8,
+    "performance": 0,
+    "efficiency": 0
+  },
+  "clocks": {
+    "performance": {
+      "base": 3.8,
+      "boost": 4
+    },
+    "efficiency": {
+      "base": 0,
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l2": 2,
+    "l3": 4,
+    "l1": "4 × 32 KB Instruction Cache + 4 × 32 KB Data Cache"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "None",
+      "baseClock": 0,
+      "boostClock": 0,
+      "shaderCount": 0
+    },
+    "memory": {
+      "maxSupport": 128,
+      "types": ["DDR4"],
+      "channels": 2
+    },
+    "tdp": 65,
+    "eccSupport": false,
+    "packaging": "Boxed",
+    "lithography": "TSMC 7nm FinFET",
+    "simultaneousMultithreading": true,
+    "ppt": 0,
+    "includesCooler": true
+  },
+  "metadata": {
+    "name": "AMD Ryzen 3 4100",
+    "manufacturer": "AMD",
+    "part_numbers": ["100-100000510BOX", "AMD Ryzen 3 4100"],
+    "series": "Ryzen 3 4000",
+    "variant": "4100",
+    "releaseYear": 2022
+  },
+  "series": "Ryzen 3 4000",
+  "microarchitecture": "Zen 2",
+  "coreFamily": "Renoir",
+  "socket": "AM4",
+  "general_product_information": {
+    "amazon_sku": "B09VCRQVWM",
+    "newegg_sku": "N82E16819113739",
+    "walmart_sku": 225385083,
+    "manufacturer_url": "https://www.amd.com/en/support/downloads/drivers.html/processors/ryzen/ryzen-4000-series/amd-ryzen-3-4100.html"
+  }
+}

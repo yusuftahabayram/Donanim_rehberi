@@ -1,0 +1,20 @@
+{
+  "opendb_id": "18b03e5f-7f6c-4865-b303-2e913f37c463",
+  "metadata": {
+    "name": "Microsoft Arc Bluetooth Wireless Optical Mouse Lilac",
+    "manufacturer": "Microsoft",
+    "part_numbers": ["ELG-00026"],
+    "series": "Arc Wireless",
+    "variant": "Lilac",
+    "releaseYear": 2019
+  },
+  "connectivity": ["Bluetooth"],
+  "rgb": false,
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B07Y42F5VG",
+    "walmart_sku": 451723898,
+    "manufacturer_url": "https://www.microsoft.com/en-us/d/surface-arc-mouse/8p5sv2rx3rn5"
+  }
+}

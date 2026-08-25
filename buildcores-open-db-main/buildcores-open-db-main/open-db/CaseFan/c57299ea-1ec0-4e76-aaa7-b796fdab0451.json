@@ -1,0 +1,30 @@
+{
+  "opendb_id": "c57299ea-1ec0-4e76-aaa7-b796fdab0451",
+  "metadata": {
+    "name": "Arctic P12 Pro Pst LN",
+    "manufacturer": "ARCTIC",
+    "series": "P12",
+    "variant": "Pro PST LN",
+    "manufacturer_color": "Black",
+    "part_numbers": ["ACFAN00343A"],
+    "releaseYear": 2026
+  },
+  "size": 120,
+  "color": ["BLACK"],
+  "lighting": ["None"],
+  "quantity": 1,
+  "pwm": true,
+  "connector": "4-pin PWM",
+  "flow_direction": "Standard",
+  "isOEM": false,
+  "min_airflow": 49,
+  "static_pressure": 3.5,
+  "controller": "None",
+  "led": "None",
+  "general_product_information": {
+    "amazon_sku": "B0FVXTP7P6",
+    "newegg_sku": "9SIA2W0KTG1003",
+    "walmart_sku": 19706754366,
+    "manufacturer_url": "https://www.arctic.de/en/P12-Pro-PST-LN/ACFAN00343A"
+  }
+}

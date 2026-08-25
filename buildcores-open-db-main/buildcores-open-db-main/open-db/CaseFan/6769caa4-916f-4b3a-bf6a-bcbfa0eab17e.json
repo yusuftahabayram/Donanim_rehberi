@@ -1,0 +1,31 @@
+{
+  "opendb_id": "6769caa4-916f-4b3a-bf6a-bcbfa0eab17e",
+  "metadata": {
+    "name": "ID-COOLING AF-125-W 120mm White PWM",
+    "manufacturer": "ID-COOLING",
+    "part_numbers": ["AF-125-W"],
+    "series": "AF",
+    "variant": "125-W",
+    "manufacturer_color": "White",
+    "releaseYear": 2025
+  },
+  "size": 120,
+  "color": ["WHITE"],
+  "quantity": 1,
+  "min_airflow": 78.25,
+  "max_airflow": null,
+  "min_noise_level": 29.85,
+  "max_noise_level": null,
+  "pwm": true,
+  "led": "None",
+  "connector": "4-pin PWM",
+  "controller": "None",
+  "static_pressure": 2.68,
+  "flow_direction": "Standard",
+  "isOEM": false,
+  "lighting": ["None"],
+  "general_product_information": {
+    "newegg_sku": "9SIC5JPKVA4309",
+    "manufacturer_url": "https://www.idcooling.com/product/detail?id=369&name=AF-125-W#specifications"
+  }
+}

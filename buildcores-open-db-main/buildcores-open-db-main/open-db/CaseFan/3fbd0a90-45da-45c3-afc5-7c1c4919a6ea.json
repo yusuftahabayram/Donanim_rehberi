@@ -1,0 +1,30 @@
+{
+  "opendb_id": "3fbd0a90-45da-45c3-afc5-7c1c4919a6ea",
+  "metadata": {
+    "name": "Arctic P12 Pro ARGB 120mm Black Reverse",
+    "manufacturer": "ARCTIC",
+    "series": "P12",
+    "part_numbers": ["ACFAN00322A"],
+    "manufacturer_color": "Black",
+    "releaseYear": 2025,
+    "variant": "Pro"
+  },
+  "size": 120,
+  "color": ["BLACK"],
+  "quantity": 1,
+  "pwm": true,
+  "led": "Addressable RGB",
+  "flow_direction": "Reverse",
+  "connector": "4-pin PWM + 3-pin 5V Addressable RGB",
+  "controller": "None",
+  "static_pressure": 4.5,
+  "isOEM": false,
+  "min_airflow": 73,
+  "lighting": ["ARGB"],
+  "general_product_information": {
+    "amazon_sku": "B0FJRYQQB4",
+    "newegg_sku": "9SIA2W0KR89532",
+    "walmart_sku": 19102268498,
+    "manufacturer_url": "https://www.arctic.de/en/P12-Pro-Reverse-A-RGB/ACFAN00322A"
+  }
+}

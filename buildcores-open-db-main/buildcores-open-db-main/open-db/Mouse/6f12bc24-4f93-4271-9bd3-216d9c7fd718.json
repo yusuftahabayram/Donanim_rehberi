@@ -1,0 +1,21 @@
+{
+  "opendb_id": "6f12bc24-4f93-4271-9bd3-216d9c7fd718",
+  "metadata": {
+    "name": "MSI FORGE GM320 Lightweight Gaming Mouse",
+    "manufacturer": "MSI",
+    "part_numbers": ["FORGE GM320"],
+    "series": "FORGE",
+    "variant": "GM320",
+    "releaseYear": 2025
+  },
+  "connectivity": ["Wired USB-A"],
+  "rgb": true,
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FP6BTX3J",
+    "newegg_sku": "N82E16826554087",
+    "walmart_sku": 17805362800,
+    "manufacturer_url": "https://www.msi.com/Gaming-Gear/FORGE-GM320/Specification"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "opendb_id": "5517bfc2-363c-42e1-b964-441a9afda2ec",
+  "metadata": {
+    "name": "ARCTIC P12 120mm Black PWM",
+    "manufacturer": "ARCTIC",
+    "part_numbers": ["ACFAN00118A", "ACFAN00119A"],
+    "series": "P12",
+    "manufacturer_color": "Black",
+    "releaseYear": 2018
+  },
+  "size": 120,
+  "color": ["BLACK"],
+  "quantity": 1,
+  "min_airflow": 56.3,
+  "max_airflow": null,
+  "min_noise_level": 22.5,
+  "max_noise_level": null,
+  "pwm": true,
+  "led": "None",
+  "connector": "4-pin PWM",
+  "controller": "None",
+  "static_pressure": 2.2,
+  "flow_direction": "Standard",
+  "isOEM": false,
+  "lighting": ["None"],
+  "general_product_information": {
+    "amazon_sku": "B07GB5JRTZ",
+    "newegg_sku": "9SIA2W08JE1431",
+    "manufacturer_url": "https://www.arctic.de/en/P12/ACFAN00118A"
+  }
+}

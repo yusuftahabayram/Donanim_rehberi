@@ -1,0 +1,15 @@
+{
+  "opendb_id": "0b8f0a01-2573-42c2-872b-a89d0ce07afa",
+  "metadata": {
+    "name": "Rapoo VT2 Max Gen-2",
+    "manufacturer": "Rapoo",
+    "series": "VT2 Max Gen-2",
+    "part_numbers": ["VT2 MAX-BK"]
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FLDK1WXD"
+  }
+}

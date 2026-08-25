@@ -1,0 +1,33 @@
+{
+  "opendb_id": "af884067-3af8-4047-b7ad-e879754848a5",
+  "connectors": {
+    "atx_24_pin": 1,
+    "eps_8_pin": 0,
+    "pcie_12vhpwr": 0,
+    "pcie_6_plus_2_pin": 0,
+    "sata": 18,
+    "molex_4_pin": 0,
+    "floppy_4_pin": 0
+  },
+  "metadata": {
+    "name": "SeaSonic PRIME TX-1600 ATX 3.1 Black / Silver 1600W Fully Modular ATX 80+ Titanium Certified",
+    "manufacturer": "SeaSonic",
+    "part_numbers": ["Prime TX-1600 ATX 3.1", "SSR-1600TR2"],
+    "series": "Prime TX ATX 3.1",
+    "variant": "1600W Titanium",
+    "manufacturer_color": "Black/Silver"
+  },
+  "wattage": 1600,
+  "form_factor": "ATX",
+  "efficiency_rating": "80+ Titanium",
+  "modular": "Full",
+  "color": ["BLACK", "GREY"],
+  "length": 210,
+  "fanless": false,
+  "lighting": [],
+  "general_product_information": {
+    "amazon_sku": "B0C571LRNB",
+    "newegg_sku": "N82E16817151262",
+    "walmart_sku": 5411359654
+  }
+}

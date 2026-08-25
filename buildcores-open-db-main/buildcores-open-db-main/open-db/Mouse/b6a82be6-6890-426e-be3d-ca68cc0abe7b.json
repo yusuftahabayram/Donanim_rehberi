@@ -1,0 +1,18 @@
+{
+  "opendb_id": "b6a82be6-6890-426e-be3d-ca68cc0abe7b",
+  "metadata": {
+    "name": "Logitech MX Anywhere 3S Laser Bluetooth Wireless Wired Mouse - Graphite",
+    "manufacturer": "Logitech",
+    "part_numbers": ["910-006925", "910-006929", "910-006928"],
+    "releaseYear": 2023
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": ["None"],
+  "rgb": false,
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0BPY4ZQXG",
+    "newegg_sku": "N82E16826197618",
+    "walmart_sku": 3423741489
+  }
+}

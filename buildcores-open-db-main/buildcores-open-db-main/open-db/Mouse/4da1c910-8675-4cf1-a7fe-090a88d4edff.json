@@ -1,0 +1,16 @@
+{
+  "opendb_id": "4da1c910-8675-4cf1-a7fe-090a88d4edff",
+  "metadata": {
+    "name": "Motospeed X6 Max",
+    "manufacturer": "Motospeed",
+    "series": "X6",
+    "variant": "Max",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0DMN4S4CV"
+  }
+}

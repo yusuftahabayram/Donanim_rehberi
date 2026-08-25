@@ -1,0 +1,16 @@
+{
+  "opendb_id": "5a904fdd-f3f6-402e-9114-223a73265b09",
+  "metadata": {
+    "name": "ATK X1 SE",
+    "manufacturer": "ATK",
+    "series": "X1",
+    "variant": "SE",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FND2K5BH"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "opendb_id": "ba91d07c-f9f4-49c2-b895-1d38a0cbde3d",
+  "metadata": {
+    "name": "EWEADN S9 Pro",
+    "manufacturer": "EWEADN",
+    "series": "S9",
+    "variant": "Pro",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0F3HMKMPY"
+  }
+}

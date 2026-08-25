@@ -1,0 +1,61 @@
+{
+  "opendb_id": "6d3271f1-8116-48cc-906b-f0faa1f6313d",
+  "cores": {
+    "total": 14,
+    "threads": 14,
+    "performance": 6,
+    "efficiency": 8
+  },
+  "clocks": {
+    "performance": {
+      "base": 3.4,
+      "boost": 5
+    },
+    "efficiency": {
+      "base": 2.9,
+      "boost": 4.4
+    }
+  },
+  "cache": {
+    "l2": 26,
+    "l3": 24,
+    "l1": "6 × 80 KB + 8 × 64 KB (L1 per-core totals)"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "Intel Xe Graphics",
+      "baseClock": 300,
+      "boostClock": 2000,
+      "shaderCount": 192
+    },
+    "memory": {
+      "maxSupport": 256,
+      "types": ["DDR5"],
+      "channels": 2
+    },
+    "tdp": 65,
+    "eccSupport": true,
+    "includesCooler": true,
+    "packaging": "Boxed",
+    "lithography": "TSMC N3B",
+    "simultaneousMultithreading": false,
+    "ppt": 121
+  },
+  "metadata": {
+    "name": "Intel Core Ultra 5 235",
+    "manufacturer": "Intel",
+    "part_numbers": ["BX80768235"],
+    "series": "Core Ultra 5 200",
+    "variant": "235",
+    "releaseYear": 2025
+  },
+  "series": "Core Ultra 5 200",
+  "microarchitecture": "Arrow Lake",
+  "coreFamily": "Arrow Lake-S",
+  "socket": "LGA 1851",
+  "general_product_information": {
+    "amazon_sku": "B0DT7DLJ5Z",
+    "newegg_sku": "N82E16819118584",
+    "walmart_sku": 15497855980
+  }
+}

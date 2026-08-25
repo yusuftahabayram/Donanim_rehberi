@@ -1,0 +1,30 @@
+{
+  "opendb_id": "8de6203c-0af0-42dc-a62d-e3f4316ffca9",
+  "metadata": {
+    "name": "Noctua NF-A6x25",
+    "manufacturer": "Noctua",
+    "series": "NF-A6x25",
+    "variant": "5V PWM",
+    "manufacturer_color": "Brown",
+    "part_numbers": ["nf-a6x25-pwm", "NF-A6x25-PWM"],
+    "releaseYear": 2012
+  },
+  "size": 60,
+  "color": ["BROWN"],
+  "quantity": 1,
+  "pwm": true,
+  "connector": "4-pin PWM",
+  "lighting": ["None"],
+  "isOEM": false,
+  "flow_direction": "Standard",
+  "min_airflow": 17.19,
+  "min_noise_level": 19.3,
+  "led": "None",
+  "controller": "None",
+  "static_pressure": 2.18,
+  "general_product_information": {
+    "amazon_sku": "B00VXTANZ4",
+    "newegg_sku": "9SIAZTUKK39062",
+    "walmart_sku": 181386318
+  }
+}

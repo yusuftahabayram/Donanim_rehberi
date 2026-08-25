@@ -1,0 +1,15 @@
+{
+  "opendb_id": "edea8a11-b0da-4564-9b76-280b5251309f",
+  "metadata": {
+    "name": "Kysona Aztec",
+    "manufacturer": "Kysona",
+    "series": "Aztec",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0CRL9338N"
+  }
+}

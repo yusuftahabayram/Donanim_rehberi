@@ -1,0 +1,36 @@
+{
+  "opendb_id": "26957a55-0849-44ff-a978-145513f474d3",
+  "modules": {
+    "quantity": 2,
+    "capacity_gb": 32
+  },
+  "metadata": {
+    "name": "G.Skill Trident Z5 Neo RGB Matte Black DDR5-6000 CL26 64GB (2x32GB)",
+    "manufacturer": "G.SKILL",
+    "part_numbers": ["6000J2636H32GX2-TZ5NR", "F5-6000J2636H32GX2-TZ5NR"],
+    "series": "Trident Z5 Neo RGB",
+    "manufacturer_color": "Matte Black",
+    "releaseYear": 2022
+  },
+  "speed": 6000,
+  "ram_type": "DDR5",
+  "form_factor": "288-pin DIMM",
+  "capacity": 64,
+  "color": ["BLACK"],
+  "cas_latency": 26,
+  "timings": "26-36-36-96",
+  "voltage": 1.45,
+  "ecc": "Non-ECC",
+  "registered": "Unbuffered",
+  "heat_spreader": true,
+  "rgb": false,
+  "profile_support": ["EXPO"],
+  "lighting": ["ARGB"],
+  "height": 44,
+  "general_product_information": {
+    "amazon_sku": "B0F1XN7DWN",
+    "newegg_sku": "N82E16820374701",
+    "walmart_sku": 15820264840,
+    "manufacturer_url": "https://www.gskill.com/product/165/390/1741936726/F5-6000J2636H32GX2-TZ5NR"
+  }
+}

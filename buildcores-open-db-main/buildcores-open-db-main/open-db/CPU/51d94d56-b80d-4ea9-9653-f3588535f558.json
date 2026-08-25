@@ -1,0 +1,60 @@
+{
+  "opendb_id": "51d94d56-b80d-4ea9-9653-f3588535f558",
+  "cores": {
+    "total": 2,
+    "performance": 0,
+    "efficiency": 0,
+    "threads": 4
+  },
+  "clocks": {
+    "performance": {
+      "base": 3.4,
+      "boost": 0
+    },
+    "efficiency": {
+      "base": 0,
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l1": "2 × 32 KB Instruction Cache + 2 × 32 KB Data Cache",
+    "l2": 0.25,
+    "l3": 3
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "Intel HD Graphics 630",
+      "baseClock": 350,
+      "boostClock": 1.1,
+      "shaderCount": 192
+    },
+    "memory": {
+      "maxSupport": 64,
+      "types": ["DDR3", "DDR4"],
+      "channels": 2
+    },
+    "tdp": 35,
+    "eccSupport": true,
+    "includesCooler": true,
+    "packaging": "OEM/Tray",
+    "lithography": "14 nm",
+    "simultaneousMultithreading": true,
+    "ppt": 0
+  },
+  "metadata": {
+    "name": "Intel Core i3 7100T",
+    "part_numbers": ["CM8067703015913"],
+    "releaseYear": 2017,
+    "series": "Core i3 71000",
+    "variant": "7100T",
+    "manufacturer": "Intel"
+  },
+  "series": "Core i3 7000",
+  "microarchitecture": "Kaby Lake",
+  "coreFamily": "Kaby Lake",
+  "socket": "LGA 1151",
+  "general_product_information": {
+    "amazon_sku": "B01NAQ6A93",
+    "manufacturer_url": "https://www.intel.com/content/www/us/en/products/sku/97485/intel-core-i37100t-processor-3m-cache-3-40-ghz/specifications.html"
+  }
+}

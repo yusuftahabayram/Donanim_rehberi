@@ -1,0 +1,37 @@
+{
+  "opendb_id": "78c18319-4820-4cc2-8039-54a92e590df6",
+  "modules": {
+    "quantity": 2,
+    "capacity_gb": 16
+  },
+  "metadata": {
+    "name": "G.Skill Trident Z5 Matte Black DDR5-6000 CL36 32GB (2x16GB)",
+    "manufacturer": "G.SKILL",
+    "part_numbers": ["F5-6000J3636F16GX2-TZ5K"],
+    "series": "Trident Z5",
+    "variant": "6000 CL36",
+    "releaseYear": 2021,
+    "manufacturer_color": "Matte Black"
+  },
+  "speed": 6000,
+  "ram_type": "DDR5",
+  "form_factor": "288-pin DIMM",
+  "capacity": 32,
+  "color": ["BLACK"],
+  "cas_latency": 36,
+  "timings": "36-36-36-96",
+  "voltage": 1.35,
+  "ecc": "Non-ECC",
+  "registered": "Unbuffered",
+  "heat_spreader": true,
+  "rgb": false,
+  "profile_support": ["XMP", "EXPO"],
+  "lighting": ["None"],
+  "height": 44,
+  "general_product_information": {
+    "amazon_sku": "B09R9D7N1X",
+    "newegg_sku": "N82E16820374339",
+    "walmart_sku": 422948192,
+    "manufacturer_url": "https://www.gskill.com/product/165/371/1640229700/F5-6000J3636F16GX2-TZ5K-F5-6000J3636F16GA2-TZ5K"
+  }
+}

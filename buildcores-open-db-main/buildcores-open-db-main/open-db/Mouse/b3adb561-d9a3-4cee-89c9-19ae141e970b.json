@@ -1,0 +1,15 @@
+{
+  "opendb_id": "b3adb561-d9a3-4cee-89c9-19ae141e970b",
+  "metadata": {
+    "name": "Microsoft Sidewinder X8",
+    "manufacturer": "Microsoft",
+    "series": "Sidewinder X8",
+    "part_numbers": []
+  },
+  "grip_types": [],
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "general_product_information": {
+    "amazon_sku": "B001FA1SIM"
+  }
+}

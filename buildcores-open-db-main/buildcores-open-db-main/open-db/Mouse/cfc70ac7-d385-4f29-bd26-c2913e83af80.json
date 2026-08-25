@@ -1,0 +1,16 @@
+{
+  "opendb_id": "cfc70ac7-d385-4f29-bd26-c2913e83af80",
+  "metadata": {
+    "name": "MCHOSE G3 Pro",
+    "manufacturer": "MCHOSE",
+    "series": "G3",
+    "variant": "Pro",
+    "part_numbers": []
+  },
+  "grip_types": [],
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "general_product_information": {
+    "amazon_sku": "B0DDT67T42"
+  }
+}

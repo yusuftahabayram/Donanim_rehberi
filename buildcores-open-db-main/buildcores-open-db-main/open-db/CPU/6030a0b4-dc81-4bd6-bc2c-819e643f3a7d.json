@@ -1,0 +1,62 @@
+{
+  "opendb_id": "6030a0b4-dc81-4bd6-bc2c-819e643f3a7d",
+  "cores": {
+    "total": 4,
+    "performance": 4,
+    "threads": 8,
+    "efficiency": 0
+  },
+  "clocks": {
+    "performance": {
+      "base": 3.5,
+      "boost": 4.7
+    },
+    "efficiency": {
+      "base": 0,
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l2": 5,
+    "l3": 12,
+    "l1": "256 KB (4×32 KB L1 Data + 4×32 KB L1 Instruction)"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "Intel UHD Graphics 730",
+      "baseClock": 300,
+      "boostClock": 1500,
+      "shaderCount": 192
+    },
+    "memory": {
+      "maxSupport": 192,
+      "types": ["DDR5", "DDR4"],
+      "channels": 2
+    },
+    "tdp": 60,
+    "eccSupport": true,
+    "includesCooler": true,
+    "packaging": "Boxed",
+    "lithography": "Intel 7",
+    "simultaneousMultithreading": true,
+    "ppt": 110
+  },
+  "metadata": {
+    "name": "Intel Core i3 14100",
+    "manufacturer": "Intel",
+    "part_numbers": ["BX8071514100"],
+    "series": "Core i3 14000",
+    "variant": "14100",
+    "releaseYear": 2024
+  },
+  "series": "Core i3 14000",
+  "microarchitecture": "Raptor Lake Refresh",
+  "coreFamily": "Raptor Cove",
+  "socket": "LGA 1700",
+  "general_product_information": {
+    "amazon_sku": "B0CQ1S3L53",
+    "newegg_sku": "N82E16819118483",
+    "walmart_sku": 5330160177,
+    "manufacturer_url": "https://www.intel.com/content/www/us/en/products/sku/236774/intel-core-i3-processor-14100-12m-cache-up-to-4-70-ghz/specifications.html"
+  }
+}

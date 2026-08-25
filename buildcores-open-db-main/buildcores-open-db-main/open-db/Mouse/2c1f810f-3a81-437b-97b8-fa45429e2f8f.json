@@ -1,0 +1,16 @@
+{
+  "opendb_id": "2c1f810f-3a81-437b-97b8-fa45429e2f8f",
+  "metadata": {
+    "name": "RAWM ES21 M",
+    "manufacturer": "RAWM",
+    "series": "ES21",
+    "variant": "M",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0DJ73ZYZV"
+  }
+}

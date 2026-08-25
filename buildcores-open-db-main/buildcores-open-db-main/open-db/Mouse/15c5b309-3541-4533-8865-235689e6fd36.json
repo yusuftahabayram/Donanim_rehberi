@@ -1,0 +1,19 @@
+{
+  "opendb_id": "15c5b309-3541-4533-8865-235689e6fd36",
+  "metadata": {
+    "name": "Logitech MX Vertical Ergonomic Wireless Mouse",
+    "manufacturer": "Logitech",
+    "part_numbers": ["910-005447", "910-005448"],
+    "releaseYear": 2018
+  },
+  "connectivity": ["Bluetooth", "Wireless 2.4GHz", "Wired USB-C"],
+  "lighting": ["None"],
+  "rgb": false,
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B07FNHV4MW",
+    "newegg_sku": "N82E16826197313",
+    "bestbuy_sku": 6282602,
+    "walmart_sku": 321255745
+  }
+}

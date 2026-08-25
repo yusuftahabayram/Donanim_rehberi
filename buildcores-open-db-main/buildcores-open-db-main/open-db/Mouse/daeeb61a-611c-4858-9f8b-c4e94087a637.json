@@ -1,0 +1,16 @@
+{
+  "opendb_id": "daeeb61a-611c-4858-9f8b-c4e94087a637",
+  "metadata": {
+    "name": "MCHOSE G3 V2",
+    "manufacturer": "MCHOSE",
+    "series": "G3",
+    "variant": "V2",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0G8Z5MTZB"
+  }
+}

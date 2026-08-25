@@ -1,0 +1,16 @@
+{
+  "opendb_id": "432af090-6e32-459c-9a85-33ef0940af1c",
+  "metadata": {
+    "name": "EWEADN X23 Pro",
+    "manufacturer": "EWEADN",
+    "series": "X23",
+    "variant": "Pro",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0DZWZZZP8"
+  }
+}

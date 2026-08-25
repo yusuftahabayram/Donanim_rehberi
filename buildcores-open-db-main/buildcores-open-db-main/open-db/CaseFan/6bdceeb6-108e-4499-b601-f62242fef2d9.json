@@ -1,0 +1,28 @@
+{
+  "opendb_id": "6bdceeb6-108e-4499-b601-f62242fef2d9",
+  "metadata": {
+    "name": "Noctua NF-A4x20 5V",
+    "manufacturer": "Noctua",
+    "series": "NF-A4x20",
+    "variant": "5V",
+    "manufacturer_color": "Brown",
+    "part_numbers": ["nf-a4x20-5v", "NF-A4x20-5V"],
+    "releaseYear": 2017
+  },
+  "size": 40,
+  "color": ["BROWN"],
+  "quantity": 1,
+  "pwm": false,
+  "connector": "3-pin",
+  "flow_direction": "Standard",
+  "lighting": ["None"],
+  "isOEM": false,
+  "min_airflow": 5.53,
+  "min_noise_level": 14.9,
+  "led": "None",
+  "controller": "None",
+  "static_pressure": 2.26,
+  "general_product_information": {
+    "amazon_sku": "B072Q3CMRW"
+  }
+}

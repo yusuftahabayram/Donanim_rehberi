@@ -1,0 +1,16 @@
+{
+  "opendb_id": "d2ecca10-d58d-4ebd-8956-dcf63231b447",
+  "metadata": {
+    "name": "Mionix Naos QG",
+    "manufacturer": "Mionix",
+    "series": "Naos QG",
+    "part_numbers": []
+  },
+  "grip_types": [],
+  "connectivity": ["Wired"],
+  "lighting": [],
+  "general_product_information": {
+    "amazon_sku": "B01LXB7BL6",
+    "walmart_sku": 183220274
+  }
+}

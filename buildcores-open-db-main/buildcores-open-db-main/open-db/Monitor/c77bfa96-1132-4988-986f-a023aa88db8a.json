@@ -1,0 +1,40 @@
+{
+  "opendb_id": "c77bfa96-1132-4988-986f-a023aa88db8a",
+  "resolution": {
+    "horizontalRes": 2560,
+    "verticalRes": 1440
+  },
+  "metadata": {
+    "name": "Dell UltraSharp U2724D 27\" 1440p 120Hz IPS Monitor",
+    "manufacturer": "Dell",
+    "part_numbers": [
+      "U2724D",
+      "P3FG2",
+      "210-BKSF",
+      "U2724dsap",
+      "210-BKVB",
+      "6WJY0",
+      "DELL-U2724D",
+      "UltraSharp U2724D"
+    ],
+    "series": "",
+    "variant": "Silver / Black",
+    "releaseYear": 2023,
+    "manufacturer_color": "Black"
+  },
+  "screen_size": 27,
+  "refresh_rate": 120,
+  "panel_type": "IPS",
+  "response_time": 8,
+  "color": ["GREY", "BLACK"],
+  "viewing_angle": "178° H x 178° V",
+  "aspect_ratio": "16:9",
+  "connectors": "1 x DisplayPort 1.4                                                    1 x HDMI 2.1",
+  "max_brightness": 350,
+  "hdr": "",
+  "adaptive_sync": "None",
+  "lighting": ["None"],
+  "general_product_information": {
+    "amazon_sku": "B0BBF5NNZR"
+  }
+}

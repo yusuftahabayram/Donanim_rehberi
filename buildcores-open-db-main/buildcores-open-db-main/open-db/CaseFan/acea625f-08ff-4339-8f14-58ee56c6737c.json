@@ -1,0 +1,33 @@
+{
+  "opendb_id": "acea625f-08ff-4339-8f14-58ee56c6737c",
+  "metadata": {
+    "name": "Thermalright TL-M12QW X3 120mm ARGB PWM White 3-Pack",
+    "manufacturer": "Thermalright",
+    "part_numbers": ["TL-M12QW X3"],
+    "series": "TL-M12",
+    "variant": "QW X3",
+    "manufacturer_color": "White",
+    "releaseYear": 2026
+  },
+  "size": 120,
+  "color": ["WHITE"],
+  "quantity": 3,
+  "min_airflow": 68.9,
+  "max_airflow": null,
+  "min_noise_level": 28.2,
+  "max_noise_level": null,
+  "pwm": true,
+  "led": "Addressable RGB",
+  "connector": "4-pin PWM + 3-pin 5V Addressable RGB",
+  "controller": "None",
+  "static_pressure": 2.21,
+  "flow_direction": "Standard",
+  "isOEM": false,
+  "lighting": ["ARGB"],
+  "general_product_information": {
+    "amazon_sku": "B0FB2ZWWXV",
+    "newegg_sku": "9SIBVHXKFF8852",
+    "walmart_sku": 17136373976,
+    "manufacturer_url": "https://www.thermalright.com/product/tl-m12qw-x3/"
+  }
+}

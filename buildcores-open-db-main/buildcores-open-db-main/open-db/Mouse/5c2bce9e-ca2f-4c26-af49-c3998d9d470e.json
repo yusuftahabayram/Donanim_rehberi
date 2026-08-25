@@ -1,0 +1,15 @@
+{
+  "opendb_id": "5c2bce9e-ca2f-4c26-af49-c3998d9d470e",
+  "metadata": {
+    "name": "Keychron BM24",
+    "manufacturer": "Keychron",
+    "series": "BM24",
+    "part_numbers": ["MSKCBM24C61"]
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FR8PCFJ3"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "opendb_id": "4d751053-e6d2-4f3f-b1e5-a24a42b9141e",
+  "metadata": {
+    "name": "Razer Cobra HyperSpeed",
+    "manufacturer": "Razer",
+    "series": "Cobra HyperSpeed",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FD5DP9CC",
+    "bestbuy_sku": 6634780,
+    "walmart_sku": 17091308392
+  }
+}

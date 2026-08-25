@@ -1,0 +1,16 @@
+{
+  "opendb_id": "67325acc-f9f1-4aea-8a22-374a527715c1",
+  "metadata": {
+    "name": "Pulsar X2H Mini",
+    "manufacturer": "Pulsar",
+    "series": "X2H",
+    "variant": "Mini",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0CH9Z62J3"
+  }
+}

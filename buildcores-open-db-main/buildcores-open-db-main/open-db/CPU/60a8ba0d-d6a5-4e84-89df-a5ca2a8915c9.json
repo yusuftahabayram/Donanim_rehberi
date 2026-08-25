@@ -1,0 +1,63 @@
+{
+  "opendb_id": "60a8ba0d-d6a5-4e84-89df-a5ca2a8915c9",
+  "cores": {
+    "total": 8,
+    "performance": 0,
+    "threads": 16,
+    "efficiency": 0
+  },
+  "clocks": {
+    "performance": {
+      "base": 4.5,
+      "boost": 5.4
+    },
+    "efficiency": {
+      "base": 0,
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l2": 8,
+    "l3": 32,
+    "l1": "8 × 64 KB (L1 per core)"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "AMD Radeon Graphics",
+      "baseClock": 400,
+      "boostClock": 2200,
+      "shaderCount": 128
+    },
+    "memory": {
+      "maxSupport": 128,
+      "types": ["DDR5"],
+      "channels": 2
+    },
+    "tdp": 105,
+    "eccSupport": true,
+    "includesCooler": false,
+    "packaging": "Boxed",
+    "lithography": "TSMC 5nm FinFET, TSMC 6nm FinFET",
+    "simultaneousMultithreading": true,
+    "ppt": 142
+  },
+  "metadata": {
+    "name": "AMD Ryzen 7 7700X",
+    "manufacturer": "AMD",
+    "part_numbers": ["100-100000591WOF", "RYZEN 7 7700X", "100100000591WOF"],
+    "series": "Ryzen 7 7000",
+    "releaseYear": 2022,
+    "variant": "7700X"
+  },
+  "series": "Ryzen 7 7000",
+  "microarchitecture": "Zen 4",
+  "coreFamily": "Raphael",
+  "socket": "AM5",
+  "general_product_information": {
+    "amazon_sku": "B0BBHHT8LY",
+    "newegg_sku": "N82E16819113768",
+    "bestbuy_sku": 6519477,
+    "walmart_sku": 1357409766,
+    "manufacturer_url": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700x.html"
+  }
+}

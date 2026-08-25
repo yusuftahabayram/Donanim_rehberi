@@ -1,0 +1,15 @@
+{
+  "opendb_id": "be0f73d6-d738-4431-81e4-62ef00ae0747",
+  "metadata": {
+    "name": "LAMZU Inca",
+    "manufacturer": "LAMZU",
+    "series": "Inca",
+    "part_numbers": ["INCA8K-BK"]
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0F18KGJGS"
+  }
+}

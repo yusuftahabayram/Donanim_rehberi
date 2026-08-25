@@ -1,0 +1,62 @@
+{
+  "opendb_id": "3805a074-834c-4673-9485-4ea1d306a008",
+  "cores": {
+    "total": 8,
+    "performance": 0,
+    "efficiency": 0,
+    "threads": 16
+  },
+  "clocks": {
+    "performance": {
+      "base": 3.8,
+      "boost": 4.4
+    },
+    "efficiency": {
+      "base": 0,
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l1": "8 × 32 KB Instruction + 8 × 32 KB Data (512 KB total)",
+    "l2": 8,
+    "l3": 16.5
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "None",
+      "baseClock": 0,
+      "boostClock": 0,
+      "shaderCount": 0
+    },
+    "memory": {
+      "maxSupport": 128,
+      "types": ["DDR4"],
+      "channels": 4
+    },
+    "tdp": 165,
+    "eccSupport": false,
+    "includesCooler": false,
+    "packaging": "Boxed",
+    "lithography": "14 nm",
+    "simultaneousMultithreading": true,
+    "ppt": 0
+  },
+  "metadata": {
+    "name": "Intel Core i7-9800X",
+    "part_numbers": ["BX80673I79800X"],
+    "releaseYear": 2018,
+    "manufacturer": "Intel",
+    "series": "Core i7 9000",
+    "variant": "9800X"
+  },
+  "series": "Core i7 9000",
+  "microarchitecture": "Skylake-X",
+  "coreFamily": "Skylake-X",
+  "socket": "LGA 2066",
+  "general_product_information": {
+    "amazon_sku": "B07JGCSMJX",
+    "newegg_sku": "N82E16819117961",
+    "walmart_sku": 3164514913,
+    "manufacturer_url": "https://www.intel.com/content/www/us/en/products/sku/189122/intel-core-i79800x-xseries-processor-16-5m-cache-up-to-4-50-ghz/specifications.html"
+  }
+}

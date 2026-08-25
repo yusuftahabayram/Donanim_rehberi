@@ -1,0 +1,17 @@
+{
+  "opendb_id": "ec8fb45f-984b-4ad7-81e5-4aa1d7250e18",
+  "metadata": {
+    "name": "INZONE Mouse-A",
+    "manufacturer": "INZONE",
+    "series": "Mouse-A",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FJ2XTB3Q",
+    "bestbuy_sku": 6641386,
+    "walmart_sku": 18337810084
+  }
+}

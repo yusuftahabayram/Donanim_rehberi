@@ -1,0 +1,15 @@
+{
+  "opendb_id": "9b2a314a-dc3e-448e-a6af-ebdd88522013",
+  "metadata": {
+    "name": "ATK Duckbill",
+    "manufacturer": "ATK",
+    "series": "Duckbill",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0FMK3WMPM"
+  }
+}

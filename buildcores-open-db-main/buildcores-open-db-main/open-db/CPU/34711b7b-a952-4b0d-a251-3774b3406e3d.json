@@ -1,0 +1,62 @@
+{
+  "opendb_id": "34711b7b-a952-4b0d-a251-3774b3406e3d",
+  "cores": {
+    "total": 6,
+    "performance": 6,
+    "threads": 12,
+    "efficiency": 0
+  },
+  "clocks": {
+    "performance": {
+      "base": 3,
+      "boost": 4.6
+    },
+    "efficiency": {
+      "base": 0,
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l2": 7.5,
+    "l3": 18,
+    "l1": "6 × 32 KB Instruction + 6 × 48 KB Data (480 KB total)"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "Intel UHD Graphics 770",
+      "baseClock": 300,
+      "boostClock": 1450,
+      "shaderCount": 256
+    },
+    "memory": {
+      "maxSupport": 128,
+      "types": ["DDR5", "DDR4"],
+      "channels": 2
+    },
+    "tdp": 65,
+    "eccSupport": false,
+    "includesCooler": true,
+    "packaging": "Boxed",
+    "lithography": "Intel 7",
+    "simultaneousMultithreading": true,
+    "ppt": 117
+  },
+  "metadata": {
+    "name": "Intel Core i5 12500",
+    "manufacturer": "Intel",
+    "part_numbers": ["BX8071512500"],
+    "series": "Core i5 12000",
+    "variant": "12500",
+    "releaseYear": 2022
+  },
+  "series": "Core i5 12000",
+  "microarchitecture": "Alder Lake",
+  "coreFamily": "Golden Cove",
+  "socket": "LGA 1700",
+  "general_product_information": {
+    "amazon_sku": "B09MSJ29RP",
+    "newegg_sku": "N82E16819118374",
+    "walmart_sku": 794223110,
+    "manufacturer_url": "https://www.intel.com/content/www/us/en/products/sku/96144/intel-core-i512500-processor-18m-cache-up-to-4-60-ghz/specifications.html"
+  }
+}

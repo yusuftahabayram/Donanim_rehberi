@@ -1,0 +1,62 @@
+{
+  "opendb_id": "ad2f57e1-6be7-4064-a331-412256955e97",
+  "cores": {
+    "total": 16,
+    "performance": 0,
+    "threads": 32,
+    "efficiency": 0
+  },
+  "clocks": {
+    "performance": {
+      "base": 3.4,
+      "boost": 4
+    },
+    "efficiency": {
+      "base": 0,
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l2": 8,
+    "l3": 32,
+    "l1": "16 × 64 KB Instruction + 16 × 32 KB Data (1536 KB total)"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "None",
+      "baseClock": 0,
+      "boostClock": 0,
+      "shaderCount": 0
+    },
+    "memory": {
+      "maxSupport": 1024,
+      "types": ["DDR4"],
+      "channels": 4
+    },
+    "tdp": 180,
+    "eccSupport": false,
+    "includesCooler": false,
+    "packaging": "Boxed",
+    "lithography": "14 nm",
+    "simultaneousMultithreading": true,
+    "ppt": 0
+  },
+  "metadata": {
+    "name": "AMD Ryzen Threadripper 1950X",
+    "manufacturer": "AMD",
+    "part_numbers": ["YD195XA8AEWOF"],
+    "series": "Ryzen Threadripper 1000",
+    "variant": "1950X",
+    "releaseYear": 2017
+  },
+  "series": "Ryzen Threadripper 1000",
+  "microarchitecture": "Zen",
+  "coreFamily": "Whitehaven",
+  "socket": "sTR4",
+  "general_product_information": {
+    "amazon_sku": "B074CBH3R4",
+    "newegg_sku": "N82E16819113447R",
+    "walmart_sku": 741472132,
+    "manufacturer_url": "https://www.amd.com/en/support/downloads/drivers.html/processors/ryzen-threadripper/ryzen-threadripper-1000-series/amd-ryzen-threadripper-1950x.html"
+  }
+}

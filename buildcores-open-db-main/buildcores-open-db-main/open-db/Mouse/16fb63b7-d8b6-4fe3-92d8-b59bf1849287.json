@@ -1,0 +1,16 @@
+{
+  "opendb_id": "16fb63b7-d8b6-4fe3-92d8-b59bf1849287",
+  "metadata": {
+    "name": "EWEADN S9 Max",
+    "manufacturer": "EWEADN",
+    "series": "S9",
+    "variant": "Max",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0F7XLT496"
+  }
+}

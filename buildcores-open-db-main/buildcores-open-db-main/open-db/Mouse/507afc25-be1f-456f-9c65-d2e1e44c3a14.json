@@ -1,0 +1,16 @@
+{
+  "opendb_id": "507afc25-be1f-456f-9c65-d2e1e44c3a14",
+  "metadata": {
+    "name": "Alienware AW720M",
+    "manufacturer": "Alienware",
+    "series": "AW720M",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0B45G75QZ",
+    "walmart_sku": 1731831826
+  }
+}

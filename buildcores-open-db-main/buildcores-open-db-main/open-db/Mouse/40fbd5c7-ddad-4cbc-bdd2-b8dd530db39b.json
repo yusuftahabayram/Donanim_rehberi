@@ -1,0 +1,16 @@
+{
+  "opendb_id": "40fbd5c7-ddad-4cbc-bdd2-b8dd530db39b",
+  "metadata": {
+    "name": "Lenovo Legion M410",
+    "manufacturer": "Lenovo",
+    "series": "Legion M410",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0DFJJRFML",
+    "walmart_sku": 15479261478
+  }
+}

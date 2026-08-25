@@ -1,0 +1,16 @@
+{
+  "opendb_id": "028407e3-3974-4875-8b7d-0d6b30ce7842",
+  "metadata": {
+    "name": "Zowie U2",
+    "manufacturer": "Zowie",
+    "series": "U2",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0CS85Y3KL",
+    "walmart_sku": 9379211184
+  }
+}

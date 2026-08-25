@@ -1,0 +1,15 @@
+{
+  "opendb_id": "2a0ba13d-122d-41c2-8840-44fffa4f823b",
+  "metadata": {
+    "name": "Waizowl OGM One",
+    "manufacturer": "Waizowl",
+    "series": "OGM One",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0C99J4VGP"
+  }
+}

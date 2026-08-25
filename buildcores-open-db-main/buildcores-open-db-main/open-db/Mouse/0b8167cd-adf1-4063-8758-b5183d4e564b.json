@@ -1,0 +1,16 @@
+{
+  "opendb_id": "0b8167cd-adf1-4063-8758-b5183d4e564b",
+  "metadata": {
+    "name": "Darmoshark N3 Pro",
+    "manufacturer": "Darmoshark",
+    "series": "N3",
+    "variant": "Pro",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz", "Bluetooth", "Wired"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0D78PLRFF"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "opendb_id": "22c7bfda-b4e2-4acf-b311-97aa83527108",
+  "metadata": {
+    "name": "AULA SC800",
+    "manufacturer": "AULA",
+    "series": "SC800",
+    "part_numbers": []
+  },
+  "connectivity": ["Wireless 2.4GHz"],
+  "lighting": [],
+  "grip_types": [],
+  "general_product_information": {
+    "amazon_sku": "B0DZWQPKH1"
+  }
+}

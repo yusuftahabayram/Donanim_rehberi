@@ -1,0 +1,62 @@
+{
+  "opendb_id": "0f832db1-807c-4f85-b76c-3bf1e8d57cc5",
+  "cores": {
+    "total": 14,
+    "performance": 0,
+    "threads": 28,
+    "efficiency": 0
+  },
+  "clocks": {
+    "performance": {
+      "base": 3.1,
+      "boost": 4.4
+    },
+    "efficiency": {
+      "base": 0,
+      "boost": 0
+    }
+  },
+  "cache": {
+    "l2": 14,
+    "l3": 19.25,
+    "l1": "14 × 32 KB Instruction + 14 × 32 KB Data (896 KB total)"
+  },
+  "specifications": {
+    "integratedGraphics": {
+      "model": "None",
+      "baseClock": 0,
+      "boostClock": 0,
+      "shaderCount": 0
+    },
+    "memory": {
+      "maxSupport": 128,
+      "types": ["DDR4"],
+      "channels": 4
+    },
+    "tdp": 165,
+    "eccSupport": false,
+    "includesCooler": false,
+    "packaging": "OEM/Tray",
+    "lithography": "14 nm",
+    "simultaneousMultithreading": true,
+    "ppt": 0
+  },
+  "metadata": {
+    "name": "Intel Core i9 7940X",
+    "manufacturer": "Intel",
+    "part_numbers": ["BX80673I97940X"],
+    "series": "Core i9 7000",
+    "variant": "7940X",
+    "releaseYear": 2017
+  },
+  "series": "Core i9 7000",
+  "microarchitecture": "Skylake",
+  "coreFamily": "Skylake-X",
+  "socket": "LGA 2066",
+  "general_product_information": {
+    "amazon_sku": "B076KXLR6K",
+    "newegg_sku": "N82E16819117834",
+    "walmart_sku": 841944474,
+    "manufacturer_url": "https://www.intel.com/content/www/us/en/products/sku/126695/intel-core-i97940x-xseries-processor-19-25m-cache-up-to-4-30-ghz/specifications.html"
+  }
+}
