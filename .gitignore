@@ -1,0 +1,53 @@
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.pyo
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Database & Generated Vector DB Files
+chroma_db/
+*.sqlite3
+*.db
+
+# Node.js & Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Scratch & Temporary Files
+scratch/
+tmp/
+temp/
+*.log
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
