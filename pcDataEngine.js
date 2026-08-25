@@ -278,6 +278,50 @@ class PCPartsDataEngine {
       }
     }
 
+    // 5. Storage vs Motherboard M.2 Check
+    if (targetCategory === 'storage' || targetCategory === 'Storage' || targetCategory === 'internal-hard-drive') {
+      if (buildCart.motherboard) {
+        const mbData = buildCart.motherboard.data || {};
+        const m2Slots = mbData.m2_slots || (mbData.storage_devices ? mbData.storage_devices.m2_slots : null);
+        
+        let hasM2 = false;
+        if (Array.isArray(m2Slots)) {
+          hasM2 = m2Slots.length > 0;
+        } else if (typeof m2Slots === 'number') {
+          hasM2 = m2Slots > 0;
+        } else if (m2Slots) {
+          hasM2 = true;
+        } else {
+          const mbStr = JSON.stringify(mbData).toLowerCase();
+          hasM2 = mbStr.includes('m.2') || mbStr.includes('nvme');
+        }
+
+        const formFactor = String(data.form_factor || '').toLowerCase();
+        const iface = String(data.interface || '').toLowerCase();
+        const type = String(data.type || '').toLowerCase();
+        const storageType = String(data.storage_type || '').toLowerCase();
+        const name = String(item.name || '').toLowerCase();
+
+        const isM2 = formFactor.includes('m.2') || 
+                     iface.includes('m.2') || 
+                     iface.includes('nvme') || 
+                     type.includes('m.2') || 
+                     storageType.includes('m.2') || 
+                     name.includes('m.2') || 
+                     name.includes('nvme') || 
+                     data.nvme === true;
+
+        if (isM2 && !hasM2) {
+          isCompatible = false;
+          reasons.push('❌ Anakart Üzerinde M.2 Slotu Bulunmuyor! (Yalnızca SATA SSD / HDD Takılabilir)');
+        } else if (isM2 && hasM2) {
+          reasons.push('✓ M.2 NVMe SSD Uyumlu (Anakart M.2 Destekliyor)');
+        } else {
+          reasons.push('✓ SATA SSD / HDD Uyumlu');
+        }
+      }
+    }
+
     return {
       isCompatible,
       reasons: reasons.length ? reasons : ['✓ Genel Uyumlu Parça']
@@ -348,9 +392,15 @@ class PCPartsDataEngine {
         body: JSON.stringify({ message, history })
       });
 
+      const contentType = res.headers.get('content-type') || '';
+      if (!contentType.includes('application/json')) {
+        const text = await res.text();
+        throw new Error(`Sunucudan geçersiz yanıt alındı (JSON beklenirken HTML döndü). Lütfen RAG & Gemini sunucusunun çalıştığından emin olun (python server.py).`);
+      }
+
       if (!res.ok) {
         const errData = await res.json().catch(() => ({}));
-        throw new Error(errData.error || `Chat request failed with status ${res.status}`);
+        throw new Error(errData.error || `Chat isteği başarısız oldu (Hata Kodu: ${res.status})`);
       }
 
       return await res.json();

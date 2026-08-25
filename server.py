@@ -39,7 +39,7 @@ def load_env():
                         k, v = line.split("=", 1)
                         k = k.strip()
                         v = v.strip().strip('"').strip("'")
-                        if k and not os.environ.get(k):
+                        if k:
                             os.environ[k] = v
         except Exception as e:
             print("[SERVER] Warning reading .env:", e)
@@ -71,40 +71,189 @@ def get_chroma_collection():
 import urllib.request
 import urllib.error
 
+def detect_category_intent(msg):
+    if not msg:
+        return None
+    msg_lower = msg.lower().strip()
+    cat_keywords = {
+        'CPUCooler': ['işlemci soğutucu', 'islemci sogutucu', 'sıvı soğutma', 'sivi sogutma', 'hava soğutma', 'soğutucu', 'sogutucu', 'cooler', 'aio'],
+        'GPU': ['ekran kart', 'ekrankart', 'gpu', 'graphics card', 'video card', 'rtx', 'gtx', 'radeon', 'geforce', 'vram'],
+        'CPU': ['işlemci', 'islemci', 'cpu', 'processor', 'ryzen', 'intel core', 'i3', 'i5', 'i7', 'i9', 'threadripper'],
+        'RAM': ['ram', 'bellek', 'memory', 'ddr4', 'ddr5'],
+        'Motherboard': ['anakart', 'motherboard', 'mainboard'],
+        'PSU': ['psu', 'güç kaynağı', 'guc kaynagi', 'power supply'],
+        'PCCase': ['kasa', 'pc kasa', 'chassis', 'tower'],
+        'Storage': ['ssd', 'm2', 'm.2', 'nvme', 'hdd', 'harddisk', 'depolama'],
+        'Chair': ['koltuk', 'oyuncu koltuğu', 'oyuncu koltugu', 'gaming chair'],
+        'keyboard': ['klavye', 'keyboard'],
+        'mouse': ['mouse', 'fare'],
+        'headphones': ['kulaklık', 'kulaklik', 'headphone', 'headset']
+    }
+    for cat, kws in cat_keywords.items():
+        if any(kw in msg_lower for kw in kws):
+            return cat
+    return None
+
 def query_rag_context(user_message, limit=5):
     collection = get_chroma_collection()
     if collection is None:
         return "", []
     try:
-        res = collection.query(
-            query_texts=[user_message],
-            n_results=limit
-        )
-        documents = res.get("documents", [[]])[0] if res.get("documents") else []
-        metadatas = res.get("metadatas", [[]])[0] if res.get("metadatas") else []
-        ids = res.get("ids", [[]])[0] if res.get("ids") else []
-        distances = res.get("distances", [[]])[0] if res.get("distances") else []
+        msg_lower = user_message.lower()
         
+        is_system_build = any(w in msg_lower for w in [
+            'sistem topla', 'sistem öner', 'sistem oner', 'sistem tavsiye',
+            'pc topla', 'pc öner', 'pc oner', 'pc tavsiye',
+            'bilgisayar topla', 'bilgisayar öner', 'bilgisayar oner',
+            'kasa topla', 'kasa dizayn', 'kasa öner', 'oyun bilgisayarı',
+            'oyun bilgisayari', 'sistem kur', 'pc kur', 'sistem diz'
+        ])
+
+        has_gpu = any(w in msg_lower for w in ['ekran kart', 'ekrankart', 'gpu', 'rtx', 'gtx', 'radeon', 'geforce'])
+        has_cpu = any(w in msg_lower for w in ['işlemci', 'islemci', 'cpu', 'processor', 'ryzen', 'intel core'])
+
+        combined_items = []
+
+        if is_system_build:
+            # Query top modern components across main PC Hardware categories
+            comp_queries = [
+                ("GPU", user_message + " RTX 4070 SUPER RTX 4080 RX 7800 XT GeForce"),
+                ("CPU", user_message + " Ryzen 7 7800X3D Ryzen 7 9700X Core i7-14700K"),
+                ("RAM", user_message + " DDR5 32GB 6000MHz"),
+                ("Motherboard", user_message + " B650 X670 Z790 ATX Motherboard"),
+                ("Storage", user_message + " 1TB 2TB NVMe M.2 SSD"),
+                ("PSU", user_message + " 750W 850W Gold Power Supply"),
+                ("PCCase", user_message + " ATX Mid Tower Glass Mesh Gaming Case")
+            ]
+            for cat, q_text in comp_queries:
+                res_c = collection.query(
+                    query_texts=[q_text],
+                    n_results=4,
+                    where={"category": cat}
+                )
+                docs = res_c.get("documents", [[]])[0] if res_c.get("documents") else []
+                metas = res_c.get("metadatas", [[]])[0] if res_c.get("metadatas") else []
+                item_ids = res_c.get("ids", [[]])[0] if res_c.get("ids") else []
+                dists = res_c.get("distances", [[]])[0] if res_c.get("distances") else []
+
+                cat_items = []
+                for doc, meta, item_id, dist in zip(docs, metas, item_ids, dists):
+                    meta = meta or {}
+                    sim = round(1 - dist, 4) if dist <= 1.0 else round(1 / (1 + dist), 4)
+                    year = int(meta.get("releaseYear") or 0)
+                    name_u = str(meta.get("name") or "").upper()
+                    cat_items.append({
+                        "doc": doc, "meta": meta, "item_id": item_id, "sim": sim,
+                        "releaseYear": year, "name": name_u
+                    })
+
+                cat_items.sort(key=lambda m: (m["releaseYear"], m["sim"]), reverse=True)
+                if cat_items:
+                    combined_items.append(cat_items[0])
+
+            combined = combined_items[:7]
+        elif has_gpu and has_cpu:
+            # Multi-category query: Fetch top GPUs and top CPUs
+            res_gpu = collection.query(
+                query_texts=[user_message + " RTX 4080 4070 RX 7800 7900"],
+                n_results=6,
+                where={"category": "GPU"}
+            )
+            res_cpu = collection.query(
+                query_texts=[user_message + " Ryzen 7 7800X3D Ryzen 7 9700X Core i7 Core i5"],
+                n_results=6,
+                where={"category": "CPU"}
+            )
+
+            for res_data in (res_gpu, res_cpu):
+                docs = res_data.get("documents", [[]])[0] if res_data.get("documents") else []
+                metas = res_data.get("metadatas", [[]])[0] if res_data.get("metadatas") else []
+                item_ids = res_data.get("ids", [[]])[0] if res_data.get("ids") else []
+                dists = res_data.get("distances", [[]])[0] if res_data.get("distances") else []
+                for doc, meta, item_id, dist in zip(docs, metas, item_ids, dists):
+                    meta = meta or {}
+                    sim = round(1 - dist, 4) if dist <= 1.0 else round(1 / (1 + dist), 4)
+                    combined_items.append({
+                        "doc": doc, "meta": meta, "item_id": item_id, "sim": sim,
+                        "releaseYear": int(meta.get("releaseYear") or 0),
+                        "name": str(meta.get("name") or "").upper()
+                    })
+
+            gpus = [i for i in combined_items if i["meta"].get("category") == "GPU"]
+            cpus = [i for i in combined_items if i["meta"].get("category") == "CPU"]
+
+            gpus.sort(key=lambda m: (m["releaseYear"], 1 if any(x in m["name"] for x in ['RTX 40', 'RTX 30', 'RX 7', 'RX 6']) else 0, m["sim"]), reverse=True)
+            cpus.sort(key=lambda m: (m["releaseYear"], 1 if any(x in m["name"] for x in ['7800X3D', '9700X', '9900X', '14700K', '13600K', '7600X']) else 0, m["sim"]), reverse=True)
+
+            final_items = []
+            max_len = max(len(gpus), len(cpus))
+            for idx in range(max_len):
+                if idx < len(gpus): final_items.append(gpus[idx])
+                if idx < len(cpus): final_items.append(cpus[idx])
+            combined = final_items[:limit]
+        else:
+            detected_cat = detect_category_intent(user_message)
+            query_text = user_message
+            if detected_cat == 'GPU' and any(w in msg_lower for w in ['güçlü', 'en iyi', 'performans', 'oyun', 'üst seviye', 'tavsiye', 'öneri', 'high', 'hızlı']):
+                query_text = user_message + ' RTX 4090 RTX 4080 SUPER RTX 4070 Ti RX 7900 XTX RX 7800 XT GeForce'
+            elif detected_cat == 'CPU' and any(w in msg_lower for w in ['güçlü', 'en iyi', 'performans', 'oyun', 'üst seviye', 'tavsiye', 'öneri', 'high', 'hızlı']):
+                query_text = user_message + ' Ryzen 7 7800X3D Ryzen 9 7950X3D Core i9-14900K Core i7-14700K'
+
+            where_clause = {"category": detected_cat} if detected_cat else None
+            n_search = limit * 4 if detected_cat else limit
+
+            res = collection.query(
+                query_texts=[query_text],
+                n_results=n_search,
+                where=where_clause
+            )
+            documents = res.get("documents", [[]])[0] if res.get("documents") else []
+            metadatas = res.get("metadatas", [[]])[0] if res.get("metadatas") else []
+            ids = res.get("ids", [[]])[0] if res.get("ids") else []
+            distances = res.get("distances", [[]])[0] if res.get("distances") else []
+            
+            combined = []
+            for doc, meta, item_id, dist in zip(documents, metadatas, ids, distances):
+                meta = meta or {}
+                sim = 0.5
+                if isinstance(dist, (int, float)):
+                    sim = round(1 - dist, 4) if dist <= 1.0 else round(1 / (1 + dist), 4)
+
+                name_upper = str(meta.get("name") or "").upper()
+                year = int(meta.get("releaseYear") or 0)
+
+                combined.append({
+                    "doc": doc,
+                    "meta": meta,
+                    "item_id": item_id,
+                    "sim": sim,
+                    "releaseYear": year,
+                    "name": name_upper
+                })
+
+            if detected_cat == 'GPU':
+                combined.sort(key=lambda m: (m["releaseYear"], 1 if any(x in m["name"] for x in ['RTX 40', 'RTX 30', 'RX 7', 'RX 6']) else 0, m["sim"]), reverse=True)
+            elif detected_cat == 'CPU':
+                combined.sort(key=lambda m: (m["releaseYear"], 1 if any(x in m["name"] for x in ['7800X3D', '9950X', '14900K', '14700K', '7950X']) else 0, m["sim"]), reverse=True)
+
+            combined = combined[:limit]
+
         context_parts = []
         rec_products = []
-        for doc, meta, item_id, dist in zip(documents, metadatas, ids, distances):
-            meta = meta or {}
-            if doc:
-                context_parts.append(str(doc))
+        for item in combined:
+            meta = item["meta"]
+            if item["doc"]:
+                context_parts.append(str(item["doc"]))
             
-            sim = 0.5
-            if isinstance(dist, (int, float)):
-                sim = round(1 - dist, 4) if dist <= 1.0 else round(1 / (1 + dist), 4)
-
             rec_products.append({
-                "id": str(item_id or ""),
+                "id": str(item["item_id"] or ""),
                 "name": str(meta.get("name") or "Bilinmeyen Ürün"),
                 "category": str(meta.get("category") or ""),
                 "manufacturer": str(meta.get("manufacturer") or "Generic"),
                 "price": float(meta.get("price") or 0),
                 "relPath": str(meta.get("relPath") or ""),
                 "releaseYear": int(meta.get("releaseYear") or 0),
-                "similarity": sim
+                "similarity": item["sim"]
             })
         return "\n".join(context_parts), rec_products
     except Exception as e:
@@ -119,7 +268,14 @@ def call_gemini_chat(user_message, history, rag_context):
             "noApiKey": True
         }
 
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
+    msg_lower = user_message.lower()
+    is_system_build = any(w in msg_lower for w in [
+        'sistem topla', 'sistem öner', 'sistem oner', 'sistem tavsiye',
+        'pc topla', 'pc öner', 'pc oner', 'pc tavsiye',
+        'bilgisayar topla', 'bilgisayar öner', 'bilgisayar oner',
+        'kasa topla', 'kasa dizayn', 'kasa öner', 'oyun bilgisayarı',
+        'oyun bilgisayari', 'sistem kur', 'pc kur', 'sistem diz'
+    ])
     
     system_prompt = (
         "Sen PC Donanım ve Bilgisayar Toplama uzmanı bir yapay zeka asistanısın. "
@@ -131,10 +287,22 @@ def call_gemini_chat(user_message, history, rag_context):
         "-----------------------------------------\n\n"
         "TALİMATLAR:\n"
         "1. Kullanıcıya Türkçe, nazik, anlaşılır ve profesyonel yanıt ver.\n"
-        "2. Eğer veritabanı bağlamında sorulan ürünler varsa, ürünlerin tam adını, fiyatını ve teknik özelliklerini vurgula.\n"
-        "3. Karşılaştırma sorularında (örn: X vs Y) artı ve eksi yönleri liste veya tablo halinde açıkla.\n"
-        "4. Yanıtı çok uzun tutma, okunabilirliği yüksek ve öz tut."
+        "2. YANITINI YARIDA KESME. Başladığın tüm liste maddelerini, başlıkları ve açıklamaları sonuna kadar eksiksiz ve eksiksiz bir cümle ile bitir.\n"
+        "3. KESİNLİKLE koltuk, oyuncu koltuğu, kulaklık veya klavye gibi çevresel aksesuarlar ÖNERME. Sadece PC İç Donanım Kasa Bileşenlerine odaklan.\n"
     )
+
+    if is_system_build:
+        system_prompt += (
+            "4. Kullanıcı tam bir PC Kasa dizaynı / Sistem toplama talebinde bulundu. "
+            "Yanıtında kullanıcı için uyumlu, performanslı ve dengeli tam bir PC Kasa Toplama Rehberi hazırla:\n"
+            "   - 🎯 **Ekran Kartı (GPU)**: Önerilen model ve neden seçildiği.\n"
+            "   - ⚡ **İşlemci (CPU)**: Önerilen model ve performansı.\n"
+            "   - 🧩 **Anakart (Motherboard)**: Soket ve çipset uyumu.\n"
+            "   - 🧠 **RAM (Bellek)**: Kapasite (örn: 32GB DDR5) ve hız.\n"
+            "   - 💾 **Depolama (SSD)**: Hızlı NVMe M.2 SSD önerisi.\n"
+            "   - 🔌 **Güç Kaynağı (PSU)**: Watt değeri ve 80+ sertifikası.\n"
+            "   - 📦 **Kasa (PC Case)**: Mesh havalandırma ve tasarım özellikleri."
+        )
 
     contents = []
     if isinstance(history, list):
@@ -153,19 +321,19 @@ def call_gemini_chat(user_message, history, rag_context):
         },
         "generationConfig": {
             "temperature": 0.7,
-            "maxOutputTokens": 1024
+            "maxOutputTokens": 4096
         }
     }
 
     candidate_models = [
-        "gemini-2.5-flash",
-        "gemini-2.0-flash",
-        "gemini-1.5-flash",
         "gemini-3.6-flash",
         "gemini-3.5-flash",
+        "gemini-3.5-flash-lite",
+        "gemini-3.1-pro-preview",
         "gemini-flash-latest"
     ]
     last_error_msg = ""
+    is_rate_limit = False
 
     for model_name in candidate_models:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent?key={api_key}"
@@ -185,15 +353,23 @@ def call_gemini_chat(user_message, history, rag_context):
                 return {"answer": "Gemini API yanıt üretemedi."}
         except urllib.error.HTTPError as e:
             err_msg = e.read().decode('utf-8', errors='ignore')
-            print(f"[SERVER] Gemini API HTTP Error ({model_name} - {e.code}):", err_msg)
-            last_error_msg = f"HTTP {e.code} ({model_name})"
-            if e.code in (404, 429, 503, 500):
+            print(f"[SERVER] Gemini API HTTP Error ({model_name} - {e.code}):", err_msg, flush=True)
+            last_error_msg = f"HTTP {e.code} ({model_name}): {err_msg[:100]}"
+            if e.code == 429:
+                is_rate_limit = True
                 continue
-            return {"answer": f"Gemini API Hatası ({e.code}): Lütfen .env dosyasındaki API key'inizi kontrol edin."}
+            if e.code in (404, 400, 503, 500):
+                continue
+            return {"answer": f"Gemini API Hatası ({e.code}): Lütfen .env dosyasındaki API key'inizi kontrol edin. (Detay: {err_msg[:150]})"}
         except Exception as e:
-            print(f"[SERVER] Gemini API Exception ({model_name}):", e)
+            print(f"[SERVER] Gemini API Exception ({model_name}):", e, flush=True)
             last_error_msg = str(e)
             continue
+
+    if is_rate_limit:
+        return {
+            "answer": "⏱️ **API Kota / Hız Sınırı Aşıldı (HTTP 429)**\n\nGoogle Gemini ücretsiz API kotasında anlık sınır aşıldı. Lütfen **15-20 saniye bekledikten sonra** sorunuzu tekrar gönderin veya `.env` dosyasında yeni bir Google AI Studio API Key kullanın.\n\n*(Aşağıda ChromaDB veritabanınızdan çekilen ilgili donanım ürünleri listelenmiştir:)*"
+        }
 
     return {
         "answer": f"⚠️ **Gemini API Bağlantı Uyarısı**\n\nGoogle Gemini servislerine ulaşılamadı veya sunucu yoğunluğu yaşanıyor (Son Hata: `{last_error_msg}`).\n\n💡 **İpucu:** Lütfen `https://aistudio.google.com/app/apikey` adresinden **`AIzaSy...`** ile başlayan ücretsiz bir Google AI Studio API Key alıp `.env` dosyasına kaydedin."
@@ -211,6 +387,8 @@ def ensure_indexes():
             print("[SERVER] Error building indexes:", e)
 
 class DataServerHandler(http.server.BaseHTTPRequestHandler):
+    close_connection = True
+
     def do_OPTIONS(self):
         self.send_response(204)
         self.send_header("Access-Control-Allow-Origin", "*")
@@ -246,7 +424,7 @@ class DataServerHandler(http.server.BaseHTTPRequestHandler):
                 "motherboard": "Motherboard",
                 "storage": "Storage", "internal-hard-drive": "Storage", "external-hard-drive": "Storage"
             }
-            category_filter = CATEGORY_NORM_MAP.get(raw_cat.lower().strip(), raw_cat) if raw_cat else None
+            category_filter = CATEGORY_NORM_MAP.get(raw_cat.lower().strip(), raw_cat) if raw_cat else detect_category_intent(query_str)
 
             limit_list = query_params.get("limit", [10])
             try:
@@ -265,9 +443,13 @@ class DataServerHandler(http.server.BaseHTTPRequestHandler):
 
             try:
                 where_clause = {"category": category_filter} if category_filter else None
+                search_q = query_str
+                if category_filter == 'GPU' and any(w in query_str.lower() for w in ['güçlü', 'en iyi', 'performans', 'oyun', 'üst seviye', 'tavsiye', 'öneri', 'high', 'hızlı']):
+                    search_q = query_str + ' RTX 4090 RTX 4080 SUPER RTX 4070 Ti RX 7900 XTX RX 7800 XT GeForce'
+
                 res = collection.query(
-                    query_texts=[query_str],
-                    n_results=limit_val,
+                    query_texts=[search_q],
+                    n_results=limit_val * 3 if category_filter else limit_val,
                     where=where_clause
                 )
 
@@ -286,11 +468,16 @@ class DataServerHandler(http.server.BaseHTTPRequestHandler):
                         "manufacturer": meta.get("manufacturer"),
                         "price": meta.get("price", 0),
                         "relPath": meta.get("relPath"),
-                        "releaseYear": meta.get("releaseYear", 0),
+                        "releaseYear": int(meta.get("releaseYear") or 0),
                         "similarity": sim,
                         "distance": dist,
                         "document": doc
                     })
+
+                if category_filter == 'GPU':
+                    items.sort(key=lambda m: (m["releaseYear"], 1 if any(x in (m["name"] or "").upper() for x in ['RTX 40', 'RTX 30', 'RX 7', 'RX 6']) else 0, m["similarity"]), reverse=True)
+
+                items = items[:limit_val]
 
                 self._send_json({
                     "query": query_str,
@@ -428,12 +615,14 @@ class DataServerHandler(http.server.BaseHTTPRequestHandler):
                 self._send_json({"error": str(e)}, 500)
             return
 
+        self._send_json({"error": f"POST endpoint '{pathname}' not found"}, 404)
+
     def _send_file(self, filepath, mime):
         try:
             with open(filepath, "rb") as f:
                 content = f.read()
             
-            accept_encoding = self.headers.get("Accept-Encoding", "") if self.headers else ""
+            accept_encoding = str(self.headers.get("Accept-Encoding") or "") if self.headers else ""
             if "gzip" in accept_encoding and len(content) > 1000:
                 compressed = gzip.compress(content)
                 self.send_response(200)
@@ -465,7 +654,7 @@ class DataServerHandler(http.server.BaseHTTPRequestHandler):
     def _send_json(self, data, code=200):
         try:
             body = json.dumps(data, ensure_ascii=False).encode("utf-8")
-            accept_encoding = self.headers.get("Accept-Encoding", "") if self.headers else ""
+            accept_encoding = str(self.headers.get("Accept-Encoding") or "") if self.headers else ""
             
             if "gzip" in accept_encoding and len(body) > 1000:
                 compressed = gzip.compress(body)
@@ -496,7 +685,7 @@ class ThreadedHTTPServer(socketserver.ThreadingMixIn, http.server.HTTPServer):
 
 def main():
     ensure_indexes()
-    server_address = ("", PORT)
+    server_address = ("0.0.0.0", PORT)
     httpd = ThreadedHTTPServer(server_address, DataServerHandler)
     print("==================================================")
     print("🚀 STAJ PROJE RAG & GEMINI SERVER RUNNING")

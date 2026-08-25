@@ -2,11 +2,11 @@
   "name": "staj-proje-json-hub",
   "version": "1.0.0",
   "description": "PC Hardware JSON Database Indexer, Web Explorer, and Data Manager",
-  "main": "server.js",
+  "main": "server.py",
   "scripts": {
-    "start": "node server.js",
-    "build-index": "node scripts/indexer.js",
-    "dev": "node server.js"
+    "start": "python server.py",
+    "build-index": "python scripts/indexer.py",
+    "dev": "python server.py"
   },
   "keywords": [
     "pc-builder",

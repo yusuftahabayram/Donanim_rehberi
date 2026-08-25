@@ -180,7 +180,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     'lithography': 'Üretim Teknolojisi',
     'releaseYear': 'Çıkış Yılı',
     'microarchitecture': 'Mikromimari',
-    'form_factor': 'Form Faktörü'
+    'form_factor': 'Form Faktörü',
+    'general_product_information': 'Genel Ürün Bilgileri',
+    'product_information': 'Ürün Bilgileri',
+    'manufacturer_url': 'Üretici Web Sitesi'
   };
 
   // 8 Steps PC Builder Definition
@@ -822,7 +825,21 @@ document.addEventListener('DOMContentLoaded', async () => {
     builderProductsContainer.innerHTML = '<div class="loading-state"><i class="fa-solid fa-spinner fa-spin"></i> Uyumlu parçalar kontrol ediliyor...</div>';
 
     const dataset = await engine.loadDataset(currentDataset);
-    let catItems = dataset[currentStepConfig.categoryName] || dataset[currentStepConfig.fallbackCat] || [];
+    
+    // Case-insensitive and robust dataset category resolution
+    let catItems = dataset[currentStepConfig.categoryName] || 
+                   dataset[currentStepConfig.categoryName.toLowerCase()] || 
+                   dataset[currentStepConfig.fallbackCat] || 
+                   dataset[currentStepConfig.fallbackCat?.toLowerCase()] || [];
+
+    if (!catItems || catItems.length === 0) {
+      const matchKey = Object.keys(dataset).find(k => 
+        k.toLowerCase() === currentStepConfig.categoryName.toLowerCase() ||
+        k.toLowerCase() === currentStepConfig.fallbackCat.toLowerCase() ||
+        (currentStepConfig.key === 'storage' && (k.toLowerCase() === 'storage' || k.toLowerCase().includes('hard-drive')))
+      );
+      if (matchKey) catItems = dataset[matchKey];
+    }
 
     if (currentBuilderSearch.trim()) {
       const q = currentBuilderSearch.toLowerCase().trim();
@@ -845,6 +862,23 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (buildCart.motherboard && (stepConfig.key === 'cpu' || stepConfig.key === 'ram')) {
       const mbSocket = buildCart.motherboard.data.socket || 'Soket Belirtilmedi';
       notice = `Anakart seçiminiz: <strong>${buildCart.motherboard.name} (${mbSocket})</strong>. Sadece bu soket ve bellek yapısıyla uyumlu ürünler önerilmektedir.`;
+    } else if (stepConfig.key === 'storage' && buildCart.motherboard) {
+      const mbData = buildCart.motherboard.data || {};
+      const m2Slots = mbData.m2_slots || (mbData.storage_devices ? mbData.storage_devices.m2_slots : null);
+      let hasM2 = false;
+      if (Array.isArray(m2Slots)) hasM2 = m2Slots.length > 0;
+      else if (typeof m2Slots === 'number') hasM2 = m2Slots > 0;
+      else if (m2Slots) hasM2 = true;
+      else {
+        const mbStr = JSON.stringify(mbData).toLowerCase();
+        hasM2 = mbStr.includes('m.2') || mbStr.includes('nvme');
+      }
+
+      if (hasM2) {
+        notice = `Anakart seçiminiz (<strong>${buildCart.motherboard.name}</strong>) M.2 slotuna sahiptir. M.2 NVMe SSD, SATA SSD ve HDD sürücülerinin tümü önerilmektedir.`;
+      } else {
+        notice = `Anakart seçiminiz (<strong>${buildCart.motherboard.name}</strong>) üzerinde M.2 slotu bulunmamaktadır. Yalnızca SATA SSD ve HDD sürücüleri önerilmektedir (M.2 SSD'ler devredışı bırakılmıştır).`;
+      }
     }
     noticeText.innerHTML = notice;
   }
@@ -1009,29 +1043,31 @@ document.addEventListener('DOMContentLoaded', async () => {
     showToast('Sistem özeti TXT olarak indirildi!', 'success');
   });
 
-  btnExportBuildJson.addEventListener('click', () => {
-    const buildExportObj = {
-      createdAt: new Date().toISOString(),
-      estimatedTdpWatt: engine.calculateEstimatedTdp(buildCart),
-      components: {}
-    };
+  if (btnExportBuildJson) {
+    btnExportBuildJson.addEventListener('click', () => {
+      const buildExportObj = {
+        createdAt: new Date().toISOString(),
+        estimatedTdpWatt: engine.calculateEstimatedTdp(buildCart),
+        components: {}
+      };
 
-    BUILDER_STEPS.forEach(step => {
-      const part = buildCart[step.key];
-      if (part) {
-        buildExportObj.components[step.key] = part.data;
-      }
+      BUILDER_STEPS.forEach(step => {
+        const part = buildCart[step.key];
+        if (part) {
+          buildExportObj.components[step.key] = part.data;
+        }
+      });
+
+      const jsonStr = JSON.stringify(buildExportObj, null, 2);
+      const blob = new Blob([jsonStr], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `Toplanan-Sistem-${Date.now()}.json`;
+      a.click();
+      showToast('Sistem şeması JSON olarak indirildi!', 'success');
     });
-
-    const jsonStr = JSON.stringify(buildExportObj, null, 2);
-    const blob = new Blob([jsonStr], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `Toplanan-Sistem-${Date.now()}.json`;
-    a.click();
-    showToast('Sistem şeması JSON olarak indirildi!', 'success');
-  });
+  }
 
   builderSearchInput.addEventListener('input', debounce((e) => {
     currentBuilderSearch = e.target.value;
@@ -1101,7 +1137,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   function openDetailModal(item) {
     const visual = getCategoryVisual(currentCategory);
     modalItemTitle.textContent = item.name;
-    modalFilePath.textContent = item.relPath;
+    if (modalFilePath) modalFilePath.style.display = 'none';
     modalItemIcon.innerHTML = `<i class="fa-solid ${visual.icon}"></i>`;
     modalItemIcon.style.background = visual.bg;
 
@@ -1120,15 +1156,40 @@ document.addEventListener('DOMContentLoaded', async () => {
     return escapeHtml(String(val));
   }
 
-  function renderTurkishDetailSpecGrid(data, containerEl = detailSpecGrid) {
+  function formatLabel(key) {
+    if (SPEC_LABEL_TR[key]) return SPEC_LABEL_TR[key];
+    return key.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  }
+
+  function renderTurkishDetailSpecGrid(data, containerEl = detailSpecGrid, parentKey = '') {
     containerEl.innerHTML = '';
     if (!data) return;
 
     Object.keys(data).forEach(key => {
-      if (key === 'price' || key === 'price_usd') return;
+      const lowerKey = key.toLowerCase();
+      const lowerParentKey = parentKey.toLowerCase();
+
+      // Under general_product_information, keep ONLY manufacturer_url
+      if (
+        (lowerParentKey.includes('product_information') || lowerParentKey.includes('productinformation')) &&
+        key !== 'manufacturer_url'
+      ) {
+        return;
+      }
+
+      if (
+        key === 'price' ||
+        key === 'price_usd' ||
+        lowerKey === 'opendb_id' ||
+        lowerKey === 'id' ||
+        lowerKey === 'json_id' ||
+        lowerKey === 'opendbid' ||
+        lowerKey === 'jsonid' ||
+        lowerKey.includes('opendb')
+      ) return;
 
       const val = data[key];
-      const trLabel = SPEC_LABEL_TR[key] || key;
+      const trLabel = formatLabel(key);
 
       if (typeof val === 'object' && val !== null && !Array.isArray(val)) {
         const groupCard = document.createElement('div');
@@ -1137,10 +1198,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         
         const subGrid = document.createElement('div');
         subGrid.className = 'detail-spec-grid inner';
-        renderTurkishDetailSpecGrid(val, subGrid);
+        renderTurkishDetailSpecGrid(val, subGrid, key);
         
-        groupCard.appendChild(subGrid);
-        containerEl.appendChild(groupCard);
+        if (subGrid.children.length > 0) {
+          groupCard.appendChild(subGrid);
+          containerEl.appendChild(groupCard);
+        }
       } else {
         const card = document.createElement('div');
         card.className = 'spec-detail-card';

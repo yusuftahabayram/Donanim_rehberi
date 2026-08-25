@@ -160,6 +160,57 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  // POST /api/chat
+  if (pathname === '/api/chat' && req.method === 'POST') {
+    let body = '';
+    req.on('data', chunk => body += chunk);
+    req.on('end', () => {
+      const { spawn } = require('child_process');
+      const pyScript = path.join(ROOT_DIR, 'scripts', 'query_chat.py');
+      const pyProc = spawn('python', ['-u', pyScript], { cwd: ROOT_DIR });
+
+      let stdoutData = '';
+      let stderrData = '';
+
+      pyProc.stdout.on('data', data => stdoutData += data.toString('utf8'));
+      pyProc.stderr.on('data', data => stderrData += data.toString('utf8'));
+
+      pyProc.on('close', code => {
+        let cleanJson = stdoutData.trim();
+        const jsonStart = cleanJson.indexOf('{');
+        const jsonEnd = cleanJson.lastIndexOf('}');
+        
+        if (jsonStart !== -1 && jsonEnd !== -1 && jsonEnd > jsonStart) {
+          cleanJson = cleanJson.substring(jsonStart, jsonEnd + 1);
+        }
+
+        try {
+          const parsed = JSON.parse(cleanJson);
+          res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
+          res.end(JSON.stringify(parsed));
+        } catch (err) {
+          console.error('[SERVER] Failed to parse Python stdout JSON:', err.message);
+          res.writeHead(500, { 'Content-Type': 'application/json; charset=utf-8' });
+          res.end(JSON.stringify({ 
+            error: `Yapay zeka yanıtı işlenirken hata oluştu: ${err.message}`, 
+            raw: stdoutData.substring(0, 200) 
+          }));
+        }
+      });
+
+      pyProc.stdin.write(body);
+      pyProc.stdin.end();
+    });
+    return;
+  }
+
+  // Catch-all 404 for unhandled /api/ endpoints
+  if (pathname.startsWith('/api/')) {
+    res.writeHead(404, { 'Content-Type': 'application/json; charset=utf-8' });
+    res.end(JSON.stringify({ error: `API endpoint '${pathname}' Node sunucusunda desteklenmiyor.` }));
+    return;
+  }
+
   // --- Static Files Server ---
   let filePath = path.join(ROOT_DIR, pathname === '/' ? 'index.html' : pathname);
 
